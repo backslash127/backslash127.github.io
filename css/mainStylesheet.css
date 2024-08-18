@@ -1,0 +1,13 @@
+body
+{
+	background: #2d0e3c url("media/background.png") repeat;
+	font: normal normal bold 24px courier new;
+	
+	color: #ffffff;
+}
+
+.main
+{
+	max-width: 100%;
+	max-height: 100%;
+}
