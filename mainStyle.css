@@ -1,0 +1,75 @@
+html
+{
+    font: normal normal bold 14px courier;
+    background: url("media/purpleBricks.png") fixed;
+}
+
+html, body
+{
+    height: 100%;
+    margin: 0;
+}
+
+.container
+{
+    display: flex;
+    height: 100%;
+}
+
+.main
+{
+    width: 1000px;
+}
+
+.nav
+{
+    width: 200px;
+    height: 100%;
+
+    text-align: center;
+}
+
+.links
+{
+    width: 100%;
+}
+
+footer
+{
+    position: fixed;
+    bottom: 0;
+
+    width: 100%;
+}
+
+/*grey elements */
+.main, footer
+{
+    padding: 10px;
+
+    color: #000000;
+    font-size: 18px;
+
+    background: #cccccc;
+    border-style: solid;
+    border-left-color: #ffffff;
+    border-top-color: #ffffff;
+    border-right-color: #5a5a5a;
+    border-bottom-color: #5a5a5a;
+}
+
+/*purple elements */
+.nav, .links
+{
+    padding: 10px;
+
+    color: #ffffff;
+    font-size: 18px;
+
+    background: #a167a5;
+    border-style: solid;
+    border-left-color: #d3bccc;
+    border-top-color: #d3bccc;
+    border-right-color: #4a306d;
+    border-bottom-color: #4a306d;
+}
