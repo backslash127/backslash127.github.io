@@ -129,9 +129,14 @@ body
     padding-top: 0px;
 }
 
-.main hr
+.blogTitle
 {
     color: #9460a9;
+}
+
+.blogTitle:hover
+{
+    color: #4a306d;
 }
 
 footer
@@ -160,6 +165,11 @@ p, sub
     word-break: normal;
 
     margin: 10px 0px;
+}
+
+hr
+{
+    color: #9460a9;
 }
 
 /* grey style */
