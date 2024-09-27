@@ -4,6 +4,8 @@ html
     background-size: 25%;
 
     font: normal normal bold 16px courier;
+
+    overflow-y: scroll;
 }
 
 body
@@ -14,18 +16,19 @@ body
 
 .container
 {
-    width: 1000px;
-    height: 750px;
+    box-sizing: border-box;
+    
+    width: 875px;
+    height: auto;
 
-    margin: auto;
-    padding: auto;
+
+    margin: 0 auto;
 }
 
 /* Banner */
 .banner
 {
     width: auto;
-    height: auto;
     
     margin: 0px;
     padding: 0px;
@@ -54,9 +57,8 @@ body
     width: auto;
     height: auto;
 
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
 }
 
 .navLinks li
@@ -116,21 +118,15 @@ body
 /* Main */
 .main
 {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 25px;
 
     width: auto;
-    height: 100%;
+    height: auto;
 
     padding: 15px;
     margin-top: 0px;
     padding-top: 0px;
-}
-
-.main h1
-{
-    color: #4a306d;
-    line-height: 15px;
 }
 
 .main hr
@@ -140,17 +136,31 @@ body
 
 footer
 {
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
 
     width: auto;
 
     padding: 15px;
     margin-top: 15px;
+
+    overflow: hidden;
 }
 
 /* Misc. */
+.heading
+{
+    color: #4a306d;
+    font-size: 32px;
+    line-height: 15px;
+}
 
+p, sub
+{
+    word-break: normal;
+
+    margin: 10px 0px;
+}
 
 /* grey style */
 .main, footer
@@ -160,7 +170,7 @@ footer
     background-color: #dadada;
 
     border-style: solid;
-    border-width: 4px;
+    border-width: 3px;
     border-top-color: #ffffff;
     border-left-color: #ffffff;
     border-bottom-color: #666666;
@@ -175,7 +185,7 @@ footer
     background-color: #9460a9;
 
     border-style: solid;
-    border-width: 4px;
+    border-width: 3px;
     border-top-color: #d3bccc;
     border-left-color: #d3bccc;
     border-bottom-color: #4a306d;
