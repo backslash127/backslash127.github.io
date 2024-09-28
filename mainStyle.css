@@ -18,7 +18,7 @@ body
 {
     box-sizing: border-box;
     
-    width: 875px;
+    width: 1000px;
     height: auto;
 
 
@@ -123,8 +123,7 @@ body
     width: auto;
     height: auto;
 
-    padding: 5px 15px;
-    margin-top: 0px;
+    padding: 15px;
 }
 
 footer
@@ -134,7 +133,6 @@ footer
     width: auto;
 
     padding: 15px;
-    margin-top: 15px;
 
     overflow: hidden;
 }
@@ -144,12 +142,13 @@ footer
 {
     display: flex;
     align-items: center;
+    justify-content: center;
 
     width: auto;
-    height: 175px;
+    height: auto;
 
-    padding: 10px;
-    margin: 10px;
+    padding: 5px;
+    margin: 5px;
 }
 
 .artShowcase img
@@ -160,8 +159,6 @@ footer
     height: 175px;
 
     vertical-align: middle;
-
-    margin: auto;
 }
 
 /* Blog */
@@ -210,8 +207,10 @@ details summary
 .heading
 {
     color: #4a306d;
-    font-size: 30px;
-    line-height: 32px;
+    font-size: 32px;
+    line-height: 48px;
+
+    margin: 0px;
 }
 
 p, sub
@@ -232,7 +231,7 @@ strong
 }
 
 /* grey style */
-.main, footer, .blogpost, .profile, .detailsBox, .detailsBox img, .artShowcase img
+.main, footer, .blogpost, .profile, .detailsBox img, .artShowcase img, .leftBar, .rightBar
 {
     color: #000000;
     
@@ -247,7 +246,7 @@ strong
 }
 
 /* purple style */
-.banner, .crumbBar, details summary, .artShowcase
+.banner, .crumbBar, details summary, .detailsBox, .artShowcase
 {
     color: #ffffff;
     
