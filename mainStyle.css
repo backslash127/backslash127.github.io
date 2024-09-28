@@ -124,19 +124,8 @@ body
     width: auto;
     height: auto;
 
-    padding: 15px;
+    padding: 5px 15px;
     margin-top: 0px;
-    padding-top: 0px;
-}
-
-.blogTitle
-{
-    color: #9460a9;
-}
-
-.blogTitle:hover
-{
-    color: #4a306d;
 }
 
 footer
@@ -152,12 +141,79 @@ footer
     overflow: hidden;
 }
 
+/* Featured Art */
+.artShowcase
+{
+    display: flex;
+    align-items: center;
+
+    width: auto;
+    height: 175px;
+
+    padding: 10px;
+    margin: 10px;
+}
+
+.artShowcase img
+{
+    object-fit: cover;
+    
+    width: 175px;
+    height: 175px;
+
+    vertical-align: middle;
+
+    margin: auto;
+}
+
+/* Blog */
+.blogpost
+{
+    width: auto;
+    height: auto;
+
+    padding: 15px;
+    margin: 5px;
+}
+
+.blogTitle
+{
+    color: #9460a9;
+}
+
+.blogTitle:hover
+{
+    color: #4a306d;
+}
+
+/* Gallery */
+details summary
+{
+    padding: 5px;
+}
+
+.detailsBox
+{
+    padding: 0px 15px;
+}
+
+.detailsBox img
+{
+    object-fit: cover;
+    
+    width: 175px;
+    height: 175px;
+
+    padding: 0px;
+    margin: 0px;
+}
+
 /* Misc. */
 .heading
 {
     color: #4a306d;
-    font-size: 32px;
-    line-height: 15px;
+    font-size: 30px;
+    line-height: 32px;
 }
 
 p, sub
@@ -172,8 +228,13 @@ hr
     color: #9460a9;
 }
 
+strong
+{
+    color: #7800ac;
+}
+
 /* grey style */
-.main, footer
+.main, footer, .blogpost, .profile, .detailsBox, .detailsBox img, .artShowcase img
 {
     color: #000000;
     
@@ -188,7 +249,7 @@ hr
 }
 
 /* purple style */
-.banner, .crumbBar
+.banner, .crumbBar, details summary, .artShowcase
 {
     color: #ffffff;
     
