@@ -3,7 +3,7 @@ html
     background: url("media/purpleBricks.png") fixed;
     background-size: 25%;
 
-    font: normal normal bold 16px courier;
+    font: normal normal bold 16px courier new;
 
     overflow-y: scroll;
 }
@@ -118,7 +118,6 @@ body
 /* Main */
 .main
 {
-    font-size: 16px;
     line-height: 25px;
 
     width: auto;
@@ -130,7 +129,6 @@ body
 
 footer
 {
-    font-size: 16px;
     text-align: center;
 
     width: auto;
