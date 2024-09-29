@@ -43,15 +43,38 @@
                 <img class="button" src="/media/buttons/links/blinkiesCafe-badge.gif">
             </a>
         </marquee>
-    
-        <div class="blogpost">
-            <p>september 28th, 2024</p>
-            <h1><a class="blogTitle" href="/blogposts/09_28_24" target="_parent">website upd8 and a silly rant</a></h1>
-            <ul>
-                <li>kickass new sidebar</li>
-                <li>almost october</li>
-            </ul>
-        </div>
+
+        <div id="player"></div>
+        <script>
+            var tag = document.createElement('script');
+
+            tag.src = "https://www.youtube.com/iframe_api";
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+            function onYouTubeIframeAPIReady() {
+                var numPl = Math.floor((Math.random() * 50) + 1);
+                var player = new YT.Player("player", {
+                    height: 'auto',
+                    width: '100%',
+                    playerVars: {
+                        listType:'playlist',
+                        list:'PLHGb39XWPsyDsNhvRcLwyIyBLE3lnOLL7',
+                        index: numPl,
+                        autoplay: 1,
+              },
+                    events: {
+                        'onReady': function (event) {
+                            //event.target.cuePlaylist({list: "PLHGb39XWPsyDsNhvRcLwyIyBLE3lnOLL7"});
+                            //event.target.playVideo();
+                            setTimeout(function() {
+                                event.target.setShuffle({'shufflePlaylist' : true});
+                            }, 1000);
+                        }
+                    }
+                });
+            }
+        </script>
 
         <div class="buttonShill">
             <p>feel free to add my button to your website!</p>

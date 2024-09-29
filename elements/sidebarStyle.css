@@ -108,6 +108,15 @@ body
     color: #4a306d;
 }
 
+/* Youtube Embed */
+#player
+{
+    display: block;
+
+    padding: 0px;
+    margin: 0px;
+}
+
 /* Misc. */
 .heading
 {
@@ -156,7 +165,7 @@ img
 }
 
 /* purple style */
- .notionTitle, .cosmetics, .buttonShill
+ .notionTitle, .cosmetics, .buttonShill, #player
 {
     color: #ffffff;
     
