@@ -38,7 +38,7 @@ body
     padding: 10px;
 }
 
-.buttons
+.cosmetics
 {
     display: flex;
     flex-direction: column;
@@ -51,6 +51,7 @@ body
     padding: 5px;
     margin: 0px;
 }
+
 .button
 {
     line-height: 0px;
@@ -59,12 +60,17 @@ body
     margin: 0px;
 }
 
+.cosmetics a
+{
+    text-decoration: none;
+}
+
+/* Blog */
 .sideBar .blogpost
 {
     margin: 0px;
 }
 
-/* Blog */
 .blogpost
 {
     width: auto;
@@ -80,6 +86,24 @@ body
 }
 
 .blogTitle:hover
+{
+    color: #4a306d;
+}
+
+/* Button Shill */
+.buttonShill
+{
+    text-align: center;
+    
+    padding: 5px;
+}
+
+.buttonShill a
+{
+    color: #ffffff;
+}
+
+.buttonShill a:hover
 {
     color: #4a306d;
 }
@@ -111,6 +135,11 @@ strong
     color: #7800ac;
 }
 
+img
+{
+    image-rendering: crisp-edges;
+}
+
 /* grey style */
 .blogpost, .notion
 {
@@ -127,7 +156,7 @@ strong
 }
 
 /* purple style */
- .notionTitle, .buttons
+ .notionTitle, .cosmetics, .buttonShill
 {
     color: #ffffff;
     
