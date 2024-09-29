@@ -44,37 +44,7 @@
             </a>
         </marquee>
 
-        <div id="player"></div>
-        <script>
-            var tag = document.createElement('script');
-
-            tag.src = "https://www.youtube.com/iframe_api";
-            var firstScriptTag = document.getElementsByTagName('script')[0];
-            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-            function onYouTubeIframeAPIReady() {
-                var numPl = Math.floor((Math.random() * 50) + 1);
-                var player = new YT.Player("player", {
-                    height: 'auto',
-                    width: '100%',
-                    playerVars: {
-                        listType:'playlist',
-                        list:'PLHGb39XWPsyDsNhvRcLwyIyBLE3lnOLL7',
-                        index: numPl,
-                        autoplay: 1,
-              },
-                    events: {
-                        'onReady': function (event) {
-                            //event.target.cuePlaylist({list: "PLHGb39XWPsyDsNhvRcLwyIyBLE3lnOLL7"});
-                            //event.target.playVideo();
-                            setTimeout(function() {
-                                event.target.setShuffle({'shufflePlaylist' : true});
-                            }, 1000);
-                        }
-                    }
-                });
-            }
-        </script>
+        <iframe class="youtubeEmbed" width="100%" height="auto" src="https://www.youtube-nocookie.com/embed/vO2Su3erRIA?si=2BBzg8gkCIHJ2jfb%loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
         <div class="buttonShill">
             <p>feel free to add my button to your website!</p>

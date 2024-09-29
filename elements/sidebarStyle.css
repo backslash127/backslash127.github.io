@@ -109,7 +109,7 @@ body
 }
 
 /* Youtube Embed */
-#player
+.youtubeEmbed
 {
     display: block;
 
@@ -150,7 +150,7 @@ img
 }
 
 /* grey style */
-.blogpost, .notion
+.blogpost, .notion, .youtubeEmbed
 {
     color: #000000;
     
@@ -165,7 +165,7 @@ img
 }
 
 /* purple style */
- .notionTitle, .cosmetics, .buttonShill, #player
+ .notionTitle, .cosmetics, .buttonShill
 {
     color: #ffffff;
     
