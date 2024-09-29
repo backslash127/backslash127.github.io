@@ -112,7 +112,7 @@ strong
 }
 
 /* grey style */
-.main, footer, .blogpost, .profile, .detailsBox img, .artShowcase img, .sideBar, .notion
+.blogpost, .notion
 {
     color: #000000;
     
@@ -127,7 +127,7 @@ strong
 }
 
 /* purple style */
-.banner, .crumbBar, .artShowcase, details summary, .detailsBox, .notionTitle, .buttons
+ .notionTitle, .buttons
 {
     color: #ffffff;
     

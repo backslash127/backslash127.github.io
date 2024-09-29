@@ -132,9 +132,7 @@ body
 
 iframe
 {
-    border-width: 0px;
     width: auto;
-    box-sizing: border-box;
 
     padding: 0px;
     margin: 0px;
@@ -246,7 +244,7 @@ strong
 }
 
 /* grey style */
-.main, footer, .blogpost, .profile, .detailsBox img, .artShowcase img, .sideBar, .notion
+.main, footer, .blogpost, .profile, .detailsBox img, .artShowcase img, .sideBar, .notion, iframe
 {
     color: #000000;
     
