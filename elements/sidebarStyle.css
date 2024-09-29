@@ -40,10 +40,6 @@ body
 
 .cosmetics
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
     height: auto;
 
     line-height: 0px;
