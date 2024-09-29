@@ -24,21 +24,28 @@
 				</ul>
 			</header>
 
-		<div class="crumbBar">
-			<a href="/blog">blog</a> > <a href="/blogposts/09_27_24">site upd8</a>
-		</div>
-
-		<div class="main">
-			<p>september 27th, 2024</p>
-			<h1 class="heading">homepage and gallery finished + some small touch-ups</h1>
-            <p>hey, real short post 2day. just writing about the website update.</p>
-            <p>the hompage has been finished! it now contains some featured artworks, and the most recent blogpost.</p>
-            <p>the gallery has also been finished. i'll dump any art i've made that i want to share in there. there's not much there as of right now though, but i hope to put some more stuff there eventually!</p>
-            <p>uhmm i also changed some stuff here and there i guess... uhhhh cleaned up the code of some stuff too... that's all really. bye!!!</p>
+			<div class="crumbBar">
+				<a href="/blog">blog</a> > <a href="/blogposts/09_27_24">site upd8</a>
 			</div>
-			
-			<br>
-			
+
+			<div class="flex">
+				<script>
+					function resizeIframe(obj) {
+					  obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+					}
+				</script>
+				<iframe src="/elements/sidebar.html" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
+				
+				<div class="main">
+					<p>september 27th, 2024</p>
+					<h1 class="heading">homepage and gallery finished + some small touch-ups</h1>
+					<p>hey, real short post 2day. just writing about the website update.</p>
+					<p>the hompage has been finished! it now contains some featured artworks, and the most recent blogpost.</p>
+					<p>the gallery has also been finished. i'll dump any art i've made that i want to share in there. there's not much there as of right now though, but i hope to put some more stuff there eventually!</p>
+					<p>uhmm i also changed some stuff here and there i guess... uhhhh cleaned up the code of some stuff too... that's all really. bye!!!</p>
+				</div>
+			</div>
+
 			<footer>
 				<p><em>website is a work-in-progress, and will most likely be a work-in-progress for the foreseeable future. if you encounter any issues then submit an issue on <a href="https://github.com/Backslash127/backslash127.github.io/">github</a>.</em></p>
 			</footer>

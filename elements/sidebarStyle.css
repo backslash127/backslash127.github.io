@@ -1,0 +1,142 @@
+html
+{
+    background-color: #dadada;
+    font: normal normal bold 16px courier new;
+
+    overflow-y: scroll;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar */
+.sideBar
+{
+    width: 300px;
+    height: auto;
+    box-sizing: border-box;
+
+    padding: 0px;
+    margin: 0px;
+}
+
+.notionTitle
+{
+    text-align: center;
+    
+    width: 100%;
+    height: auto;
+
+    box-sizing: border-box;
+}
+
+.notion
+{
+    padding: 10px;
+}
+
+.buttons
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: auto;
+
+    line-height: 0px;
+
+    padding: 5px;
+    margin: 0px;
+}
+.button
+{
+    line-height: 0px;
+
+    padding: 0px;
+    margin: 0px;
+}
+
+.sideBar .blogpost
+{
+    margin: 0px;
+}
+
+/* Blog */
+.blogpost
+{
+    width: auto;
+    height: auto;
+
+    padding: 15px;
+    margin: 5px;
+}
+
+.blogTitle
+{
+    color: #9460a9;
+}
+
+.blogTitle:hover
+{
+    color: #4a306d;
+}
+
+/* Misc. */
+.heading
+{
+    color: #4a306d;
+    font-size: 32px;
+    line-height: 48px;
+
+    margin: 0px;
+}
+
+p, sub
+{
+    word-break: normal;
+
+    margin: 10px 0px;
+}
+
+hr
+{
+    color: #9460a9;
+}
+
+strong
+{
+    color: #7800ac;
+}
+
+/* grey style */
+.main, footer, .blogpost, .profile, .detailsBox img, .artShowcase img, .sideBar, .notion
+{
+    color: #000000;
+    
+    background-color: #dadada;
+
+    border-style: solid;
+    border-width: 3px;
+    border-top-color: #ffffff;
+    border-left-color: #ffffff;
+    border-bottom-color: #666666;
+    border-right-color: #666666;
+}
+
+/* purple style */
+.banner, .crumbBar, .artShowcase, details summary, .detailsBox, .notionTitle, .buttons
+{
+    color: #ffffff;
+    
+    background-color: #9460a9;
+
+    border-style: solid;
+    border-width: 3px;
+    border-top-color: #d3bccc;
+    border-left-color: #d3bccc;
+    border-bottom-color: #4a306d;
+    border-right-color: #4a306d;
+}
