@@ -138,6 +138,16 @@ iframe
     margin: 0px;
 }
 
+.youtubeEmbed
+{
+    position: fixed;
+
+    bottom: 0px;
+
+    padding: 5px;
+    margin: 15px;
+}
+
 /* Footer */
 footer
 {
