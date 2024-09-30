@@ -205,6 +205,15 @@ details summary
     padding: 0px 15px;
 }
 
+
+.detailsBox .button img
+{
+    border-width: 0px;
+
+    width: 88px;
+    height: 31px;
+}
+
 .detailsBox img
 {
     object-fit: cover;
@@ -214,6 +223,16 @@ details summary
 
     padding: 0px;
     margin: 0px;
+}
+
+.detailsBox a
+{
+    color: #ffffff;
+}
+
+.detailsBox a:hover
+{
+    color: #4a306d;
 }
 
 /* Misc. */
