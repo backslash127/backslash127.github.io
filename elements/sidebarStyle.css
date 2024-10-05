@@ -107,6 +107,11 @@ body
 /* Youtube Embed */
 .youtubeEmbed
 {
+    line-height: 0px;
+    
+    width: auto;
+    height: auto;
+
     display: block;
 
     padding: 0px;
