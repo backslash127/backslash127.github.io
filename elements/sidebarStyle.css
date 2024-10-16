@@ -1,7 +1,7 @@
 html
 {
     background-color: #dadada;
-    font: normal normal bold 16px courier new;
+    font: normal normal bold 16px courier;
 
     overflow-y: scroll;
 }
@@ -16,7 +16,6 @@ body
 .sideBar
 {
     width: 300px;
-    height: auto;
     box-sizing: border-box;
 
     padding: 0px;

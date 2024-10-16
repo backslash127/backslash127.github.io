@@ -3,7 +3,7 @@ html
     background: url("media/purpleBricks.png") fixed;
     background-size: 25%;
 
-    font: normal normal bold 16px courier new;
+    font: normal normal bold 16px courier;
 
     overflow-y: scroll;
 }
@@ -133,7 +133,6 @@ body
 iframe
 {
     width: auto;
-    height: auto;
 
     padding: 0px;
     margin: 0px;
