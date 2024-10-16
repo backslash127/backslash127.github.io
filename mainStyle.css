@@ -133,6 +133,7 @@ body
 iframe
 {
     width: auto;
+    height: auto;
 
     padding: 0px;
     margin: 0px;

@@ -56,9 +56,10 @@ body
     margin: 0px;
 }
 
-.cosmetics a
+.cosmetics a, .cosmetics img
 {
     text-decoration: none;
+    line-height: 0px;
 }
 
 /* Blog */
