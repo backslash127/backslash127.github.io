@@ -229,6 +229,8 @@ details summary
 
     width: 176px;
     height: 62px;
+
+    image-rendering: crisp-edges;
 }
 
 .detailsBox img
