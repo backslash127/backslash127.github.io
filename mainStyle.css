@@ -307,7 +307,8 @@ strong
 }
 
 /* grey style */
-.main, footer, .blogpost, .profile, .detailsBox img, .detailsBox, .artShowcase img, iframe, .audioFile audio
+.main, footer, .blogpost, .profile, .detailsBox img, .detailsBox, .artShowcase img, iframe, .audioFile audio, 
+.audioFile img
 {
     color: #000000;
     
@@ -322,8 +323,7 @@ strong
 }
 
 /* purple style */
-.banner, .crumbBar, .artShowcase, details summary, 
-.audioFile img
+.banner, .crumbBar, .artShowcase, details summary
 
 {
     color: #ffffff;
