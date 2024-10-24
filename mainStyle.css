@@ -217,6 +217,12 @@ details summary
     justify-content: center;
 }
 
+.detailsBox .music
+{
+    display: flex;
+    flex-direction: column;
+}
+
 .detailsBox .button img
 {
     border-width: 0px;
