@@ -205,8 +205,17 @@ details summary
 .detailsBox
 {
     padding: 0px 15px;
+
+    align-items: center;
 }
 
+.detailsBox .images
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .detailsBox .button img
 {
