@@ -16,6 +16,8 @@ body
 .sideBar
 {
     width: 300px;
+    height: auto;
+
     box-sizing: border-box;
 
     padding: 0px;
