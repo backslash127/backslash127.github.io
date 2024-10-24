@@ -279,8 +279,23 @@ strong
     color: #7800ac;
 }
 
+.audioFile
+{
+    width: 100%;
+    height: 100%;
+
+    padding: auto;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
 /* grey style */
-.main, footer, .blogpost, .profile, .detailsBox img, .detailsBox, .artShowcase img, iframe
+.main, footer, .blogpost, .profile, .detailsBox img, .detailsBox, .artShowcase img, iframe, .audioFile audio
 {
     color: #000000;
     
