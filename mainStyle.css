@@ -103,14 +103,14 @@ body
     margin: 0px;
 }
 
-.crumbBar a
+.crumbBar a, .errorContainer a
 {
     color: #ffffff;
 
     margin: 0px;
 }
 
-.crumbBar a:hover
+.crumbBar a:hover, .errorContainer a:hover
 {
     color: #4a306d;
 }
@@ -260,7 +260,6 @@ details summary
     width: 100%;
     height: 100%;
 
-    padding: auto;
     margin: auto;
 
     display: flex;
@@ -286,6 +285,24 @@ details summary
     height: 500px;
 
     object-fit: cover;
+}
+
+/* 404 */
+.errorContainer
+{
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.errorContainer a
+{
+    padding: 10px;
+    margin: 15px;
 }
 
 /* Misc. */
@@ -332,7 +349,7 @@ strong
 }
 
 /* purple style */
-.banner, .crumbBar, .artShowcase, details summary
+.banner, .crumbBar, .artShowcase, details summary, .errorContainer a
 
 {
     color: #ffffff;
