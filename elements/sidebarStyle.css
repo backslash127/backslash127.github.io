@@ -15,6 +15,9 @@ body
 /* Sidebar */
 .sideBar
 {
+    display: flex;
+    flex-direction: column;
+
     width: 300px;
     height: auto;
 
@@ -145,11 +148,6 @@ hr
 strong
 {
     color: #7800ac;
-}
-
-img
-{
-    image-rendering: crisp-edges;
 }
 
 /* grey style */
