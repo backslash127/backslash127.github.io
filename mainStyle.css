@@ -140,6 +140,8 @@ body
 
 .main
 {
+    flex: 1;
+
     width: 700px;
     height: auto;
     box-sizing: border-box;
@@ -147,10 +149,21 @@ body
     padding: 15px;
 }
 
+/* sidebar */
+.sidebar
+{
+    line-height: 0px;
+
+    height: auto;
+
+    box-sizing: border-box;
+
+    padding: 0px;
+    margin: 0px;
+}
+
 iframe
 {
-    width: auto;
-
     padding: 0px;
     margin: 0px;
 }
@@ -340,7 +353,7 @@ strong
 }
 
 /* grey style */
-.main, footer, .profile, .detailsBox img, .detailsBox, .artShowcase img, iframe, .audioFile audio, 
+.main, footer, .profile, .detailsBox img, .detailsBox, .artShowcase img, .sidebar, .audioFile audio, 
 .audioFile img
 {
     color: #000000;

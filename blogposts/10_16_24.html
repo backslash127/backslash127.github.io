@@ -29,12 +29,14 @@
 			</div>
 
 			<div class="flex">
-				<script>
-					function resizeIframe(obj) {
-					  obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
-					}
-				</script>
-				<iframe src="/elements/sidebar.html" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
+				<div class="sidebar">
+					<script>
+						function resizeIframe(obj) {
+						  obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+						}
+					</script>
+					<iframe src="/elements/sidebar.html" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
+				</div>
 				
 				<div class="main">
 					<p>october 16th, 2024</p>
