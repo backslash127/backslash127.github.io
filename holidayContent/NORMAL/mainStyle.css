@@ -1,6 +1,6 @@
 html
 {
-    background: url("media/orangeBricks.png") fixed;
+    background: url("media/purpleBricks.png") fixed;
     background-size: 32.5%;
 
     image-rendering: crisp-edges;
@@ -96,12 +96,12 @@ body
 
 .navLinks a:hover
 {
-    color: #d45113;
+    color: #9460a9;
 }
 
 .navLinks .active
 {
-    color: #f8dda4;
+    color: #d3bccc;
     text-decoration: none;
 }
 
@@ -127,7 +127,7 @@ body
 
 .crumbBar a:hover, .errorContainer a:hover
 {
-    color: #813405;
+    color: #4a306d;
 }
 
 /* Main */
@@ -214,12 +214,12 @@ footer
 
 .blogTitle
 {
-    color: #d45113;
+    color: #9460a9;
 }
 
 .blogTitle:hover
 {
-    color: #813405;
+    color: #4a306d;
 }
 
 /* Gallery */
@@ -266,12 +266,12 @@ details summary
 
 .detailsBox a
 {
-    color: #d45113;
+    color: #9460a9;
 }
 
 .detailsBox a:hover
 {
-    color: #813405;
+    color: #4a306d;
 }
 
 /* Music Page */
@@ -327,7 +327,7 @@ details summary
 /* Misc. */
 .heading
 {
-    color: #813405;
+    color: #4a306d;
     font-size: 32px;
     line-height: 32px;
 
@@ -343,7 +343,7 @@ p, sub
 
 hr
 {
-    color: #d45113;
+    color: #9460a9;
     margin: 20px;
 }
 
@@ -368,18 +368,18 @@ strong
     border-right-color: #666666;
 }
 
-/* orange style */
+/* purple style */
 .banner, .crumbBar, .artShowcase, details summary, .errorContainer a
 
 {
     color: #ffffff;
     
-    background-color: #d45113;
+    background-color: #9460a9;
 
     border-style: solid;
     border-width: 3px;
-    border-top-color: #f8dda4;
-    border-left-color: #f8dda4;
-    border-bottom-color: #813405;
-    border-right-color: #813405;
+    border-top-color: #d3bccc;
+    border-left-color: #d3bccc;
+    border-bottom-color: #4a306d;
+    border-right-color: #4a306d;
 }
