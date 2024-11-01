@@ -1,6 +1,6 @@
 html
 {
-    background: url("media/orangeBricks.png") fixed;
+    background: url("media/orangeBricks.png");
     background-size: 32.5%;
 
     image-rendering: crisp-edges;
