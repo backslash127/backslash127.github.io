@@ -72,7 +72,15 @@
 			</div>
 
 			<!-- footer -->
-			<iframe id="footer" src="/elements/footer.html" frameborder="0" scrolling="no"></iframe>
+			<iframe id="footer" src="/elements/footer.html" scrolling="no"></iframe>
+			<!-- frame resizer -->
+			<script src="/node_modules/@iframe-resizer/parent/index.umd.js"></script>
+			<script>
+				iframeResize({
+					license: 'GPLv3',
+					waitForLoad: true,
+				}, '#footer' );
+			</script>
 		</div>
 	</body>
 </html>
