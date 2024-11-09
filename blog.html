@@ -66,11 +66,11 @@
 			<!-- frame resizer -->
 			<script src="/node_modules/@iframe-resizer/parent/index.umd.js"></script>
 			<script>
-				const iframes = iframeResize({
+				const iframes = iframeResize( [{options}], ["#footer"] || [iframe] )
+				iframeResize({
 					license: 'GPLv3',
 					waitForLoad: false,
 				}, '#footer' );
 			</script>
-		</div>
 	</body>
 </html>
