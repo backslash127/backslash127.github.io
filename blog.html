@@ -1,130 +1,78 @@
 <!DOCTYPE html>
 
+<!-- main html -->
 <html lang="en-US">
-	<head>
-		<meta charset="utf-8">
+	<!-- head -->
+	<head>		
+		<!-- metadata -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="author" content="Backslash">
 
-		<title>Backslash's Dwelling</title>
+		<!-- stylesheet -->
+		<link rel="stylesheet" href="/stylesheets/mainStylesheet.css">
 
-		<link rel="stylesheet" href="mainStyle.css">
+		<!-- font - Courier Prime -->
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Prosto+One&display=swap');
+		</style>
+
+		<!-- frame resizer -->
+		<script src="/node_modules/@iframe-resizer/parent/index.umd.js"></script>
+
+		<!-- title -->
+		<title>\ BACKSLASH'S DWELLING \</title>
 	</head>
 
+	<!-- body -->
 	<body>
-		<div class="container">
-			<header>
-				<div class="banner">
-					<img src="media/banner.png" alt="BACKSLASH">
-				</div>
-
-				<ul class="navLinks">
-					<li><a class="" href="/">HOME</a></li>
-					<li><a class="" href="/gallery">GALLERY</a></li>
-					<li><a class="active" href="/blog">BLOG</a></li>
-					<li><a class="" href="/about">ABOUT</a></li>
+		<div id="vignette"></div>
+		<div id="flexBody">
+			<!-- navigation -->
+			<nav>
+				<img id="bannerImage" class="purple" src="/media/pageContent/banner.png">
+				<ul id="navLinks">
+					<li>&lt;</li>
+	
+					<li><a id="" target="_parent" href="/">HOME</a></li>
+					<li><a id="navActive" target="_parent" href="/blog">BLOG</a></li>
+					<li><a id="" target="_parent" href="/gallery">GALLERY</a></li>
+					<li><a id="" target="_parent" href="/about">ABOUT</a></li>
+	
+					<li>&gt;</li>
 				</ul>
-			</header>
+			</nav>
 
-			<div class="crumbBar">
-				<a href="/blog">blog</a>
-			</div>
+			<!-- main page content -->
+			<ul id="breadcrumbs" class="purple">
+				<li id="last"><a target="_parent" href="/">BLOG</a></li>
+			</ul>
 
-			<div class="flex">
-				<div class="sidebar">
-					<script>
-						function resizeIframe(obj) {
-						  obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
-						}
-					</script>
-					<iframe src="/elements/sidebar.html" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
-				</div>
-
-				<div class="main">
-					<div class="blogpost">
-						<p>october 31st, 2024</p>
-						<h1><a class="blogTitle" href="/blogposts/10_31_24">happy halloween!!!</a></h1>
-						<ul>
-							<li>its that time again</li>
-						</ul>
-					</div>
-
+			<div id="mainContent" class="grey">
+				<p class="header">\\ BLOG</p>
+				<hr>
+				<p>welcome to my blog, every blogpost will be listed by date in descending order. (newest first, oldest last.)</p>
+				<br>
+				<div class="blogpost">
+					<p id="blogDate">11/09/24</p>
+					<a class="header" href="/blogposts/11_09_24"><p>MASSIVE website update!!!</p></a>
 					<hr>
-
-					<div class="blogpost">
-						<p>october 25th, 2024</p>
-						<h1><a class="blogTitle" href="/blogposts/10_25_24">im sick >X{</a></h1>
-						<ul>
-							<li>its true!</li>
-						</ul>
-					</div>
-
-					<hr>
-					
-					<div class="blogpost">
-						<p>october 16th, 2024</p>
-						<h1><a class="blogTitle" href="/blogposts/10_16_24">hows it goin'?</a></h1>
-						<ul>
-							<li>medsszzzzz</li>
-							<li>some other gunk</li>
-						</ul>
-					</div>
-
-					<hr>
-
-					<div class="blogpost">
-						<p>october 9th, 2024</p>
-						<h1><a class="blogTitle" href="/blogposts/10_09_24">lets get real</a></h1>
-						<ul>
-							<li>diagnosis + medication</li>
-						</ul>
-					</div>
-
-					<hr>
-
-					<div class="blogpost">
-						<p>october 3rd, 2024</p>
-						<h1><a class="blogTitle" href="/blogposts/10_03_24">small personal post</a></h1>
-						<ul>
-							<li>its been a long week</li>
-						</ul>
-					</div>
-
-					<hr>
-
-					<div class="blogpost">
-						<p>september 28th, 2024</p>
-						<h1><a class="blogTitle" href="/blogposts/09_28_24">website upd8 and a silly rant</a></h1>
-						<ul>
-							<li>kickass new sidebar</li>
-							<li>almost october</li>
-						</ul>
-					</div>
-
-					<hr>
-
-					<div class="blogpost">
-						<p>september 27th, 2024</p>
-						<h1><a class="blogTitle" href="/blogposts/09_27_24">site upd8</a></h1>
-						<ul>
-							<li>homepage and gallery finished + some small touch-ups</li>
-						</ul>
-					</div>
-		
-					<hr>
-		
-					<div class="blogpost">
-						<p>september 26th, 2024</p>
-						<h1><a class="blogTitle" href="/blogposts/09_26_24">first blogpost!!!</a></h1>
-						<ul>
-							<li>website release!</li>
-							<li>some more personal fluff</li>
-						</ul>
-					</div>
+					<ul>
+						<li>i rewrote the whole fuckin' thing</li>
+						<li>some real talkins'</li>
+						<li>short wrap up</li>
+					</ul>
 				</div>
 			</div>
-			
-			<footer>
-				<p><em>website is a work-in-progress, and will most likely be a work-in-progress for the foreseeable future. if you encounter any issues then submit an issue on <a href="https://github.com/Backslash127/backslash127.github.io/">github</a>.</em></p>
-			</footer>
+
+			<!-- footer -->
+			<iframe id="footer" src="/elements/footer.html" scrolling="no"></iframe>
+			<script>
+			iframeResize({
+				license: 'GPLv3',
+				waitForLoad: true,
+			}, '#footer' );
+			</script>
 		</div>
 	</body>
 </html>

@@ -1,63 +1,78 @@
 <!DOCTYPE html>
 
+<!-- main html -->
 <html lang="en-US">
-	<head>
-		<meta charset="utf-8">
+	<!-- head -->
+	<head>		
+		<!-- metadata -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="author" content="Backslash">
 
-		<title>Backslash's Dwelling</title>
+		<!-- stylesheet -->
+		<link rel="stylesheet" href="/stylesheets/mainStylesheet.css">
 
-		<link rel="stylesheet" href="mainStyle.css">
+		<!-- font - Courier Prime -->
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Prosto+One&display=swap');
+		</style>
+
+		<!-- frame resizer -->
+		<script src="/node_modules/@iframe-resizer/parent/index.umd.js"></script>
+
+		<!-- title -->
+		<title>\ BACKSLASH'S DWELLING \</title>
 	</head>
 
+	<!-- body -->
 	<body>
-		<div class="container">
-			<header>
-				<div class="banner">
-					<img src="media/banner.png" alt="BACKSLASH">
-				</div>
-
-				<ul class="navLinks">
-					<li><a class="" href="/">HOME</a></li>
-					<li><a class="" href="/gallery">GALLERY</a></li>
-					<li><a class="" href="/blog">BLOG</a></li>
-					<li><a class="active" href="/about">ABOUT</a></li>
+		<div id="vignette"></div>
+		<div id="flexBody">
+			<!-- navigation -->
+			<nav>
+				<img id="bannerImage" class="purple" src="/media/pageContent/banner.png">
+				<ul id="navLinks">
+					<li>&lt;</li>
+	
+					<li><a id="" target="_parent" href="/">HOME</a></li>
+					<li><a id="" target="_parent" href="/blog">BLOG</a></li>
+					<li><a id="" target="_parent" href="/gallery">GALLERY</a></li>
+					<li><a id="navActive" target="_parent" href="/about">ABOUT</a></li>
+	
+					<li>&gt;</li>
 				</ul>
-			</header>
+			</nav>
 
-			<div class="crumbBar">
-				<a href="/about">about</a>
+			<!-- main page content -->
+			<ul id="breadcrumbs" class="purple">
+				<li id="last"><a target="_parent" href="/about">ABOUT</a></li>
+			</ul>
+
+			<div id="mainContent" class="grey">
+				<p class="header">\\ BIO</p>
+				<hr>
+				<p>hi!!! i'm backslash. i love cats, and the colour purple, <strong>a lot</strong>.</p>
+				<p>i love kicking my feet up and enjoying my free time whenever i have some to spend.</p>
+				<p>i've been doing art for pretty much my entire life, and along the way i've picked up some other hobbies as well.</p>
+				<p>other than digital art, i dabble in graffiti writing. nothing illegal, i just appreciate the more artsy aspects of it. (though i'm not opposed to the more criminal side of it.)</p>
+				<p>i also occasionally make music! my songs are ususally small-ish demo-esque things i make because i'm bored, so don't expect anything super intricate or special.</p>
+				<p>as of recent, i've been playing around with HTML and CSS, which is what sprouted this website!</p>
+
+				<p class="header">\\ CONTACT</p>
+				<hr>
+				<p>if you wanna get in touch with me for any reason, shoot me a message on discord!</p>
+				<p>\\ <strong>@backslash__</strong></p>
+				<p>i also have a social media account or two, scattered about here and there, but i wont be sharing those. do feel free to go hunting for them yourself though, i don't mind!</p>
 			</div>
 
-			<div class="flex">
-				<div class="sidebar">
-					<script>
-						function resizeIframe(obj) {
-						  obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
-						}
-					</script>
-					<iframe src="/elements/sidebar.html" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
-				</div>
-				
-				<div class="main">
-					<h1 class="heading">who?</h1>
-					<p>hey!!!!! i'm Backslash. a cat-loving digital artist, music composer, and coder (i guess?).</p>
-					<p>on my off time, i love playing video games, listening to music, kickin' it with my friends, and creating things.</p>
-					<p>everything i do is super unprofessional and something i do purely as a hobby, so don't expect this website to be very serious all that much.</p>
-					<hr>
-					<h2 class="heading">how?</h2>
-					<p>i use procreate on my iphone XR to do... well, basically everything. i dont use a stylus or anything like that, just my finger!</p>
-					<p>i also use garageband on my phone to make music. though ill admit i do so rather infrequently.</p>
-					<hr>
-					<h2 class="heading">contact & socials</h2>
-					<p>if you want to contact me for any reason, you can message me on discord!</p>
-					<p style="font-size: 20px;"><strong>@backslash__</strong></p>
-					<p>as for any of my social media profiles. i won't be sharing them here as i don't have many i'm very active on, and i feel as if it defeats the purpose of having this website up. but feel free to go searching for them on your own.</p>
-				</div>
-			</div>
-
-			<footer>
-				<p><em>website is a work-in-progress, and will most likely be a work-in-progress for the foreseeable future. if you encounter any issues then submit an issue on <a href="https://github.com/Backslash127/backslash127.github.io/">github</a>.</em></p>
-			</footer>
+			<!-- footer -->
+			<iframe id="footer" src="/elements/footer.html" frameborder="0" scrolling="no"></iframe>
+			<script>
+			iframeResize({
+				license: 'GPLv3',
+				waitForLoad: true,
+			}, '#footer' );
+			</script>
 		</div>
 	</body>
 </html>

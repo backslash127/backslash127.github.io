@@ -1,115 +1,107 @@
 <!DOCTYPE html>
 
+<!-- main html -->
 <html lang="en-US">
-	<head>
-		<meta charset="utf-8">
+	<!-- head -->
+	<head>		
+		<!-- metadata -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="author" content="Backslash">
 
-		<title>Backslash's Dwelling</title>
+		<!-- stylesheet -->
+		<link rel="stylesheet" href="/stylesheets/mainStylesheet.css">
 
-		<link rel="stylesheet" href="mainStyle.css">
+		<!-- font - Courier Prime -->
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Prosto+One&display=swap');
+		</style>
+
+		<!-- frame resizer -->
+		<script src="/node_modules/@iframe-resizer/parent/index.umd.js"></script>
+
+		<!-- title -->
+		<title>\ BACKSLASH'S DWELLING \</title>
 	</head>
 
+	<!-- body -->
 	<body>
-		<div class="container">
-			<header>
-				<div class="banner">
-					<img src="media/banner.png" alt="BACKSLASH">
-				</div>
-
-				<ul class="navLinks">
-					<li><a class="" href="/">HOME</a></li>
-					<li><a class="active" href="/gallery">GALLERY</a></li>
-					<li><a class="" href="/blog">BLOG</a></li>
-					<li><a class="" href="/about">ABOUT</a></li>
+		<div id="vignette"></div>
+		<div id="flexBody">
+			<!-- navigation -->
+			<nav>
+				<img id="bannerImage" class="purple" src="/media/pageContent/banner.png">
+				<ul id="navLinks">
+					<li>&lt;</li>
+	
+					<li><a id="" target="_parent" href="/">HOME</a></li>
+					<li><a id="" target="_parent" href="/blog">BLOG</a></li>
+					<li><a id="navActive" target="_parent" href="/gallery">GALLERY</a></li>
+					<li><a id="" target="_parent" href="/about">ABOUT</a></li>
+	
+					<li>&gt;</li>
 				</ul>
-			</header>
+			</nav>
 
-			<div class="crumbBar">
-				<a href="/gallery">gallery</a>
+			<!-- main page content -->
+			<ul id="breadcrumbs" class="purple">
+				<li id="last"><a target="_parent" href="/gallery">GALLERY</a></li>
+			</ul>
+
+			<div id="mainContent" class="grey">
+				<p class="header">\\ GALLERY</p>
+				<hr>
+				<p>welcome to the gallery!!! here is where i'll put (most) of the art i make!</p>
+				<p>works will be sorted into their respective categories.</p>
+				<p class="subtext">some works will be cropped, click on a work to view its raw file in a new tab.</p>
+
+				<details class="galleryDetails"><summary class="purple">\\ GRAFFITI</summary>
+					<div class="detailsContent, grey">
+						<p>tags, throwies, pieces, anything related, etc. y'all know it already.</p>
+						<hr>
+						<div class="detailsImages">
+							<a target="_blank" href="/media/galleryContent/graffiti/G-STOP_magazine.png"><img class="grey" src="/media/galleryContent/graffiti/G-STOP_magazine.png"></a>
+							<a target="_blank" href="/media/galleryContent/graffiti/assortedTagz.png"><img class="grey" src="/media/galleryContent/graffiti/assortedTagz.png"></a>
+						</div>
+					</div>
+				</details>
+
+				<hr>
+
+				<details class="galleryDetails"><summary class="purple">\\ DOODLES</summary>
+					<div class="detailsContent, grey">
+						<p>small doodles, nothing crazy.</p>
+						<hr>
+						<div class="detailsImages">
+							<a target="_blank" href="/media/galleryContent/doodles/DROPDEAD.png"><img class="grey" src="/media/galleryContent/doodles/DROPDEAD.png"></a>
+							<a target="_blank" href="/media/galleryContent/doodles/TURNTECH.png"><img class="grey" src="/media/galleryContent/doodles/TURNTECH.png"></a>
+							<a target="_blank" href="/media/galleryContent/doodles/KUIPER.png"><img class="grey" src="/media/galleryContent/doodles/KUIPER.png"></a>
+						</div>
+					</div>
+				</details>
+
+				<hr>
+
+				<details class="galleryDetails"><summary class="purple">\\ MUSIC</summary>
+					<div class="detailsContent, grey">
+						<p>tunes. give 'em a listen.</p>
+						<hr>
+						<div class="detailsImages">
+							<a target="_blank" href="/media/galleryContent/music/minifunk"><img class="grey" src="/media/galleryContent/music/minifunk.png"></a>
+							<a target="_blank" href="/media/galleryContent/music/CHECKOUT"><img class="grey" src="/media/galleryContent/music/CHECKOUT.png"></a>
+						</div>
+					</div>
+				</details>
 			</div>
 
-			<div class="flex">
-				<div class="sidebar">
-					<script>
-						function resizeIframe(obj) {
-						  obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
-						}
-					</script>
-					<iframe src="/elements/sidebar.html" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
-				</div>
-
-				<div class="main">
-					<h1 class="heading">welcome to the gallery!</h1>
-					<p>here, i'll put any of my art that i want to show off!</p>
-					<p>each work will be put into it's respective category.</p>
-					<sub>some works will be cropped, click on them to open the full file in a new tab.</sub>
-
-					<hr>
-
-					<details>
-						<summary>GRAFFITI</summary>
-						<div class="detailsBox">
-							<p>pieces, throwies, tags, and other related stuff.</p>
-							<hr>
-							<div class="images">
-								<a href="media/gallery/graffiti/G-STOP_magazine.png" target="_blank"><img src="media/gallery/graffiti/G-STOP_magazine.png"></a>
-								<a href="media/gallery/graffiti/throwie_ARK.png" target="_blank"><img src="media/gallery/graffiti/throwie_ARK.png"></a>
-								<a href="media/gallery/graffiti/assortedTagz.png" target="_blank"><img src="media/gallery/graffiti/assortedTagz.png"></a>
-							</div>
-						</div>
-					</details>
-
-					<hr>
-
-					<details>
-						<summary>DOODLES</summary>
-						<div class="detailsBox">
-							<p>small doodles i scratch out usually out of boredom. though, sometimes i doodle for other reasons. mostly for personal use like profile pictures n stuff.</p>
-							<hr>
-							<div class="images">
-								<a href="media/gallery/doodles/DROPDEAD.png" target="_blank"><img src="media/gallery/doodles/DROPDEAD.png"></a>
-								<a href="media/gallery/doodles/TURNTECH.png" target="_blank"><img src="media/gallery/doodles/TURNTECH.png"></a>
-							</div>
-						</div>
-					</details>
-
-					<hr>
-
-					<details>
-						<summary>MUSIC</summary>
-						<div class="detailsBox">
-							<p>music i make, pretty self-explanatory.</p>
-							<p>click on a songs cover art to give it a listen!</p>
-							<hr>
-							<div class="images">
-								<a href="media/gallery/music/minifunk" target="_blank"><img src="media/gallery/music/minifunk.png"></a>
-								<a href="media/gallery/music/CHECKOUT" target="_blank"><img src="media/gallery/music/CHECKOUT.png"></a>
-							</div>
-						</div>
-					</details>
-
-					<hr>
-					
-					<details>
-						<summary>BUTTONS (88x31)</summary>
-						<div class="detailsBox">
-							<p>88x31 buttons i've made, feel free to add them to your website! you do not have to credit me at all.</p>
-							<p>PLEASE DO NOT <a href="https://simple.wikipedia.org/wiki/Hotlinking" target="_blank">HOTLINK</a></p>
-							<hr>
-							<div class="images">
-								<a class="button" href="media/buttons/button_ATCQ.gif" target="_blank"><img src="media/buttons/button_ATCQ.gif"></a>
-							</div>
-						</div>
-					</details>
-
-					<hr>
-					
-				</div>
-			</div>
-
-			<footer>
-				<p><em>website is a work-in-progress, and will most likely be a work-in-progress for the foreseeable future. if you encounter any issues then submit an issue on <a href="https://github.com/Backslash127/backslash127.github.io/">github</a>.</em></p>
-			</footer>
+			<!-- footer -->
+			<iframe id="footer" src="/elements/footer.html" scrolling="no"></iframe>
+			<script>
+			iframeResize({
+				license: 'GPLv3',
+				waitForLoad: true,
+			}, '#footer' );
+			</script>
 		</div>
 	</body>
 </html>
