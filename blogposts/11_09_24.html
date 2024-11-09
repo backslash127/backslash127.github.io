@@ -18,7 +18,13 @@
 		</style>
 
 		<!-- frame resizer -->
-		<script src="/node_modules/@iframe-resizer/parent/index.umd.js"></script>
+		<script src="/node_modules/@iframe-resizer/parent/index.umd.js" type="text/javascript" async></script>
+		<script>
+			iframeResize({
+				license: 'GPLv3',
+				waitForLoad: true,
+			}, '#footer' );
+		</script>
 
 		<!-- title -->
 		<title>\ BACKSLASH'S DWELLING \</title>
@@ -83,12 +89,6 @@
 
 			<!-- footer -->
 			<iframe id="footer" src="/elements/footer.html" scrolling="no"></iframe>
-			<script>
-			iframeResize({
-				license: 'GPLv3',
-				waitForLoad: true,
-			}, '#footer' );
-			</script>
 		</div>
 	</body>
 </html>
