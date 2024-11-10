@@ -170,6 +170,46 @@ nav
 	height: auto;
 }
 
+#videoPlayer
+{
+	display: flex;
+	flex-direction: column;
+
+	padding: 0;
+	margin: 0;
+
+	position: fixed;
+	left: 0;
+	bottom: 0;
+
+	box-sizing: border-box;
+	
+}
+
+#videoInfo
+{
+	width: 100%;
+	height: auto;
+
+	line-height: 1;
+
+	box-sizing: border-box;
+}
+
+#videoPlayer iframe
+{
+	padding: 5px;
+	margin: 0;
+	
+	box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1750px) {
+    #videoPlayer {
+        display: none;
+    }
+}
+
 /* featured art */
 #artShowcase
 {
