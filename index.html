@@ -98,13 +98,61 @@
 				<p class="header">- \</p>
 			</div>
 
-			<!-- <div id="videoPlayer">
-				<iframe id="playerVideo" class="grey" width="420px" height="237px" src="https://www.youtube-nocookie.com/embed/vO2Su3erRIA?si=oy8BcZOK6S2CYCod" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-				<div id="videoInfo" class="purple">
-					<p><strong>A Tribe Called Quest</strong> - <em>We the People</em></p>
-				</div>
-			</div> -->
+			<div>
+				<audio controls preload="auto" src="/media/randomSong/randomSong.mp3" loop="true" autobuffer>
+					Unsupported in Firefox
+				</audio>
+					
+				<script>
+					
+					function setCookie(c_name,value,exdays)
+					{
+						var exdate=new Date();
+						exdate.setDate(exdate.getDate() + exdays);
+						var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+						document.cookie=c_name + "=" + c_value;
+					}
+					
+					function getCookie(c_name)
+					{
+						var i,x,y,ARRcookies=document.cookie.split(";");
+						for (i=0;i<ARRcookies.length;i++)
+						{
+						x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+						y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+						x=x.replace(/^\s+|\s+$/g,"");
+						if (x==c_name)
+							{
+							return unescape(y);
+							}
+						}
+					}
+					
+					var song = document.getElementsByTagName('audio')[0];
+					var played = false;
+					var tillPlayed = getCookie('timePlayed');
+					function update()
+					{
+						if(!played){
+							if(tillPlayed){
+							song.currentTime = tillPlayed;
+							song.play();
+							played = true;
+							}
+							else {
+									song.play();
+									played = true;
+							}
+						}
+					
+						else {
+						setCookie('timePlayed', song.currentTime);
+						}
+					}
+					setInterval(update,1000);
+				</script>
+			</div>
 
 			<!-- footer -->
 			<iframe id="footer" src="/elements/footer.html" scrolling="no"></iframe>
