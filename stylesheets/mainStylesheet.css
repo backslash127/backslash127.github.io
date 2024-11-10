@@ -1,20 +1,6 @@
 /* main stylesheet for pretty much every page */
 
 /* the big stuff */
-html
-{
-	background: fixed url("../media/styleContent/purpleBricks.png");
-	background-size: 32.5em;
-
-    font: normal normal normal 100% "Courier Prime";
-	line-height: 1.6;
-	word-wrap: break-word;
-
-	scrollbar-color: #4a306d #9460a9;
-	overflow-y: scroll;
-
-	image-rendering: pixelated;
-}
 
 body
 {
@@ -550,4 +536,22 @@ footer
 .grey .subtext
 {
 	font-size: 80%;
+}
+
+html
+{
+	background: fixed url("../media/styleContent/purpleBricks.png");
+	background-size: 32.5em;
+
+    font: normal normal normal 100% "Courier Prime";
+	line-height: 1.6;
+	word-wrap: break-word;
+
+	scrollbar-color: #4a306d #9460a9;
+	overflow-y: scroll;
+
+	image-rendering: pixelated;
+
+	visibility: visible;
+    opacity: 1;
 }
