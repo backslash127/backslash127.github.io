@@ -14,9 +14,6 @@ html
 	overflow-y: scroll;
 
 	image-rendering: pixelated;
-
-	visibility: visible;
-    opacity: 1;
 }
 
 body
@@ -323,12 +320,6 @@ nav
 	line-height: 0;
 
 	box-sizing: border-box;
-}
-
-#buttonMarquee img:hover
-{
-	border: 2px solid;
-	border-color: #4a306d #d3bccc #d3bccc #4a306d; /* top > right > bottom > left */
 }
 
 /* gallery */
