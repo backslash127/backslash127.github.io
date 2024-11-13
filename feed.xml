@@ -1,20 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<rss version="2.0">
 	<channel>
-		<atom:link href="https://backslash127.github.io/feed.xml" rel="self" type="application/rss+xml" />
 		<title>\ BACKSLASH'S DWELLING \</title>
 		<link>https://backslash127.github.io/</link>
 		<description>backslash's personal website, blog, and art portfolio.</description>
-		<ttl>60</ttl>
 		<language>en-us</language>
+		<docs>https://www.rssboard.org/rss-specification</docs>
+		<ttl>60</ttl>
 
 		<item>
 			<title>RSS feed</title>
-			<pubDate>Tue, 12 Nov 2024 02:43:53 +0000</pubDate>
 			<link>https://backslash127.github.io/blogposts/11_11_24</link>
-			<guid>https://backslash127.github.io/xml/item1731379433</guid>
-			<description>a small blogpost announcing the new RSS feed.</description>
+			<guid>https://backslash127.github.io/blogposts/11_11_24</guid>
+			<description>a quick blogpost about the new RSS feed.</description>
+			<pubDate>Wed, 13 Nov 2024 00:03:43 +0000</pubDate>
 		</item>
-
-    </channel>
+		
+	</channel>
 </rss>
