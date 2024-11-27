@@ -186,30 +186,6 @@ nav
 	
 }
 
-#videoInfo
-{
-	width: 100%;
-	height: auto;
-
-	line-height: 1;
-
-	box-sizing: border-box;
-}
-
-#videoPlayer #playerVideo
-{
-	padding: 5px;
-	margin: 0;
-	
-	box-sizing: border-box;
-}
-
-@media only screen and (max-width: 1750px) {
-    #videoPlayer {
-        display: none;
-    }
-}
-
 /* featured art */
 #artShowcase
 {
