@@ -1,121 +1,89 @@
 <!DOCTYPE html>
 
-<!-- main html -->
-<html lang="en-US">
-	<!-- head -->
-	<head>		
-		<!-- metadata -->
+<html lang="en">
+	<!-- Head -->
+	<head>
+		<!-- Metadata -->
 		<meta charset="UTF-8">
-		<meta name="author" content="Backslash">
+		<meta name="author" content="backslash">
+		<title>\\ BACKSLASH'S DWELLING \\</title>
 
-		<!-- stylesheet -->
-		<link rel="stylesheet" href="/stylesheets/mainStylesheet.css">
-
-		<!-- font - Courier Prime -->
+		<!-- Style -->
+		<link rel="stylesheet" href="/stylesheets/mainStyle.css">
 		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Prosto+One&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Days+One&family=Prosto+One&display=swap');
 		</style>
-
-		<!-- title -->
-		<title>\ BACKSLASH'S DWELLING \</title>
 	</head>
 
-	<!-- body -->
+	<!-- Body -->
 	<body>
-		<div id="vignette"></div>
-		<div id="flexBody">
-			<!-- navigation -->
-			<nav>
-				<img id="bannerImage" class="purple" src="/media/pageContent/banner.png">
-				<ul id="navLinks">
-					<li>&lt;</li>
-	
-					<li><a id="" target="_parent" href="/">HOME</a></li>
-					<li><a id="" target="_parent" href="/blog">BLOG</a></li>
-					<li><a id="navActive" target="_parent" href="/gallery">GALLERY</a></li>
-					<li><a id="" target="_parent" href="/about">ABOUT</a></li>
-	
-					<li>&gt;</li>
+		<!-- Header -->
+		<header>
+			<a href="https://backslash127.github.io/"><img id="bannerImage" src="/media/pageMedia/bannerWide.png" alt="BACKSLASH"></a>
+			<nav class="white">
+				<ul id="navList">
+					<li class="navFirst"><a href="/" class="">HOME</a></li>
+					<li><a href="/blog" class="">BLOG</a></li>
+					<li><a href="/gallery" class="active">GALLERY</a></li>
+					<li><a href="/about" class="">ABOUT</a></li>
 				</ul>
 			</nav>
+		</header>
 
-			<!-- main page content -->
-			<ul id="breadcrumbs" class="purple">
-				<li id="last"><a target="_parent" href="/gallery">GALLERY</a></li>
-			</ul>
-
-			<div id="mainContent" class="grey">
-				<p class="header">\\ GALLERY</p>
+		<!-- Main page content -->
+		<main class="purple">
+			<section>
+				<h2>GALLERY</h2>
 				<hr>
-				<p>welcome to the gallery!!! here is where i'll put (most) of the art i make!</p>
-				<p>works will be sorted into their respective categories.</p>
-				<p class="subtext">some works will be cropped, click on a work to view its raw file in a new tab.</p>
 
-				<details class="galleryDetails"><summary class="purple">\\ GRAFFITI</summary>
-					<div class="detailsContent, grey">
-						<p>tags, throwies, pieces, anything related, etc. y'all know it already.</p>
+				<p>welcome to the gallery! this is where i'll be putting anything i've created that i want to share!</p>
+
+				<br>
+			</section>
+
+			<!-- Graffiti -->
+			<section>
+				<details class="galleryDetails white">
+					<summary><em>GRAFFITI</em></summary>
+					<div class="detailsContent">
+						<p>tags, throwies, pieces, and everything adjacent.</p>
 						<hr>
-						<div class="detailsImages">
-							<a target="_blank" href="/media/galleryContent/graffiti/G-STOP_magazine.png"><img class="grey" src="/media/galleryContent/graffiti/G-STOP_magazine.png"></a>
-							<a target="_blank" href="/media/galleryContent/graffiti/SHOVE.png"><img class="grey" src="/media/galleryContent/graffiti/SHOVE.png"></a>
-							<a target="_blank" href="/media/galleryContent/graffiti/assortedTagz.png"><img class="grey" src="/media/galleryContent/graffiti/assortedTagz.png"></a>
+						<div class="galleryCarousel">
+							<div class="imageOverflow">
+								<a href="/media/galleryMedia/graffiti/G-STOP_magazine.png" target="_blank"><img class="galleryPreview" src="/media/galleryMedia/graffiti/G-STOP_magazine.png"></a>
+							</div>
 						</div>
 					</div>
 				</details>
 
-				<hr>
+				<br>
+			</section>
 
-				<details class="galleryDetails"><summary class="purple">\\ DOODLES</summary>
-					<div class="detailsContent, grey">
-						<p>small doodles, nothing crazy.</p>
+			<!-- Doodles -->
+			<section>
+				<details class="galleryDetails white">
+					<summary><em>DOODLES</em></summary>
+					<div class="detailsContent">
+						<p>small drawings i make, ususally out of boredom. :3</p>
 						<hr>
-						<div class="detailsImages">
-							<a target="_blank" href="/media/galleryContent/doodles/GREYMATTER.png"><img class="grey" src="/media/galleryContent/doodles/GREYMATTER.png"></a>
-							<a target="_blank" href="/media/galleryContent/doodles/KUIPER.png"><img class="grey" src="/media/galleryContent/doodles/KUIPER.png"></a>
-							<a target="_blank" href="/media/galleryContent/doodles/DROPDEAD.png"><img class="grey" src="/media/galleryContent/doodles/DROPDEAD.png"></a>
-							<a target="_blank" href="/media/galleryContent/doodles/TURNTECH.png"><img class="grey" src="/media/galleryContent/doodles/TURNTECH.png"></a>
+						<div class="galleryCarousel">
+							<div class="imageOverflow">
+								<a href="/media/galleryMedia/doodles/DROPDEAD.png" target="_blank"><img class="galleryPreview" src="/media/galleryMedia/doodles/DROPDEAD.png"></a>
+							</div>
 						</div>
 					</div>
 				</details>
 
-				<hr>
+				<br>
+			</section>
+		</main>
 
-				<details class="galleryDetails"><summary class="purple">\\ MUSIC</summary>
-					<div class="detailsContent, grey">
-						<p>tunes. give 'em a listen.</p>
-						<hr>
-						<div class="detailsImages">
-							<a target="_blank" href="/media/galleryContent/music/minifunk"><img class="grey" src="/media/galleryContent/music/minifunk.png"></a>
-							<a target="_blank" href="/media/galleryContent/music/CHECKOUT"><img class="grey" src="/media/galleryContent/music/CHECKOUT.png"></a>
-						</div>
-					</div>
-				</details>
+		<!-- Footer -->
+		<footer class="white">
+			<a id="rssButton" href="/feed.xml"><img src="/media/pageMedia/rss.png"></a>
 
-				<hr>
-
-				<details class="galleryDetails"><summary class="purple">\\ SLIDES SERIES</summary>
-					<div class="detailsContent, grey">
-						<p>small graphic design pieces i make (mostly) in google slides, no i'm not kidding. :3c</p>
-						<hr>
-						<div class="detailsImages">
-							<a target="_blank" href="/media/galleryContent/slidesSeries/HIVEMIND.png"><img class="grey" src="/media/galleryContent/slidesSeries/HIVEMIND.png"></a>
-							<a target="_blank" href="/media/galleryContent/slidesSeries/DREAMER.png"><img class="grey" src="/media/galleryContent/slidesSeries/DREAMER.png"></a>
-							<a target="_blank" href="/media/galleryContent/slidesSeries/LOVESPECTRUM.png"><img class="grey" src="/media/galleryContent/slidesSeries/LOVESPECTRUM.png"></a>
-						</div>
-					</div>
-				</details>
-			</div>
-
-			<!-- footer -->
-			<iframe id="footer" src="/elements/footer.html" scrolling="no"></iframe>
-			<!-- frame resizer -->
-			<script src="/node_modules/@iframe-resizer/parent/index.umd.js"></script>
-			<script>
-				iframeResize({
-					license: 'GPLv3',
-					waitForLoad: false,
-				}, '#footer' );
-			</script>
-		</div>
+			<p>this website is a work-in-progress and will be for the foreseeable future.</p>
+			<p> if you encounter any issues please let me know on <a href="https://github.com/backslash127/backslash127.github.io/issues">Github</a>.</p>
+		</footer>
 	</body>
 </html>

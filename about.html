@@ -1,76 +1,83 @@
 <!DOCTYPE html>
 
-<!-- main html -->
-<html lang="en-US">
-	<!-- head -->
-	<head>		
-		<!-- metadata -->
+<html lang="en">
+	<!-- Head -->
+	<head>
+		<!-- Metadata -->
 		<meta charset="UTF-8">
-		<meta name="author" content="Backslash">
+		<meta name="author" content="backslash">
+		<title>\\ BACKSLASH'S DWELLING \\</title>
 
-		<!-- stylesheet -->
-		<link rel="stylesheet" href="/stylesheets/mainStylesheet.css">
-
-		<!-- font - Courier Prime -->
+		<!-- Style -->
+		<link rel="stylesheet" href="/stylesheets/mainStyle.css">
 		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Prosto+One&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Days+One&family=Prosto+One&display=swap');
 		</style>
-
-		<!-- title -->
-		<title>\ BACKSLASH'S DWELLING \</title>
 	</head>
 
-	<!-- body -->
+	<!-- Body -->
 	<body>
-		<div id="vignette"></div>
-		<div id="flexBody">
-			<!-- navigation -->
-			<nav>
-				<img id="bannerImage" class="purple" src="/media/pageContent/banner.png">
-				<ul id="navLinks">
-					<li>&lt;</li>
-	
-					<li><a id="" target="_parent" href="/">HOME</a></li>
-					<li><a id="" target="_parent" href="/blog">BLOG</a></li>
-					<li><a id="" target="_parent" href="/gallery">GALLERY</a></li>
-					<li><a id="navActive" target="_parent" href="/about">ABOUT</a></li>
-	
-					<li>&gt;</li>
+		<!-- Header -->
+		<header>
+			<a href="https://backslash127.github.io/"><img id="bannerImage" src="/media/pageMedia/bannerWide.png" alt="BACKSLASH"></a>
+			<nav class="white">
+				<ul id="navList">
+					<li class="navFirst"><a href="/" class="">HOME</a></li>
+					<li><a href="/blog" class="">BLOG</a></li>
+					<li><a href="/gallery" class="">GALLERY</a></li>
+					<li><a href="/about" class="active">ABOUT</a></li>
 				</ul>
 			</nav>
+		</header>
 
-			<!-- main page content -->
-			<ul id="breadcrumbs" class="purple">
-				<li id="last"><a target="_parent" href="/about">ABOUT</a></li>
-			</ul>
-
-			<div id="mainContent" class="grey">
-				<p class="header">\\ BIO</p>
+		<!-- Main page content -->
+		<main class="purple">
+			<section>
+				<h2>WHO?</h2>
 				<hr>
-				<p>hi!!! i'm backslash. i love cats, and the colour purple, <strong>a lot</strong>.</p>
-				<p>i love kicking my feet up and enjoying my free time whenever i have some to spend.</p>
-				<p>i've been doing art for pretty much my entire life, and along the way i've picked up some other hobbies as well.</p>
-				<p>other than digital art, i dabble in graffiti writing. nothing illegal, i just appreciate the more artsy aspects of it. (though i'm not opposed to the more criminal side of it.)</p>
-				<p>i also occasionally make music! my songs are ususally small-ish demo-esque things i make because i'm bored, so don't expect anything super intricate or special.</p>
-				<p>as of recent, i've been playing around with HTML and CSS, which is what sprouted this website!</p>
 
-				<p class="header">\\ CONTACT</p>
+				<p>hi, i'm Backslash (like the keyboard key)! a korean, cat-loving, digital artist who loves to do literally anything but what she's supposed to.</p>
+				<p>i love spending my free time creating things. but, when i'm not making things i tend to hang out with my friends and play video games.</p>
+				<p>i'm also transgender and super gay lol. :3</p>
+
+				<br>
+			</section>
+
+			<section>
+				<h2>WHAT?</h2>
 				<hr>
-				<p>if you wanna get in touch with me for any reason, shoot me a message on discord!</p>
-				<p>\\ <strong>@backslash__</strong></p>
-				<p>i also have a social media account or two, scattered about here and there, but i wont be sharing those. do feel free to go hunting for them yourself though, i don't mind!</p>
-			</div>
 
-			<!-- footer -->
-			<iframe id="footer" src="/elements/footer.html" scrolling="no"></iframe>
-			<!-- frame resizer -->
-			<script src="/node_modules/@iframe-resizer/parent/index.umd.js"></script>
-			<script>
-				iframeResize({
-					license: 'GPLv3',
-					waitForLoad: false,
-				}, '#footer' );
-			</script>
-		</div>
+				<p>i do lots of things! maybe too many things. some i do more than others.</p>
+				<p>here's a small list of the main stuff.</p>
+				<ul>
+					<li>digital art</li>
+					<li>graffiti</li>
+					<li>music composition</li>
+					<li>game development</li>
+					<li>web devolopment i guess lol</li>
+				</ul>
+				
+				<br>
+			</section>
+
+			<section>
+				<h2>CONTACT</h2>
+				<hr>
+
+				<p>wanna reach me for whatever reason? hit me up on <a href="https://discord.com/users/467507791553101845">Discord</a>!</p>
+				<p>i've also got a <a href="https://bsky.app/profile/backslash127.github.io">Bluesky</a> if that's more to your liking.</p>
+				<p>please be aware that i will most likely not respond to messages immediately.</p>
+				
+				<br>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer class="white">
+			<a id="rssButton" href="/feed.xml"><img src="/media/pageMedia/rss.png"></a>
+
+			<p>this website is a work-in-progress and will be for the foreseeable future.</p>
+			<p> if you encounter any issues please let me know on <a href="https://github.com/backslash127/backslash127.github.io/issues">Github</a>.</p>
+		</footer>
 	</body>
 </html>

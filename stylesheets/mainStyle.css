@@ -1,0 +1,393 @@
+*
+{
+	box-sizing: border-box;
+}
+
+html
+{
+	font: normal normal normal 1.5vh "Days One";
+	color: #ffffff;
+	line-height: 2;
+	text-wrap: wrap;
+
+	background: #9460a9 url(/media/pageMedia/purpleBricks.png) fixed;
+	background-size: 32.5em;
+
+	image-rendering: pixelated;
+	
+	overflow-y: scroll;
+	scrollbar-color: #9460a9 #ffffff;
+}
+
+body
+{
+	display: flex;
+	flex-direction: column;
+
+	padding: 0;
+	margin: 0;
+
+	width: 100%;
+	height: 100%;
+	min-height: 100vh;
+
+	image-rendering: auto;
+}
+
+/* Header Content */
+#bannerImage
+{
+	padding: 0;
+	margin: 0;
+
+	width: 32.5%;
+	height: auto;
+}
+
+@media (max-width: 1000px) {
+    #bannerImage
+	{
+		display: none;
+	}
+}
+
+nav
+{
+	font-weight: bold;
+	font-style: italic;
+	
+	width: 75%;
+
+	padding: 10px 25px 10px 25px;
+
+	border-radius: 0 1em 1em 0;
+}
+
+#navList
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+
+	padding: 0;
+	margin: 0;
+
+	list-style: none;
+
+	text-align: center;
+	line-height: .5;
+}
+
+#navList li
+{
+	padding: 20px;
+	margin: 0;
+
+	text-align: center;
+}
+
+#navList li::before
+{
+	content: "\005C\005C";
+	padding-right: 40px;
+}
+
+#navList .navFirst::before
+{
+	content: "";
+	padding: 0;
+}
+
+#navList .active
+{
+	color: #b594c4;
+	font-style: normal;
+	text-decoration: none;
+}
+
+@media (max-width: 1000px)
+{
+    nav
+	{
+		width: 100%;
+
+		padding: 10px 25px 10px 25px;
+
+		border-radius: 0 0 1em 1em;
+	}
+
+	#navList
+	{
+		justify-content: center;
+	}
+
+	#navList li
+	{
+		padding: 15px 10px 15px 10px;
+		margin: auto;
+	}
+
+	#navList li::before, #navList .navFirst::before
+	{
+		display: none;
+	}
+	
+}
+
+/* Main Content */
+main
+{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+
+	width: 75%;
+
+	padding: 10px 25px 10px 25px;
+	margin: 0;
+}
+
+@media (max-width: 1000px)
+{
+	main
+	{
+		width: 100%;
+
+		padding: 10px 20px 10px 20px;
+	}
+}
+
+/* Art Showcase + Gallery Content */
+#artShowcase
+{
+	width: 100%;
+	height: auto;
+
+	padding: 0;
+	margin: 0;
+
+	overflow: auto;
+
+	border-radius: 1em;
+}
+
+.galleryDetails
+{
+	padding: 15px;
+	border-radius: 1em;
+}
+
+.detailsContent
+{
+	padding: 10px;
+}
+
+.galleryCarousel.white
+{
+		overflow: auto;
+}
+
+.imageOverflow
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	width: fit-content;
+	height: auto;
+
+	padding: 15px 0px 15px 0px;
+	margin: 0 auto 0 auto;
+
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+.imageOverflow img
+{
+	width: 250px;
+	height: 250px;
+
+	margin: 0 20px 0 20px;
+
+	border: solid #9460a9 2px;
+	border-radius: 1em;
+
+	object-fit: cover;
+}
+
+.imageOverflow img:hover
+{
+	scale: 1.05;
+	border: solid #9460a9 4px;
+}
+
+@media (max-width: 1000px)
+{
+	#artShowcase
+	{
+		width: 100%;
+
+		margin: 0;
+
+		border-radius: 1em;
+	}
+}
+
+/* Blog Content */
+.blogpostSection
+{
+	padding: 25px;
+	margin: 0 0 25px 0;
+
+	border-radius: 1em;
+}
+
+/* Footer Content */
+footer
+{
+	margin-top: auto;
+
+	width: 75%;
+
+	padding: 10px 25px 10px 25px;
+
+	border-radius: 0 1em 0 0;
+}
+
+footer p
+{
+	font-size: .875em;
+}
+
+#rssButton img
+{
+	position: relative;
+	float: right;
+
+	width: 32px;
+	height: 32px;
+
+	margin: 15px 0 0 0;
+}
+
+#rssButton img:hover
+{
+	scale: 1.125;
+}
+
+@media (max-width: 1000px)
+{
+	footer
+	{
+		width: 100%;
+
+		border-radius: 1em 1em 0 0;
+
+		text-align: center;
+	}
+}
+
+/* Color Styles */
+.purple
+{
+	background-color: transparent;
+	color: #ffffff;
+
+	font-size: 1.325em;
+}
+
+.purple a
+{
+	color: #ffffff;
+}
+
+.purple hr
+{
+	border-color: #ffffff;
+}
+
+.white
+{
+	background-color: #ffffff;
+	color: #9460a9;
+
+	font-size: 1.325em;
+}
+
+.white a
+{
+	color: #9460a9;
+}
+
+.white hr
+{
+	border-color: #9460a9;
+}
+
+/* Misc. */
+section
+{
+	width: 100%;
+}
+
+p
+{
+	margin: 10px 0 10px 0;
+}
+
+h2
+{
+	font-weight: bold;
+	font-style: italic;
+
+	margin: 15px 0 15px 0;
+}
+
+h2::before
+{
+	content: "\005C\005C";
+	padding: 0 20px 0 0;
+}
+
+h2::after
+{
+	content: "\005C\005C";
+	padding: 0 0 0 20px;
+}
+
+hr
+{
+	line-height: 0;
+
+	margin: .25em 0 .5em 0;
+	width: 75%;
+
+	border: 3px solid;
+	border-radius: 1em;
+}
+
+a
+{
+	text-decoration: underline 4px;
+	font-weight: bold;
+}
+
+a:hover
+{
+	text-decoration: underline 8px;
+}
+
+a:has(img)
+{
+	display: block;
+	
+	line-height: 0;
+	text-decoration: none;
+}
+
+img::selection
+{
+	background-color: #ffffff;
+}

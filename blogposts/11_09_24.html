@@ -1,57 +1,41 @@
 <!DOCTYPE html>
 
-<!-- main html -->
-<html lang="en-US">
-	<!-- head -->
-	<head>		
-		<!-- metadata -->
+<html lang="en">
+	<!-- Head -->
+	<head>
+		<!-- Metadata -->
 		<meta charset="UTF-8">
-		<meta name="author" content="Backslash">
+		<meta name="author" content="backslash">
+		<title>\\ BACKSLASH'S DWELLING \\</title>
 
-		<!-- stylesheet -->
-		<link rel="stylesheet" href="/stylesheets/mainStylesheet.css">
-
-		<!-- font - Courier Prime -->
+		<!-- Style -->
+		<link rel="stylesheet" href="/stylesheets/mainStyle.css">
 		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Prosto+One&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Days+One&family=Prosto+One&display=swap');
 		</style>
-
-		<!-- rss -->
-		<link rel="alternate" type="application/rss+xml"
-		href="/feed.xml" title="RSS">
-
-		<!-- title -->
-		<title>\ BACKSLASH'S DWELLING \</title>
 	</head>
 
-	<!-- body -->
+	<!-- Body -->
 	<body>
-		<div id="vignette"></div>
-		<div id="flexBody">
-			<!-- navigation -->
-			<nav>
-				<img id="bannerImage" class="purple" src="/media/pageContent/banner.png">
-				<ul id="navLinks">
-					<li>&lt;</li>
-	
-					<li><a id="" target="_parent" href="/">HOME</a></li>
-					<li><a id="navActive" target="_parent" href="/blog">BLOG</a></li>
-					<li><a id="" target="_parent" href="/gallery">GALLERY</a></li>
-					<li><a id="" target="_parent" href="/about">ABOUT</a></li>
-	
-					<li>&gt;</li>
+		<!-- Header -->
+		<header>
+			<a href="https://backslash127.github.io/"><img id="bannerImage" src="/media/pageMedia/bannerWide.png" alt="BACKSLASH"></a>
+			<nav class="white">
+				<ul id="navList">
+					<li class="navFirst"><a href="/" class="">HOME</a></li>
+					<li><a href="/" class="active">BLOG</a></li>
+					<li><a href="/" class="">GALLERY</a></li>
+					<li><a href="/" class="">ABOUT</a></li>
 				</ul>
 			</nav>
+		</header>
 
-			<!-- main page content -->
-			<ul id="breadcrumbs" class="purple">
-				<li id=""><a target="_parent" href="/blog">BLOG</a></li>
-				<li id="last"><a target="_parent" href="/blogposts/11_09_24">MASSIVE website update!!!</a></li>
-			</ul>
-
-			<div id="mainContent" class="grey">
-				<p>11/09/24</p>
-				<h2 class="header">i rewrote the whole fuckin' thing</h2>
+		<!-- Main page content -->
+		<main class="purple">
+			<section>
+				<p>11/09/24 -- MASSIVE website update!!!</p>
+				
+				<h2>i rewrote the whole fuckin' thing</h2>
 				<hr>
 
 				<p>it's true!</p>
@@ -59,7 +43,11 @@
 				<p>you may notice that the sidebar is missing, that's intentional. i'll be spending some time brainstorming a replacement for the sidebar, as it was buggy and didn't play nice with the way the website scales with screen size now.</p>
 				<p>you might also notice that every previous blogpost is gone now too. why? iunno lol. i just can't be bothered to move 'em all over. and honestly none of them really mattered that much to me. we're startin' fresh now! and hopefully i can put together blogposts with more substance more consistently. X\</p>
 
-				<h2 class="header">some real talkins'</h2>
+				<br>
+			</section>
+
+			<section>
+				<h2>some real talkins'</h2>
 				<hr>
 
 				<p>alright let's get down to some real shit.</p>
@@ -70,25 +58,26 @@
 				<p>outlive those who oppose you, fight for your life in every and any way, tooth and nail.</p>
 				<p>things look bleak, but that doesn't mean it's over. keep fighting.</p>
 
-				<h2 class="header">short wrap up</h2>
+				<br>
+			</section>
+			
+			<section>
+				<h2>short wrap up</h2>
 				<hr>
 
 				<p>anywho, thanks for stopping by and giving this a read. go ahead and take a look around the new, refurbished website. not much is different, but changes will be made as time goes on.</p>
 				<p>stay safe y'all. :3c</p>
 
-				<h2 class="header">- \</h2>
-			</div>
-			
-			<!-- footer -->
-			<iframe id="footer" src="/elements/footer.html" scrolling="no"></iframe>
-			<!-- frame resizer -->
-			<script src="/node_modules/@iframe-resizer/parent/index.umd.js"></script>
-			<script>
-				iframeResize({
-					license: 'GPLv3',
-					waitForLoad: false,
-				}, '#footer' );
-			</script>
-		</div>
+				<br>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer class="white">
+			<a id="rssButton" href="/feed.xml"><img src="/media/pageMedia/rss.png"></a>
+
+			<p>this website is a work-in-progress and will be for the foreseeable future.</p>
+			<p> if you encounter any issues please let me know on <a href="https://github.com/backslash127/backslash127.github.io/issues">Github</a>.</p>
+		</footer>
 	</body>
 </html>

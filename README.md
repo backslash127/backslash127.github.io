@@ -1,1 +1,3 @@
-hi!!! this is the github source repo thing for my fuckinnnnnnnhhh uhhhhhhhhmmmm my uhrmmmmmm whatsit called the my uhmmm my website yea
+hey! welcome to the github source for my personal website.
+
+feel free to take a look around and dig through my (probably) atrocious code.

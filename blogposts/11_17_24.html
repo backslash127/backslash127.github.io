@@ -1,57 +1,41 @@
 <!DOCTYPE html>
 
-<!-- main html -->
-<html lang="en-US">
-	<!-- head -->
-	<head>		
-		<!-- metadata -->
+<html lang="en">
+	<!-- Head -->
+	<head>
+		<!-- Metadata -->
 		<meta charset="UTF-8">
-		<meta name="author" content="Backslash">
+		<meta name="author" content="backslash">
+		<title>\\ BACKSLASH'S DWELLING \\</title>
 
-		<!-- stylesheet -->
-		<link rel="stylesheet" href="/stylesheets/mainStylesheet.css">
-
-		<!-- font - Courier Prime -->
+		<!-- Style -->
+		<link rel="stylesheet" href="/stylesheets/mainStyle.css">
 		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Prosto+One&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Days+One&family=Prosto+One&display=swap');
 		</style>
-
-		<!-- rss -->
-		<link rel="alternate" type="application/rss+xml"
-		href="/feed.xml" title="RSS">
-
-		<!-- title -->
-		<title>\ BACKSLASH'S DWELLING \</title>
 	</head>
 
-	<!-- body -->
+	<!-- Body -->
 	<body>
-		<div id="vignette"></div>
-		<div id="flexBody">
-			<!-- navigation -->
-			<nav>
-				<img id="bannerImage" class="purple" src="/media/pageContent/banner.png">
-				<ul id="navLinks">
-					<li>&lt;</li>
-	
-					<li><a id="" target="_parent" href="/">HOME</a></li>
-					<li><a id="navActive" target="_parent" href="/blog">BLOG</a></li>
-					<li><a id="" target="_parent" href="/gallery">GALLERY</a></li>
-					<li><a id="" target="_parent" href="/about">ABOUT</a></li>
-	
-					<li>&gt;</li>
+		<!-- Header -->
+		<header>
+			<a href="https://backslash127.github.io/"><img id="bannerImage" src="/media/pageMedia/bannerWide.png" alt="BACKSLASH"></a>
+			<nav class="white">
+				<ul id="navList">
+					<li class="navFirst"><a href="/" class="">HOME</a></li>
+					<li><a href="/" class="active">BLOG</a></li>
+					<li><a href="/" class="">GALLERY</a></li>
+					<li><a href="/" class="">ABOUT</a></li>
 				</ul>
 			</nav>
+		</header>
 
-			<!-- main page content -->
-			<ul id="breadcrumbs" class="purple">
-				<li id=""><a target="_parent" href="/blog">BLOG</a></li>
-				<li id="last"><a target="_parent" href="/blogposts/11_17_24">thoughts</a></li>
-			</ul>
-
-			<div id="mainContent" class="grey">
-				<p>11/17/24</p>
-				<h2 class="header">shit sucks</h2>
+		<!-- Main page content -->
+		<main class="purple">
+			<section>
+				<p>11/17/24 -- thoughts</p>
+				
+				<h2>shit sucks</h2>
 				<hr>
 
 				<p>recently i've been thinking a lot about the future, school, and other shit like that.</p>
@@ -61,27 +45,30 @@
 				<p>i'm not worried about disappointing anyone either, i don't care if people are disappointed if i don't ever go to college. i'd rather not sacrifice my health just to please people, even if it's my family.</p>
 				<p>i understand that thinking about the future is a good thing to do, but i need to work on fixing up the present or else i won't have a future to thing about. not a good one at least.</p>
 
-				<h2 class="header">other things</h2>
+				<br>
+			</section>
+
+			<section>		
+				<h2>other things</h2>
+				<hr>
+
 				<p>things haven't been very interesting recently. just the same shit everyday. that's okay i guess, but i'd like my life to be at least a little more interesting.</p>
 				<p>i hate the people i hang out with at school. they both suck, big time.</p>
 				<p>i've come to the realization that i don't actually have anyone i hang out with in-person that i can consider a "friend".</p>
 				<p>i wish i had some new ones, y'know? you can only go so far with good friends you know online. i'm not very good at putting myself out there, and the chumps i hang out with now have attached themselves to me like parasites. a few years ago i tried distancing myself from them but i couldn't get them off my ass. i suppose im stuck with them for the rest of my years at school.</p>
 				<p>i guess that's something nice to look forward to. graduating and getting those two off my back forever. well idk probably not forever, i might see them out and about but i don't care, better than having to see and deal with them everyday.</p>
 				<p>iunno, life's been kicking my ass recently but i know things will get better. and if things dont get better? then that's as good as things get, and that's okay.</p>
+				
+				<br>
+			</section>
+		</main>
 
-				<h2 class="header">- \</h2>
-			</div>
-			
-			<!-- footer -->
-			<iframe id="footer" src="/elements/footer.html" scrolling="no"></iframe>
-			<!-- frame resizer -->
-			<script src="/node_modules/@iframe-resizer/parent/index.umd.js"></script>
-			<script>
-				iframeResize({
-					license: 'GPLv3',
-					waitForLoad: false,
-				}, '#footer' );
-			</script>
-		</div>
+		<!-- Footer -->
+		<footer class="white">
+			<a id="rssButton" href="/feed.xml"><img src="/media/pageMedia/rss.png"></a>
+
+			<p>this website is a work-in-progress and will be for the foreseeable future.</p>
+			<p> if you encounter any issues please let me know on <a href="https://github.com/backslash127/backslash127.github.io/issues">Github</a>.</p>
+		</footer>
 	</body>
 </html>

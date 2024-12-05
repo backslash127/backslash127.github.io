@@ -1,114 +1,126 @@
 <!DOCTYPE html>
 
-<!-- main html -->
-<html lang="en-US">
-	<!-- head -->
-	<head>		
-		<!-- metadata -->
+<html lang="en">
+	<!-- Head -->
+	<head>
+		<!-- Metadata -->
 		<meta charset="UTF-8">
-		<meta name="author" content="Backslash">
+		<meta name="author" content="backslash">
+		<title>\\ BACKSLASH'S DWELLING \\</title>
 
-		<!-- stylesheet -->
-		<link rel="stylesheet" href="/stylesheets/mainStylesheet.css">
-
-		<!-- font - Courier Prime -->
+		<!-- Style -->
+		<link rel="stylesheet" href="/stylesheets/mainStyle.css">
 		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Prosto+One&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Days+One&family=Prosto+One&display=swap');
 		</style>
-
-		<!-- title -->
-		<title>\ BACKSLASH'S DWELLING \</title>
 	</head>
 
-	<!-- body -->
+	<!-- Body -->
 	<body>
-		<div id="vignette"></div>
-		<div id="flexBody">
-			<!-- navigation -->
-			<nav>
-				<img id="bannerImage" class="purple" src="/media/pageContent/banner.png">
-				<ul id="navLinks">
-					<li>&lt;</li>
-	
-					<li><a id="" target="_parent" href="/">HOME</a></li>
-					<li><a id="navActive" target="_parent" href="/blog">BLOG</a></li>
-					<li><a id="" target="_parent" href="/gallery">GALLERY</a></li>
-					<li><a id="" target="_parent" href="/about">ABOUT</a></li>
-	
-					<li>&gt;</li>
+		<!-- Header -->
+		<header>
+			<a href="https://backslash127.github.io/"><img id="bannerImage" src="/media/pageMedia/bannerWide.png" alt="BACKSLASH"></a>
+			<nav class="white">
+				<ul id="navList">
+					<li class="navFirst"><a href="/" class="">HOME</a></li>
+					<li><a href="/blog" class="active">BLOG</a></li>
+					<li><a href="/gallery" class="">GALLERY</a></li>
+					<li><a href="/about" class="">ABOUT</a></li>
 				</ul>
 			</nav>
+		</header>
 
-			<!-- main page content -->
-			<ul id="breadcrumbs" class="purple">
-				<li id="last"><a target="_parent" href="/blog">BLOG</a></li>
-			</ul>
-
-			<div id="mainContent" class="grey">
-				<p class="header">\\ BLOG</p>
+		<!-- Main page content -->
+		<main class="purple">
+			<section>
+				<h2>BLOGPOSTS</h2>
 				<hr>
-				<p>welcome to my blog, every blogpost will be listed by date in descending order. (newest first, oldest last.)</p>
-				<br>
-				<div class="blogpost">
-					<p id="blogDate">11/26/24</p>
-					<a class="header" href="/blogposts/11_26_24"><p>happy thanksgiving!!!</p></a>
-					<hr>
-					<ul>
-						<li>yes, i know i'm early</li>
-						<li>keepin' busy</li>
-					</ul>
-				</div>
-				<br>
-				<div class="blogpost">
-					<p id="blogDate">11/17/24</p>
-					<a class="header" href="/blogposts/11_17_24"><p>thoughts</p></a>
-					<hr>
-					<ul>
-						<li>shit sucks</li>
-						<li>other things</li>
-					</ul>
-				</div>
-				<br>
-				<div class="blogpost">
-					<p id="blogDate">11/11/24</p>
-					<a class="header" href="/blogposts/11_11_24"><p>RSS feed</p></a>
-					<hr>
-					<ul>
-						<li>RSS feed?</li>
-					</ul>
-				</div>
-				<br>
-				<div class="blogpost">
-					<p id="blogDate">11/10/24</p>
-					<a class="header" href="/blogposts/11_10_24"><p>relaxin'</p></a>
-					<hr>
-					<ul>
-						<li>instinctive travels</li>
-						<li>y'all play video games right</li>
-					</ul>
-				</div>
-				<br>
-				<div class="blogpost">
-					<p id="blogDate">11/09/24</p>
-					<a class="header" href="/blogposts/11_09_24"><p>MASSIVE website update!!!</p></a>
-					<hr>
-					<ul>
-						<li>i rewrote the whole fuckin' thing</li>
-						<li>some real talkins'</li>
-						<li>short wrap up</li>
-					</ul>
-				</div>
-			</div>
 
-			<!-- footer -->
-			<iframe id="footer" src="/elements/footer.html" scrolling="no"></iframe>
-			<!-- frame resizer -->
-			<script src="/node_modules/@iframe-resizer/parent/index.umd.js"></script>
-			<script>
-				iframeResize({
-					license: 'GPLv3',
-					waitForLoad: false,
-				}, '#footer' );
-			</script>
+				<p>blogposts are listed here. they're sorted in descending order. (newest first, oldest last.)</p>
+
+				<br>
+			</section>
+
+			<!-- Blogposts -->
+			<section class="blogpostSection white">
+				<h2><a href="/blogposts/12_04_24">oops i did it again lol</a></h2>
+				<p><em>12/04/24</em></p>
+				<hr>
+
+				<ul>
+					<li>rewrote the website again</li>
+					<li>can you believe it guys?</li>
+				</ul>
+
+			</section>
+
+			<section class="blogpostSection white">
+				<h2><a href="/blogposts/11_26_24">happy thanksgiving!!!</a></h2>
+				<p><em>11/26/24</em></p>
+				<hr>
+
+				<ul>
+					<li>yes, i know i'm early</li>
+					<li>keepin' busy</li>
+				</ul>
+
+			</section>
+			
+			<section class="blogpostSection white">
+				<h2><a href="/blogposts/11_17_24">thoughts</a></h2>
+				<p><em>11/17/24</em></p>
+				<hr>
+
+				<ul>
+					<li>shit sucks</li>
+					<li>other things</li>
+				</ul>
+
+			</section>
+
+			<section class="blogpostSection white">
+				<h2><a href="/blogposts/11_11_24">RSS feed</a></h2>
+				<p><em>11/11/24</em></p>
+				<hr>
+
+				<ul>
+					<li>RSS feed?</li>
+				</ul>
+
+			</section>
+
+			<section class="blogpostSection white">
+				<h2><a href="/blogposts/11_10_24">relaxin'</a></h2>
+				<p><em>11/10/24</em></p>
+				<hr>
+
+				<ul>
+					<li>instinctive travels</li>
+					<li>y'all play video games right</li>
+				</ul>
+
+			</section>
+
+			<section class="blogpostSection white">
+				<h2><a href="/blogposts/11_09_24">MASSIVE website update!!!</a></h2>
+				<p><em>11/09/24</em></p>
+				<hr>
+
+				<ul>
+					<li>i rewrote the whole fuckin' thing</li>
+					<li>some real talkins'</li>
+					<li>short wrap up</li>
+				</ul>
+
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer class="white">
+			<a id="rssButton" href="/feed.xml"><img src="/media/pageMedia/rss.png"></a>
+
+			<p>this website is a work-in-progress and will be for the foreseeable future.</p>
+			<p> if you encounter any issues please let me know on <a href="https://github.com/backslash127/backslash127.github.io/issues">Github</a>.</p>
+		</footer>
 	</body>
 </html>
