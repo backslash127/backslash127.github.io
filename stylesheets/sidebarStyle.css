@@ -1,0 +1,240 @@
+*
+{
+	box-sizing: border-box;
+}
+
+html
+{
+	font: normal normal normal 1em "Days One";
+	color: #ffffff;
+	line-height: 2;
+	text-wrap: wrap;
+
+	background: none transparent;
+	
+	overflow-y: scroll;
+	scrollbar-color: #9460a9 #ffffff;
+}
+
+body
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding: 0;
+	margin: 0;
+
+	width: 100%;
+	height: 100%;
+	min-height: 100vh;
+
+	image-rendering: auto;
+}
+
+#title
+{
+	margin: 5px 0 5px 0;
+
+	border-radius: 1em;
+
+	text-align: center;
+}
+
+/* Featured Artwork */
+#featuredArtwork
+{	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	padding: 10px;
+	margin: 5px 0 5px 0;
+
+	border-radius: 1em;
+}
+
+#featuredArtwork img
+{
+	width: auto;
+	height: 175px;
+
+	border: solid #9460a9 2px;
+	border-radius: 1em;
+
+	object-fit: cover;
+}
+
+#featuredArtwork img:hover
+{
+	scale: 1.05;
+	border: solid #9460a9 4px;
+}
+
+/* Music Video */
+#musicVideo
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	padding: 10px;
+	margin: 5px 0 5px 0;
+
+	border-radius: 1em;
+}
+
+#musicVideo iframe
+{
+	border-radius: 1em;
+
+	width: auto;
+	height: auto;
+}
+
+/* Buttons */
+#buttonMarquee
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+
+	width: 100%;
+	height: auto;
+
+	padding: 5px;
+}
+
+.button
+{
+	display: inline-block;
+
+	width: 88px;
+	height: 31px;
+
+	margin: 0 5px 0 5px;
+}
+
+.button:hover
+{
+	scale: 1.125;
+}
+
+.button img
+{
+	object-fit: cover;
+}
+
+/* Blog Content */
+.blogpostSection
+{
+	padding: 25px;
+	margin: 5px 0 5px 0;
+
+	border-radius: 1em;
+}
+
+/* Color Styles */
+.purple
+{
+	background-color: transparent;
+	color: #ffffff;
+
+	font-size: 1.325em;
+}
+
+.purple a
+{
+	color: #ffffff;
+}
+
+.purple hr
+{
+	border-color: #ffffff;
+}
+
+.white
+{
+	background-color: #ffffff;
+	color: #9460a9;
+
+	font-size: 1.325em;
+}
+
+.white a
+{
+	color: #9460a9;
+}
+
+.white hr
+{
+	border-color: #9460a9;
+}
+
+/* Misc. */
+section
+{
+	width: 100%;
+}
+
+p
+{
+	margin: 10px 0 10px 0;
+}
+
+h2
+{
+	font-weight: bold;
+	font-style: italic;
+
+	margin: 15px 0 15px 0;
+}
+
+h2::before
+{
+	content: "\005C\005C";
+	padding: 0 20px 0 0;
+}
+
+h2::after
+{
+	content: "\005C\005C";
+	padding: 0 0 0 20px;
+}
+
+hr
+{
+	line-height: 0;
+
+	margin: .25em 0 .5em 0;
+	width: 75%;
+
+	border: 3px solid;
+	border-radius: 1em;
+}
+
+a
+{
+	text-decoration: underline 4px;
+	font-weight: bold;
+}
+
+a:hover
+{
+	text-decoration: underline 8px;
+}
+
+a:has(img)
+{
+	display: block;
+	
+	line-height: 0;
+	text-decoration: none;
+}
+
+img::selection
+{
+	background-color: #ffffff;
+}
