@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- HTML -->
+<html lang="en">
+	<!-- head -->
+	<head>
+		<!-- metadata -->
+		<title>01011100 — home</title>
+
+		<!-- stylesheets -->
+		<link href="/stylesheets/main.css" rel="stylesheet" type="text/css">
+		<link href="/stylesheets/index.css" rel="stylesheet" type="text/css">
+		<link href="/stylesheets/blog.css" rel="stylesheet" type="text/css">
+
+		<!-- font -->
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+		</style>
+	</head>
+
+	<!-- body -->
+	 <body>
+		<div id="vignette"></div>
+		
+		<!-- sidebar -->
+		<div id="sidebar">
+			<iframe src="/sidebar.html">iframe failed to load... sorry! X_X</iframe>
+		</div>
+
+		<!-- main page content -->
+		<div id="mainFlex">
+			<div id="main" class="window">
+				<div class="titleBar">
+					<p>homepage</p>
+					
+					<img class="barButton" src="/media/main/paw.png" draggable="false">
+				</div>
+	
+				<div class="content">
+					<!-- header -->
+					<header>
+						<div id="banner" class="cutout">
+							<a href="/"><img src="/media/main/banner.png" alt="\\ BACKSLASH \\"></a>
+							<iframe src="/nav.html">iframe failed to load... sorry! X_X</iframe>
+						</div>
+
+						<br>
+					</header>
+					
+					<!-- welcome -->
+					<section>
+						<h2 class="heading">WELCOME!</h2>
+						<hr>
+						
+						<p>hello!!! welcome to my website. this is a small personal project of mine where i'll be keeping my art, hosting a blog, and doing really anything else i want lol. thanks for stopping by! :3</p>
+
+						<br>
+					</section>
+
+					<!-- art showcase -->
+					<section>
+						<h2 class="heading">ART SHOWCASE</h2>
+						<hr>
+						
+						<p>here's a small selection of artworks that i want to show off.</p>
+						<p><em>some works will be cropped, clicking on one will open it's raw file in a new tab.</em></p>
+
+						<div id="artShowcase" class="cutout">
+							<div id="overflow">
+								<a target="_blank" href="/gallery/doodles/KAT.png">
+									<img src="/gallery/doodles/KAT.png">
+								</a>
+								
+								<a target="_blank" href="/gallery/graffiti/G-STOP_magazine.png">
+									<img src="/gallery/graffiti/G-STOP_magazine.png">
+								</a>
+
+							</div>
+						</div>
+
+						<br>
+					</section>
+
+					<!-- blogpost -->
+					<section>
+						<h2 class="heading">MOST RECENT BLOGPOST</h2>
+						<hr>
+						
+						<p>pretty self-explanatory.</p>
+
+						<section class="cutout blogpost">
+							<p class="blogDate"><em>12/28/24</em></p>
+							<h2 class="heading">
+								<a href="">PLACEHOLDER</a>
+							</h2>
+							<hr>
+
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</section>
+
+						<br>
+					</section>
+
+					<!-- footer -->
+					<footer>
+						<p>this website is a work-in-progress, and it will be for the forseeable future. if you encounter any issues please let me know on <a target="_blank" href="https://github.com/backslash127/backslash127.github.io/issues">github</a>.</p>
+						<p>if you want to get in touch, shoot me a message on <a target="_blank" href="https://discord.com/users/467507791553101845">discord</a>!</p>
+						<p><em>BACKSLASH — <span id="year">:3</span></em></p>
+						<script>
+							n =  new Date();
+							y = n.getFullYear();
+							document.getElementById("year").innerHTML = y;
+						</script>
+					</footer>
+				</div>
+			</div>
+		</div>
+		
+		<!-- side images -->
+		<div id="left"><img src="/media/main/graffitiLeft.png"></div>
+		<div id="right"><img src="/media/main/graffitiRight.png"></div>
+	 </body>
+</html>
