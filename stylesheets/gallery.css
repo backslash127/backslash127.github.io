@@ -19,6 +19,7 @@
 
 .gridImage
 {
+	flex: 0 1 auto;
 	display: block;
 
 	padding: 0;
@@ -27,8 +28,8 @@
 
 .gridImage img
 {
-	width: .625em;
-	height: .625em;
+	width: auto;
+	height: auto;
 
 	object-fit: cover;
 	
