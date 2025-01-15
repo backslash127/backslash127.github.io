@@ -27,8 +27,18 @@
 
 .gridImage img
 {
-	object-fit: cover;
-
 	width: 250px;
-	height: auto;
+	height: 10px;
+
+	object-fit: cover;
+	
+	transition: all 50ms ease-in-out;
+}
+
+.gridImage img:hover
+{
+	scale: 1.025;
+
+	transform-origin: center;
+	transform: rotate(1.40625deg);
 }
