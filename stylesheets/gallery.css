@@ -21,9 +21,6 @@
 {
 	display: block;
 
-	width: 250px;
-	height: auto;
-
 	padding: 0;
 	margin: auto;
 }
@@ -31,4 +28,7 @@
 .gridImage img
 {
 	object-fit: cover;
+
+	width: 250px;
+	height: auto;
 }
