@@ -27,8 +27,8 @@
 
 .gridImage img
 {
-	width: 250px;
-	height: auto;
+	width: .625em;
+	height: .625em;
 
 	object-fit: cover;
 	
