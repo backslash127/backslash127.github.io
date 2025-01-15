@@ -22,13 +22,13 @@
 	display: block;
 
 	padding: 0;
-	margin: auto;
+	margin: 15px;
 }
 
 .gridImage img
 {
 	width: 250px;
-	height: 10px;
+	height: auto;
 
 	object-fit: cover;
 	
