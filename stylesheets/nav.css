@@ -24,7 +24,7 @@ nav
 
 nav a
 {
-	width: 100%;
+	width: auto;
 	height: auto;
 	
 	padding: 0;
