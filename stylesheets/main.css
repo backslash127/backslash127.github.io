@@ -334,14 +334,14 @@ footer
 {
 	left: 0;
 	object-position: left;
+
+	display: none; /* change this later when u finally get better at graffiti lmao */
 }
 
 #right, #right img
 {
 	right: 0;
 	object-position: right;
-
-	display: none; /* change this later when u finally get better at graffiti */
 }
 
 /* misc */
