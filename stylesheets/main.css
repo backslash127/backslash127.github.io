@@ -104,7 +104,7 @@ header iframe
 	height: 50px;
 
 	padding: 0;
-	margin: 0;
+	margin: 0 0 10px 0;
 
 	position: absolute;
 	bottom: 0;
@@ -522,6 +522,13 @@ hr
 		height: 75px;
 
 		object-position: 0 100%;
+	}
+
+	header iframe
+	{
+		height: 100%;
+
+		margin: 0;
 	}
 
 	#vignette
