@@ -335,7 +335,7 @@ footer
 	left: 0;
 	object-position: left;
 
-	/* display: none; change this later when u finally get better at graffiti lmao */
+	display: none; /* change this later when u finally get better at graffiti lmao */
 }
 
 #right, #right img
