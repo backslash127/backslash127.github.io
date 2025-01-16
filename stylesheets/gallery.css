@@ -1,3 +1,8 @@
+.category
+{
+	padding: 15px;
+}
+
 #artGrid
 {
 	display: flex;
