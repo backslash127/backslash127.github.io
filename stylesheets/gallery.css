@@ -12,7 +12,7 @@
 	width: 100%;
 	height: fit-content;
 
-	padding: 0;
+	padding: 5px;
 	margin: 0;
 }
 
@@ -22,11 +22,11 @@
 	flex-direction: column;
 	align-items: center;
 
-	width: 50%;
+	width: calc(100% / 3);
 	height: fit-content;
 
 	padding: 0;
-	margin: auto;
+	margin: 0 auto;
 }
 
 .gridImage
@@ -49,5 +49,7 @@
 
 .gridImage img:hover
 {
-	scale: 1.0125;
+	scale: 1.025;
+
+	transform: rotate(calc(1.40625deg / 2));
 }
