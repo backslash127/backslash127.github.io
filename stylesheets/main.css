@@ -1,0 +1,537 @@
+*
+{
+	box-sizing: border-box;
+}
+
+html
+{
+	font-family: "Courier Prime Sans";
+	font-size: 112.5%;
+	line-height: 1.625rem;
+
+	background: #9460a9 url(/media/main/purpleBricks.png) center/32.5% fixed;
+	image-rendering: pixelated;
+
+	scrollbar-color: #9460a9 transparent;
+}
+
+body
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+	width: 100vw;
+	height: 100vh;
+
+	padding: 10px;
+	margin: 0;
+}
+
+::selection
+{
+	color: #e8e8e8;
+
+	background-color: #9460a9;
+}
+
+#mainFlex
+{
+	display: flex;
+	flex-direction: column;
+
+	width: 50rem;
+	height: 100%;
+
+	padding: 0;
+	margin: 0;
+}
+
+#main
+{
+	display: flex;
+	flex-direction: column;
+
+	width: 100%;
+	height: 100%;
+
+	padding: 0;
+	margin: 0;
+}
+
+.content
+{
+	padding: 15px 25px;
+	margin: 0;
+
+	width: 100%;
+	height: 100%;
+
+	overflow-y: scroll;
+}
+
+/* header/nav */
+#banner
+{
+	position: relative;
+}
+
+#banner img
+{
+	position: relative;
+	
+	width: 100%;
+	height: 225px;
+
+	padding: 0;
+	margin: 0;
+
+	object-fit: cover;
+	object-position: 0 96.25%;
+
+	image-rendering: auto;
+}
+
+header
+{
+	width: 100%;
+	height: auto;
+}
+
+header iframe
+{
+	width: 100%;
+	height: 50px;
+
+	padding: 0;
+	margin: 0 0 10px 0;
+
+	position: absolute;
+	bottom: 0;
+
+	border: none 0 transparent;
+}
+
+/* footer */
+footer
+{
+	width: 100%;
+	height: auto;
+
+	padding: 5px 20px;
+	margin: 0;
+
+	font-size: .875rem;
+	text-align: center;
+	line-height: 1.5em;
+
+	border: solid 3px;
+	border-color: #000000 #ffffff #ffffff #000000;
+}
+
+/* sidebar */
+#sidebar
+{
+	display: flex;
+	flex-direction: column;
+
+	justify-content: center;
+
+	width: 19.375em;
+	height: 100%;
+
+	padding: 0;
+	margin-right: 10px;
+}
+
+#sidebar iframe
+{
+	width: 100%;
+	height: 100%;
+
+	border: none transparent;
+}
+
+/* misc */
+#vignette
+{
+	position: fixed;
+
+	width: 100%;
+	height: 100%;
+
+	margin: -10px;
+
+	pointer-events: none;
+
+	box-shadow: inset 0 0 2rem #00000080;
+}
+
+/* window style */
+.titleBar
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+
+	padding: 0 6px 0 10px;
+	margin: 2px 2px 0 2px;
+
+	width: auto;
+	height: 38px;
+
+	color: #ffffff;
+	line-height: 1.75em;
+
+	background: linear-gradient(to right, #9460a9, #d0a2e3);
+
+	border-bottom: solid 3px #d0a2e3;
+}
+
+.titleBar p
+{
+	width: 100%;
+}
+
+.titleBar *::selection
+{
+	color: #9460a9;
+
+	background-color: #e8e8e8;
+}
+
+.window
+{
+	padding: 0;
+	margin: 0;
+
+	background: #e8e8e8;
+	border: solid 3px;
+	border-color: #ffffff #000000 #000000 #ffffff;
+}
+.cutout
+{
+	color: #ffffff;
+
+	background: url(/media/main/purpleBricks.png) center/32.5% fixed;
+	border: solid 3px;
+	border-color: #000000 #ffffff #ffffff #000000;
+}
+
+.cutout *::selection
+{
+	color: #9460a9;
+
+	background-color: #e8e8e8;
+}
+
+.cutout .heading, .cutout a
+{
+	color: #e8e8e8;
+}
+
+.cutout hr
+{
+	border-color: #e8e8e8;
+}
+
+/* title bar buttons */
+.barButton
+{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+
+	padding: 0;
+	margin: 0;
+
+	cursor: pointer;
+	user-select: none;
+
+	background: #e8e8e8;
+	border: solid 2px;
+	border-color: #ffffff #000000 #000000 #ffffff;
+}
+
+.barButton:active
+{
+	padding: 2px;
+
+	border-color: #000000 #ffffff #ffffff #000000;
+}
+
+.infoButton
+{
+	position: relative;
+
+	width: 24px;
+	height: 24px;
+}
+
+.infoTooltip
+{
+	display: none;
+	z-index: 1;
+
+	position: absolute;
+	right: 24px;
+
+	width: 250px;
+
+	padding: 10px;
+	margin: 0;
+
+	color: #000000;
+	font-size: .875rem;
+	line-height: 1.5em;
+	text-align: center;
+
+	background: #e8e8e8;
+	border: solid 2px;
+	border-color: #ffffff #000000 #000000 #ffffff;
+}
+
+.infoButton:active .infoTooltip
+{
+	display: block;
+}
+
+/* side images */
+#left, #right
+{
+
+	position: fixed;
+	top: 0;
+
+	width: 375px;
+	height: 100%;
+
+	padding: 0;
+	margin: 0;
+
+	z-index: -2;
+
+	mix-blend-mode: soft-light;
+	image-rendering: auto;
+}
+
+#left img, #right img
+{
+	width: 100%;
+	height: 100%;
+
+	padding: 0;
+	margin: 0;
+
+	object-fit: contain;
+
+	pointer-events: none;
+	user-select: none;
+}
+
+#left, #left img
+{
+	left: 0;
+	object-position: left;
+}
+
+#right, #right img
+{
+	right: 0;
+	object-position: right;
+}
+
+/* misc */
+.heading
+{
+	color: #9460a9;
+
+	font-weight: bold;
+	font-style: italic;
+}
+
+.webButton
+{
+	width: 88px;
+	height: 31px;
+
+	padding: 0;
+	margin: 0;
+
+	image-rendering: auto;
+}
+
+a
+{
+	color: #9460a9;
+	text-decoration-thickness: 2px;
+	font-weight: bold;
+
+	transition: all 50ms ease-in-out;
+}
+
+a:hover
+{
+	text-decoration-thickness: 4px;
+	font-style: italic;
+}
+
+a:has(img)
+{
+	display: block;
+	
+	line-height: 0;
+	text-decoration: none;
+}
+
+h2::before
+{
+	content: "\005C\005C";
+	
+	margin-right: 20px;
+}
+
+hr
+{
+	margin-right: 37.5%;
+
+	border: solid 2px #9460a9;
+}
+
+/* marquee */
+.marquee
+{
+	display: flex;
+	flex-direction: row;
+
+	width: auto;
+	height: auto;
+
+	padding: 0;
+	margin: 0;
+
+	--gap: 1rem;
+	gap: var(--gap);
+
+	overflow: hidden;
+}
+
+.marqueeContent
+{
+	display: flex;
+	flex-direction: row;
+	flex-shrink: 0;
+	justify-content: space-around;
+
+	min-width: 100%;
+
+	padding: 0;
+	margin: 0;
+
+	gap: var(--gap);
+
+	animation: marquee 15s linear infinite;
+}
+
+.marquee:hover .marqueeContent
+{
+	animation-play-state: paused;
+}
+
+@keyframes marquee
+{
+	0%
+	{
+		transform: translateX(0);
+	}
+
+	100%
+	{
+		transform: translateX(calc(-100% - var(--gap)));
+	}
+}
+
+/* font */
+@font-face
+{
+	font-family: "Courier Prime Sans";
+	src: url(/fonts/Courier\ Prime\ Sans.ttf);
+
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face
+{
+	font-family: "Courier Prime Sans";
+	src: url(/fonts/Courier\ Prime\ Sans\ Bold.ttf);
+
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face
+{
+	font-family: "Courier Prime Sans";
+	src: url(/fonts/Courier\ Prime\ Sans\ Italic.ttf);
+
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face
+{
+	font-family: "Courier Prime Sans";
+	src: url(/fonts/Courier\ Prime\ Sans\ Bold\ Italic.ttf);
+
+	font-weight: bold;
+	font-style: italic;
+}
+
+/* screen sizing */
+@media (max-width: 1250px)
+{
+	body
+	{
+		padding: 0;
+	}
+	
+	#sidebar
+	{
+		display: none;
+	}
+
+	#mainFlex
+	{
+		width: 100%;
+		height: 100vh;
+	}
+
+	#banner a
+	{
+		opacity: 0;
+		
+		user-select: none;
+		pointer-events: none;
+	}
+	
+	#banner img
+	{
+		height: 75px;
+
+		object-position: 0 100%;
+	}
+
+	header iframe
+	{
+		height: 100%;
+
+		margin: 0;
+	}
+
+	#vignette
+	{
+		display: none;
+	}
+}

@@ -1,0 +1,57 @@
+#artShowcase
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	
+	width: 100%;
+	height: auto;
+
+	padding: 0;
+	margin: 0;
+}
+
+#overflow
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	width: 100%;
+	height: auto;
+
+	padding: 10px;
+	margin: 0;
+
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+#artShowcase a
+{
+	margin: auto;
+}
+
+#artShowcase img
+{
+	width: 250px;
+	height: 250px;
+
+	object-fit: cover;
+
+	background: #e8e8e8;
+	border: solid 2px #e8e8e8;
+
+	transition: all 50ms ease-in-out;
+}
+
+#artShowcase img:hover
+{
+	scale: 1.025;
+
+	transform-origin: center;
+	transform: rotate(calc(1.40625deg / 2));
+
+	border-width: 3px;
+}

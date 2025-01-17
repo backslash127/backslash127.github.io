@@ -1,0 +1,155 @@
+html
+{
+	background: none transparent;
+}
+
+body
+{
+	justify-content: left;
+
+	padding: 0;
+	margin: 0;
+
+	overflow: hidden;
+}
+
+.content
+{
+	display: flex;
+	flex-direction: column;
+
+	overflow: hidden;
+}
+
+/* YT embed */
+#youtubeEmbed
+{
+	width: 100vw;
+	height: auto;
+
+	padding: 0;
+	margin: 0;
+}
+
+#youtubeEmbed iframe
+{
+	width: 100%;
+	height: auto;
+
+	padding: 0;
+	margin: 0;
+
+	border: solid 3px;
+	border-color: #000000 #ffffff #ffffff #000000;
+}
+
+/* buttons */
+#buttonMarquee
+{
+	width: 100vw;
+	height: auto;
+	
+	margin: 10px 0 0 0;
+}
+
+#buttonMarquee .marquee
+{
+	font-size: 0;
+	line-height: 0;
+	
+	border: solid 3px;
+	border-color: #000000 #ffffff #ffffff #000000;
+}
+
+/* changelog */
+#changelog
+{
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+
+	width: 100vw;
+	height: 0;
+
+	margin: 10px 0 0 0;
+}
+
+#changelog .content
+{
+	padding: 0;
+	margin: 0
+}
+
+#logOverflow
+{
+	width: auto;
+	height: 100%;
+
+	padding: 15px 20px;
+	margin: 0;
+	
+	scrollbar-gutter: stable;
+	overflow-y: scroll;
+
+	line-height: 1.5em;
+}
+
+#logOverflow ul
+{
+	margin: 15px 0;
+
+	font-size: medium;
+}
+
+#logOverflow hr
+{
+	margin: 5px 25% 0 0;
+
+	border-width: 1px;
+}
+
+/* last.fm */
+#lastfm
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+	width: 100vw;
+	height: auto;
+
+	margin: 10px 0 0 0;
+}
+
+#lastfm .content
+{
+	font-size: .75rem;
+}
+
+#album-cover
+{
+    margin-right: 25px;
+}
+
+#lastfm a
+{
+    color: #000000;
+
+    text-decoration: none;
+    font-weight: normal;
+
+    transition: all 50ms ease-in-out;
+}
+
+#lastfm a:hover
+{
+    color: #9460a9;
+
+    font-weight: bold;
+}
+
+#refresh
+{
+
+    text-decoration: underline #9460a9;
+}

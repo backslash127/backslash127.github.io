@@ -1,62 +1,162 @@
 <!DOCTYPE html>
-
+<!-- HTML -->
 <html lang="en">
-	<!-- Head -->
+	<!-- head -->
 	<head>
-		<!-- Metadata -->
-		<meta charset="UTF-8">
-		<meta name="author" content="backslash">
-		<title>\\ SIDEBAR \\</title>
+		<!-- metadata -->
+		<title>what're you doing here?</title>
 
-		<!-- Style -->
-		<link rel="stylesheet" href="/stylesheets/sidebarStyle.css">
+		<!-- stylesheets -->
+		<link href="/stylesheets/main.css" rel="stylesheet" type="text/css">
+		<link href="/stylesheets/sidebar.css" rel="stylesheet" type="text/css">
+
+		<!-- font -->
 		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Days+One&family=Prosto+One&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 		</style>
-
-		<!-- iFrame Resizer -->
-		<script
-		src="/node_modules/@iframe-resizer/child/index.umd.js"
-		type="text/javascript"
-		async
-		></script>
 	</head>
 
-	<!-- Body -->
-	<body>
-		<!-- Blogpost Link -->
-		<section class="blogpostSection white">
-			<h2><a href="/blogposts/12_13_24" target="_parent _blank">LATEST POST</a></h2>
-			<hr>
-			<p><em>12/13/24</em></p>
-			<p>made an oc i think. she's a cat, she's cool.</p>
+	<!-- body -->
+	 <body>
+		<!-- main content -->
+		<div id="mainFlex">
+			<!-- youtube embed -->
+			<div id="youtubeEmbed" class="window">
+				<div class="titleBar">
+					<p>youtubeEmbed</p>
 
-		</section>
+					<img class="barButton" src="/media/main/paw.png" draggable="false">
+				</div>
+				
+				<div class="content">
+					<iframe src="https://www.youtube-nocookie.com/embed/2iZonnn1nIs?si=_9PFb72QAkSmC4Zh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+			</div>
 
-		<!-- Featured Artwork -->
-		<section id="featuredArtwork" class="white">
-			<p>\\ FEATURED ARTWORK \\</p>
-			<a href="/media/gallery/doodles/KAT.png" target="_parent _blank"><img class="galleryPreview" src="/media/gallery/doodles/KAT.png"></a>
-		</section>
+			<!-- web buttons -->
+			<div id="buttonMarquee" class="window">
+				<div class="titleBar">
+					<p>webButtons</p>
 
-		<!-- Random Music Video -->
-		<section id="musicVideo" class="white">
-			<iframe src="https://www.youtube-nocookie.com/embed/kQaSDJYwdh4?si=QkkA_r9pSddvEQRI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-		</section>
+					<!--  <div class="infoButton">
+						<span class="infoTooltip">this is an ever-growing assortment of buttons i've collected from perusing the internet!</span>
+						<img class="barButton" src="/media/main/question.png" draggable="false">
+					</div> -->
+					<img class="barButton" src="/media/main/paw.png" draggable="false">
+				</div>
 
-		<!-- Web Buttons -->
-		<section>
-			<marquee id="buttonMarquee">
-				<a class="button" href="https://atribecalledquest.com" target="_parent _blank">
-					<img src="/media/buttons/ATCQ.gif">
-				</a>
-				<a class="button" href="https://wiby.me" target="_parent _blank">
-					<img src="/media/buttons/wiby.gif">
-				</a>
-				<a class="button" href="https://blinkies.cafe" target="_parent _blank">
-					<img src="/media/buttons/blinkiesCafe-badge.gif">
-				</a>
-			</marquee>
-		</section>
-	</body>
+				<div class="content">
+					<div class="marquee">
+						<div class="marqueeContent" style="animation-duration: 25s;">
+							<a title="me!" class="webButton" target="_blank" href="/"><img src="/media/buttons/backslash.gif"></a>
+							<a title="A Tribe Called Quest" class="webButton" target="_blank" href="https://atribecalledquest.com"><img src="/media/buttons/ATCQ.gif"></a>
+							<a title="Wiby" class="webButton" target="_blank" href="https://wiby.me"><img src="/media/buttons/wiby.gif"></a>
+							<a title="ribozone" class="webButton" target="_blank" href="https://ribo.zone/"><img src="/media/buttons/ribose.png"></a>
+							<a title="KITMEOW" class="webButton" target="_blank" href="https://kitmeow.neocities.org/"><img src="/media/buttons/kitdoombutton1.gif"></a>
+							<a title="00s" class="webButton" target="_blank" href="https://00s.neocities.org/"><img src="/media/buttons/00s.gif"></a>
+							<a title="thepersonever" class="webButton" target="_blank" href="https://thepersonever.net/"><img src="/media/buttons/thepersoneverbutton.gif"></a>
+							<a title="juneish" class="webButton" target="_blank" href="https://juneish.neocities.org/"><img src="/media/buttons/webcatz.gif"></a>
+							<a title="dimden" class="webButton" target="_blank" href="https://dimden.dev/"><img src="https://dimden.dev/services/images/88x31.gif"></a>
+							<a title="blinkies.cafe" class="webButton" target="_blank" href="https://blinkies.cafe"><img src="/media/buttons/blinkiesCafe-badge.gif"></a>
+							<a title="OLLIVEEN" class="webButton" target="_blank" href="https://olliveen.neocities.org/"><img src="/media/buttons/olliveen.gif"></a>
+							<a title="nekoweb.org" class="webButton" target="_blank" href="https://nekoweb.org/"><img src="https://nekoweb.org/assets/buttons/button11.gif"></a> <!-- button by milkyway.moe -->
+							<a title="mukky's world" class="webButton" target="_blank" href="https://mukkysworld.neocities.org/"><img src="/media/buttons/MukkysWorld_Button.gif"></a>
+							<a title="ITEM64" class="webButton" target="_blank" href="https://item64.neocities.org/"><img src="/media/buttons/item64.gif"></a>
+							<a title="The Largest 88x31 Collection" class="webButton" target="_blank" href="https://capstasher.neocities.org/88x31collection-page1"><img src="/media/buttons/the-largest-88x31-collection-2.png"></a>
+						</div>
+
+						<div class="marqueeContent" style="animation-duration: 25s;">
+							<a title="me!" class="webButton" target="_blank" href="/"><img src="/media/buttons/backslash.gif"></a>
+							<a title="A Tribe Called Quest" class="webButton" target="_blank" href="https://atribecalledquest.com"><img src="/media/buttons/ATCQ.gif"></a>
+							<a title="Wiby" class="webButton" target="_blank" href="https://wiby.me"><img src="/media/buttons/wiby.gif"></a>
+							<a title="ribozone" class="webButton" target="_blank" href="https://ribo.zone/"><img src="/media/buttons/ribose.png"></a>
+							<a title="KITMEOW" class="webButton" target="_blank" href="https://kitmeow.neocities.org/"><img src="/media/buttons/kitdoombutton1.gif"></a>
+							<a title="00s" class="webButton" target="_blank" href="https://00s.neocities.org/"><img src="/media/buttons/00s.gif"></a>
+							<a title="thepersonever" class="webButton" target="_blank" href="https://thepersonever.net/"><img src="/media/buttons/thepersoneverbutton.gif"></a>
+							<a title="juneish" class="webButton" target="_blank" href="https://juneish.neocities.org/"><img src="/media/buttons/webcatz.gif"></a>
+							<a title="dimden" class="webButton" target="_blank" href="https://dimden.dev/"><img src="https://dimden.dev/services/images/88x31.gif"></a>
+							<a title="blinkies.cafe" class="webButton" target="_blank" href="https://blinkies.cafe"><img src="/media/buttons/blinkiesCafe-badge.gif"></a>
+							<a title="OLLIVEEN" class="webButton" target="_blank" href="https://olliveen.neocities.org/"><img src="/media/buttons/olliveen.gif"></a>
+							<a title="nekoweb.org" class="webButton" target="_blank" href="https://nekoweb.org/"><img src="https://nekoweb.org/assets/buttons/button11.gif"></a> <!-- button by milkyway.moe -->
+							<a title="mukky's world" class="webButton" target="_blank" href="https://mukkysworld.neocities.org/"><img src="/media/buttons/MukkysWorld_Button.gif"></a>
+							<a title="ITEM64" class="webButton" target="_blank" href="https://item64.neocities.org/"><img src="/media/buttons/item64.gif"></a>
+							<a title="The Largest 88x31 Collection" class="webButton" target="_blank" href="https://capstasher.neocities.org/88x31collection-page1"><img src="/media/buttons/the-largest-88x31-collection-2.png"></a>
+						</div>
+					</div>
+
+					<div class="marquee">
+						<div class="marqueeContent" style="animation-direction: reverse; animation-duration: 5s;">
+							<img class="webButton" src="/media/buttons/paws.png">
+							<img class="webButton" src="/media/buttons/firefox2.gif">
+							<img class="webButton" src="/media/buttons/ublock-now.png">
+						</div>
+
+						<div class="marqueeContent" style="animation-direction: reverse; animation-duration: 5s;">
+							<img class="webButton" src="/media/buttons/paws.png">
+							<img class="webButton" src="/media/buttons/firefox2.gif">
+							<img class="webButton" src="/media/buttons/ublock-now.png">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- changelog -->
+			<div id="changelog" class="window">
+				<div class="titleBar">
+					<p>changelog</p>
+
+					<img class="barButton" src="/media/main/paw.png" draggable="false">
+				</div>
+
+				<div class="content">
+					<div id="logOverflow">
+						<section>
+							<p>01/17/25</p>
+							<hr>
+
+							<ul>
+								<li>rewrote the whole website</li>
+								<li>sidebar hath returned</li>
+								<li>gallery has been updated to be considerably better lol (no more categories but i didn't want them anyways)</li>
+								<li>new extras page, i'll be putting some other gunk in there idk lol</li>
+								<li>uhmm idk, code cleanup i guess? not very interesting</li>
+								<li>everything's generally nicer looking (i think)</li>
+								<li>if you stumble upon an issue or something like that PLEASE tell me on <a target="_blank" href="https://github.com/backslash127/backslash127.github.io/issues">github</a> or <a target="_blank" href="https://discord.com/users/467507791553101845">discord</a></li>
+							</ul>
+
+							<br>
+						</section>
+					</div>
+				</div>
+			</div>
+
+			<!-- last.fm -->
+			<div id="lastfm" class="window">
+				<div class="titleBar">
+					<p>last.fm</p>
+					
+					<img class="barButton" src="/media/main/refresh.png" draggable="false" onclick="window.location.reload()">
+					<img class="barButton" src="/media/main/paw.png" draggable="false">
+				</div>
+	
+				<div class="content">
+					<table>
+						<tr>
+							<td rowspan="3"><img id="album-cover"></td>
+							<td id="track"></td>
+						</tr>
+						<tr>
+							<td id="artist"></td>
+						</tr>
+						<tr>
+							<td id="date"></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			
+			<script src="/javascript/lastfm.js"></script>
+		</div>
+		
+	 </body>
 </html>

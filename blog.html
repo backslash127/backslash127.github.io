@@ -1,138 +1,91 @@
 <!DOCTYPE html>
-
+<!-- HTML -->
 <html lang="en">
-	<!-- Head -->
+	<!-- head -->
 	<head>
-		<!-- Metadata -->
-		<meta charset="UTF-8">
-		<meta name="author" content="backslash">
-		<title>\\ BACKSLASH'S DWELLING \\</title>
+		<!-- metadata -->
+		<title>01011100 — blog</title>
 
-		<!-- Style -->
-		<link rel="stylesheet" href="/stylesheets/mainStyle.css">
+		<!-- stylesheets -->
+		<link href="/stylesheets/main.css" rel="stylesheet" type="text/css">
+		<link href="/stylesheets/blog.css" rel="stylesheet" type="text/css">
+
+		<!-- font -->
 		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Days+One&family=Prosto+One&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 		</style>
 	</head>
 
-	<!-- Body -->
-	<body>
-		<!-- Header -->
-		<header>
-			<a href="https://backslash127.github.io/"><img id="bannerImage" src="/media/pages/bannerWide.png" alt="BACKSLASH"></a>
-			<nav class="white">
-				<ul id="navList">
-					<li class="navFirst"><a href="/" class="">HOME</a></li>
-					<li><a href="/blog" class="active">BLOG</a></li>
-					<li><a href="/gallery" class="">GALLERY</a></li>
-					<li><a href="/about" class="">ABOUT</a></li>
-				</ul>
-			</nav>
-		</header>
+	<!-- body -->
+	 <body>
+		<div id="vignette"></div>
+		
+		<!-- sidebar -->
+		<div id="sidebar">
+			<iframe src="/sidebar.html">iframe failed to load... sorry! X_X</iframe>
+		</div>
 
-		<!-- Main page content -->
-		<main class="purple">
-			<section>
-				<h2>BLOGPOSTS</h2>
-				<hr>
+		<!-- main page content -->
+		<div id="mainFlex">
+			<div id="main" class="window">
+				<div class="titleBar">
+					<p>blogposts</p>
+					
+					<a href="/"><img class="barButton" src="/media//main//home.png" draggable="false"></a>
+					<img class="barButton" src="/media/main/paw.png" draggable="false">
+				</div>
+	
+				<div class="content">
+					<!-- header -->
+					<header>
+						<div id="banner" class="cutout">
+							<a href="/"><img src="/media/main/banner.png" alt="\\ BACKSLASH \\"></a>
+							<iframe src="/nav.html">iframe failed to load... sorry! X_X</iframe>
+						</div>
 
-				<p>blogposts are listed here. they're sorted in descending order. (newest first, oldest last.)</p>
+						<br>
+					</header>
 
-				<br>
-			</section>
+					<!-- info -->
+					<section>
+						<h2 class="heading">BLOG</h2>
+						<hr>
 
-			<!-- Blogposts -->
-			<section class="blogpostSection white">
-				<p><em>12/13/24</em></p>
-				<h2><a href="/blogposts/12_13_24">made an oc.. persona, character... thing?</a></h2>
-				<hr>
+						<p>this is a list of blogposts i've made. each blogpost is ordered chronologically in descending order. (newest first, oldest last)</p>
+					</section>
 
-				<ul>
-					<li>didn't even mean to lol</li>
-				</ul>
+					<!-- blogposts -->
+					<div id="blogposts">
+						<section class="cutout blogpost">
+							<p class="blogDate"><em>01/17/25</em></p>
+							<h2 class="heading">
+								<a href="blogposts/01_17_25">look she did it again</a>
+							</h2>
+							<hr>
+	
+							<p>i rewrote the website for like the florpzillionth time oops. this is the last time and it's good now so... ya.</p>
+						</section>
+	
+						<br>
+					</div>
 
-			</section>
-
-			<section class="blogpostSection white">
-				<p><em>12/04/24</em></p>
-				<h2><a href="/blogposts/12_04_24">oops i did it again lol</a></h2>
-
-				<hr>
-
-				<ul>
-					<li>rewrote the website again</li>
-					<li>can you believe it guys?</li>
-				</ul>
-
-			</section>
-
-			<section class="blogpostSection white">
-				<p><em>11/26/24</em></p>
-				<h2><a href="/blogposts/11_26_24">happy thanksgiving!!!</a></h2>
-				<hr>
-
-				<ul>
-					<li>yes, i know i'm early</li>
-					<li>keepin' busy</li>
-				</ul>
-
-			</section>
-			
-			<section class="blogpostSection white">
-				<p><em>11/17/24</em></p>
-				<h2><a href="/blogposts/11_17_24">thoughts</a></h2>
-				<hr>
-
-				<ul>
-					<li>shit sucks</li>
-					<li>other things</li>
-				</ul>
-
-			</section>
-
-			<section class="blogpostSection white">
-				<p><em>11/11/24</em></p>
-				<h2><a href="/blogposts/11_11_24">RSS feed</a></h2>
-				<hr>
-
-				<ul>
-					<li>RSS feed?</li>
-				</ul>
-
-			</section>
-
-			<section class="blogpostSection white">
-				<p><em>11/10/24</em></p>
-				<h2><a href="/blogposts/11_10_24">relaxin'</a></h2>
-				<hr>
-
-				<ul>
-					<li>instinctive travels</li>
-					<li>y'all play video games right</li>
-				</ul>
-
-			</section>
-
-			<section class="blogpostSection white">
-				<p><em>11/09/24</em></p>
-				<h2><a href="/blogposts/11_09_24">MASSIVE website update!!!</a></h2>
-				<hr>
-
-				<ul>
-					<li>i rewrote the whole fuckin' thing</li>
-					<li>some real talkins'</li>
-					<li>short wrap up</li>
-				</ul>
-
-			</section>
-		</main>
-
-		<!-- Footer -->
-		<footer class="white">
-			<a id="rssButton" href="/feed.xml"><img src="/media/pages/rss.png"></a>
-
-			<p>this website is a work-in-progress and will be for the foreseeable future.</p>
-			<p> if you encounter any issues please let me know on <a href="https://github.com/backslash127/backslash127.github.io/issues">Github</a>.</p>
-		</footer>
-	</body>
+					<!-- footer -->
+					<footer>
+						<p>this website is a work-in-progress, and it will be for the forseeable future. if you encounter any issues please let me know on <a target="_blank" href="https://github.com/backslash127/backslash127.github.io/issues">github</a>.</p>
+						<p>if you want to get in touch, shoot me a message on <a target="_blank" href="https://discord.com/users/467507791553101845">discord</a>!</p>
+						<p><em>BACKSLASH — <span id="year">:3</span></em></p>
+						<script>
+							n =  new Date();
+							y = n.getFullYear();
+							document.getElementById("year").innerHTML = y;
+						</script>
+					</footer>
+				</div>
+			</div>
+		</div>
+		
+		<!-- side images -->
+		<div id="left"><img src="/media/main/graffitiLeft.png"></div>
+		<div id="right"><img src="/media/main/graffitiRight.png"></div>
+	 </body>
 </html>
