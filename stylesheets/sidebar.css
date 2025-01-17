@@ -72,8 +72,6 @@ body
 	height: 0;
 
 	margin: 10px 0 0 0;
-
-	font-size: small;
 }
 
 #changelog .content
@@ -96,11 +94,12 @@ body
 	line-height: 1.5em;
 }
 
-#logOverflow p
+#logOverflow ul
 {
 	margin: 15px 0;
-}
 
+	font-size: small;
+}
 
 #logOverflow hr
 {
