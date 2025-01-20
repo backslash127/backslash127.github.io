@@ -87,7 +87,7 @@ body
 	margin: 0;
 
 	object-fit: cover;
-	object-position: 0 96.25%;
+	object-position: 0 75%;
 
 	image-rendering: auto;
 }
@@ -518,8 +518,6 @@ hr
 	#banner img
 	{
 		height: 75px;
-
-		object-position: 0 100%;
 	}
 
 	header iframe
