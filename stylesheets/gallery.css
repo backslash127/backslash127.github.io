@@ -44,12 +44,13 @@
 
 	object-fit: contain;
 	
-	transition: all 50ms ease-in-out;
+	transition: all 75ms cubic-bezier(.625, .5, .75, 2.375);
 }
 
 .gridImage img:hover
 {
 	scale: 1.025;
 
-	transform: rotate(calc(1.40625deg / 2));
+	transform-origin: center;
+	transform: rotate(.875deg);
 }
