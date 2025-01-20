@@ -43,6 +43,11 @@ body
 	border-color: #000000 #ffffff #ffffff #000000;
 }
 
+#youtubeEmbed .content
+{
+	padding: 0;
+}
+
 /* buttons */
 #buttonMarquee
 {
