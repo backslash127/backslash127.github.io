@@ -17,4 +17,3 @@ jobs:
           nekoweb-cookie: ${{ secrets.NEKOWEB_COOKIE }}
           nekoweb-folder: 'site'
           directory: 'public'
-
