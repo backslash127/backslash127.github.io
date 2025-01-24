@@ -9,9 +9,20 @@
     font-size: 12px;
 }
 .site-box > a > p {
-    color: var(--black);
+    color: #000000;
     font-weight: bold;
 }
 .site-box > a > span {
-    color: var(--black);
+    color: #000000;
+}
+
+.sitefeature {
+    margin-top: 15px;
+    margin-left: 17px;
+    background-image: url(https://backslash.nekoweb.org/media/nekoweb/image.png);
+    border: none;
+}
+
+.screenshot {
+    display: none;
 }
