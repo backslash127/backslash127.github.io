@@ -398,6 +398,39 @@ hr
 	border: solid 2px #9460a9;
 }
 
+.button
+{
+	display: inline-block;
+
+	padding: 10px;
+	margin: 10px;
+
+	width: auto;
+	height: auto;
+
+	color: #000000;
+	text-decoration: none;
+
+	font-weight: normal;
+	font-style: normal;
+	font-size: medium;
+
+	background: #e8e8e8;
+
+	border: solid 3px;
+	border-color: #ffffff #000000 #000000 #ffffff;
+}
+
+.button:hover
+{
+	font-style: initial;
+}
+
+.button:focus
+{
+	border-color: #000000 #ffffff #ffffff #000000;
+}
+
 /* marquee */
 .marquee
 {
