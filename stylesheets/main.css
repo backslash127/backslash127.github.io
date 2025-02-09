@@ -431,6 +431,11 @@ hr
 	border-color: #000000 #ffffff #ffffff #000000;
 }
 
+strong
+{
+	color: #9460a9;
+}
+
 /* marquee */
 .marquee
 {
@@ -519,6 +524,11 @@ hr
 
 	font-weight: bold;
 	font-style: italic;
+}
+
+@font-face {
+	font-family: "Days One";
+	src: url(/fonts/DaysOne-Regular.ttf);
 }
 
 /* screen sizing */
