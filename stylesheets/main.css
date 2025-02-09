@@ -534,11 +534,6 @@ strong
 /* screen sizing */
 @media (max-width: 1250px)
 {
-	html
-	{
-		background-attachment: scroll;
-	}
-
 	body
 	{
 		padding: 0;
@@ -578,10 +573,5 @@ strong
 	#vignette
 	{
 		display: none;
-	}
-
-	.cutout
-	{
-		background-attachment: scroll;
 	}
 }
