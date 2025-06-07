@@ -1,39 +1,29 @@
 <!DOCTYPE html>
-
+<!-- HTML -->
 <html lang="en">
-	<!-- head -->
 	<head>
 		<!-- metadata -->
-		<title>01011100 — 404</title>
+		<title>01011100 -- 404</title>
 
-		<!-- stylesheets -->
+		<!-- CSS -->
 		<link href="/stylesheets/main.css" rel="stylesheet" type="text/css">
+		<link href="/stylesheets/fonts.css" rel="stylesheet" type="text/css">
 		<link href="/stylesheets/404.css" rel="stylesheet" type="text/css">
-
-		<!-- font -->
-		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-		</style>
 	</head>
 
-	<!-- body -->
 	<body>
-		<div id="vignette"></div>
-		
-		<div id="mainFlex">
-			<div id="main" class="window" style="position: relative;">
-				<div class="titleBar">
-					<p>404</p>
-					
-					<a href="/"><img class="barButton" src="/media//main//home.png" draggable="false"></a>
-					<img class="barButton" src="/media/main/paw.png" draggable="false">
-				</div>
+		<div id="404" class="window">
+			<!-- titlebar -->
+			<div class="titleBar">
+				<img id="barIcon" src="/media/icons/404.png">
+				<p class="title">404</p>
+				<span class="barSeparator"></span>
+				<button class="barButton"><img draggable="false" src="/media/titlebar/paw.png"></button>
+			</div>
 
-				<div class="content" style="overflow: hidden;">
-					<p>if you're seeing this, you either came here on purpose, or i messed something up. sorry!</p>
-					<p style="text-align: right; padding-right: 15px;">— backslash</p>
-				</div>
-
+			<div id="mainContent" class="windowContent">
+				<p>oops! that page doesn't exist.</p>
+				<a href="/" id="return"><button>return home</button></a>
 			</div>
 		</div>
 	</body>

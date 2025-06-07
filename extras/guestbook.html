@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- HTML -->
+<html lang="en">
+	<head>
+		<!-- metadata -->
+		<title>01011100 -- Guestbook</title>
+
+		<!-- CSS -->
+		<link href="/stylesheets/main.css" rel="stylesheet" type="text/css">
+		<link href="/stylesheets/fonts.css" rel="stylesheet" type="text/css">
+		<link href="/stylesheets/guestbook.css" rel="stylesheet" type="text/css">
+		
+		<!-- JS -->
+		<script src="/javascript/quickJump.js"></script>
+	</head>
+
+	<body>
+		<!-- sidebar -->
+		<div id="sidebar">
+			<iframe src="/sidebar.html"></iframe>
+		</div>
+
+		<!-- main window -->
+		<div id="main" class="window">
+			<!-- titlebar -->
+			<div class="titleBar">
+				<img id="barIcon" src="/media/icons/guestbook.png">
+				<p class="title">Guestbook</p>
+				<span class="barSeparator"></span>
+				<button class="barButton"><img draggable="false" src="/media/titlebar/paw.png"></button>
+			</div>
+
+			<!-- content -->
+			<div id="mainContent" class="windowContent">
+				<!-- banner -->
+				<nav>
+					<ul id="navLinks" class="cutout">
+						<li><a href="/">HOME</a></li>
+						<li><a href="/blog">BLOG</a></li>
+						<li><a href="/gallery">GALLERY</a></li>
+						<li><a href="/about">ABOUT</a></li>
+						<li><a href="/extras">EXTRAS</a></li>
+					</ul>
+				</nav>
+
+				<div id="wrapper">
+					<iframe id="guestbook" class="indent" src="https://backslash.atabook.org"></iframe>
+				</div>
+
+				<!-- actual stuff -->
+				<main>
+					<section>
+						<footer class="indent">
+							<p>this website is a work-in-progress, and it will be for the foreseeable future.</p>
+							<p>if you encounter any issues, bugs, etc. please submit an issue on <a href="https://github.com/backslash127/backslash127.github.io/issues" target="_blank">github</a>.</p>
+						</footer>
+					</section>
+				</main>
+			</div>
+		</div>
+	</body>
+</html>

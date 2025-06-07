@@ -5,50 +5,35 @@
 	align-items: center;
 	justify-content: center;
 
-	width: 100%;
+	padding: 5px;
+}
+
+.artCard
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	width: calc(100% / 3);
 	height: auto;
 
 	padding: 0;
-	margin: 0;
+	margin: 10px;
+
+	transition: all 50ms ease-in-out;
 }
 
-#overflow
+.cardThumbnail
 {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-
 	width: 100%;
 	height: auto;
 
-	padding: 10px;
-	margin: 0;
-
-	overflow-x: auto;
-	overflow-y: hidden;
-}
-
-#artShowcase a
-{
-	margin: auto;
-}
-
-#artShowcase img
-{
-	position: relative
-	;
-	width: 250px;
-	height: 250px;
+	aspect-ratio: 1 / 1;
 
 	object-fit: cover;
-
-	transition: all 75ms cubic-bezier(.625, .5, .75, 2.375);
 }
 
-#artShowcase img:hover
+.artCard:hover
 {
-	scale: 1.025;
-
-	transform-origin: center;
-	transform: rotate(.875deg);
+	transform: scale(102.5%) rotate(calc(45deg / 37.5));
 }

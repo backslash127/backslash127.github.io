@@ -1,143 +1,118 @@
 <!DOCTYPE html>
 <!-- HTML -->
 <html lang="en">
-	<!-- head -->
 	<head>
 		<!-- metadata -->
-		<title>01011100 — blog</title>
+		<title>01011100 -- Blog</title>
 
-		<!-- stylesheets -->
+		<!-- CSS -->
 		<link href="/stylesheets/main.css" rel="stylesheet" type="text/css">
-		<link href="/stylesheets/blog.css" rel="stylesheet" type="text/css">
+		<link href="/stylesheets/fonts.css" rel="stylesheet" type="text/css">
 
-		<!-- font -->
-		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-		</style>
+		<!-- JS -->
+		<script src="/javascript/quickJump.js"></script>
 	</head>
 
-	<!-- body -->
 	<body>
-		<div id="vignette"></div>
-		
 		<!-- sidebar -->
 		<div id="sidebar">
-			<iframe src="/sidebar.html">iframe failed to load... sorry! X_X</iframe>
+			<iframe src="/sidebar.html"></iframe>
 		</div>
 
-		<!-- main page content -->
-		<div id="mainFlex">
-			<div id="main" class="window">
-				<div class="titleBar">
-					<p>blogposts</p>
-					
-					<a href="#bottom"><img class="barButton" src="/media/main/bottom.png" draggable="false"></a>
-					<a href="/"><img class="barButton" src="/media/main/home.png" draggable="false"></a>
-					<img class="barButton" src="/media/main/paw.png" draggable="false">
-				</div>
+		<!-- main window -->
+		<div id="main" class="window">
+			<!-- titlebar -->
+			<div class="titleBar">
+				<img id="barIcon" src="/media/icons/blog.png">
+				<p class="title">Blog</p>
+				<span class="barSeparator"></span>
+				<button id="pageBottom" class="barButton" onclick="toBottom();"><img draggable="false" src="/media/titlebar/arrow.png"></button>
+				<button class="barButton"><img draggable="false" src="/media/titlebar/paw.png"></button>
+			</div>
+
+			<!-- content -->
+			<div id="mainContent" class="windowContent">
+				<!-- nav -->
+				<nav>
+					<ul id="navLinks" class="cutout">
+						<li><a href="/">HOME</a></li>
+						<li><a href="/blog">BLOG</a></li>
+						<li><a href="/gallery">GALLERY</a></li>
+						<li><a href="/about">ABOUT</a></li>
+						<li><a href="/extras">EXTRAS</a></li>
+					</ul>
+				</nav>
+
+				<!-- actual stuff -->
+				<main>
+					<section>
+						<header>Blog</header>
+						<hr>
 	
-				<div class="content">
-					<!-- header -->
-					<a id="top"></a>
-					<header>
-						<div id="banner" class="cutout">
-							<a href="/"><img src="/media/main/banner.png" alt="\\ BACKSLASH \\"></a>
-							<iframe src="/nav.html">iframe failed to load... sorry! X_X</iframe>
+						<p>welcome to my blog, each blogpost is ordered chronologically in descending order. (newest first, oldest last.)</p>
+					</section>
+					
+					<section>
+						<div class="blogpost cutout">
+							<p style="float: right;"><em>06/07/25</em></p>
+							<header><a href="/blog/06_07_25">good lird i did it AGAIN</a></header>
+							<hr>
+	
+							<p>siggh... okay.. fine yeah whateverrr i lied,,, i rewrote the website again.... smh...</p>
 						</div>
 
-						<br>
-					</header>
-
-					<!-- info -->
-					<section>
-						<h2 class="heading">BLOG</h2>
-						<hr>
-
-						<p>this is a list of blogposts i've made. each blogpost is ordered chronologically in descending order. (newest first, oldest last)</p>
-					</section>
-
-					<!-- blogposts -->
-					<div id="blogposts">
-						<section class="cutout blogpost">
-							<p class="blogDate"><em>06/04/25</em></p>
-							<h2 class="heading">
-								<a href="blogposts/06_04_25">adventure!</a>
-							</h2>
+						<div class="blogpost cutout">
+							<p style="float: right;"><em>06/04/25</em></p>
+							<header><a href="/blog/06_04_25">adventure!</a></header>
 							<hr>
-							
+	
 							<p>any y'all mfs remember minecraft story mode? i did, and i just finished Season 1.</p>
-						</section>
+						</div>
 
-						<br>
-						<section class="cutout blogpost">
-							<p class="blogDate"><em>05/05/25</em></p>
-							<h2 class="heading">
-								<a href="blogposts/05_05_25">where have i been?</a>
-							</h2>
+						<div class="blogpost cutout">
+							<p style="float: right;"><em>05/05/25</em></p>
+							<header><a href="/blog/05_05_25">where have i been?</a></header>
 							<hr>
-							
+	
 							<p>just a small blogpost about where ive been and what ive been doing</p>
 							<p>medium-sized website update soon maybe? if i can figure out a better masonry grid for the gallery... no promises.</p>
-						</section>
-						
-						<br>
-						<section class="cutout blogpost">
-							<p class="blogDate"><em>02/09/25</em></p>
-							<h2 class="heading">
-								<a href="blogposts/02_09_25">absolutely zero sea cucumbers in sight</a>
-							</h2>
-							<hr>
+						</div>
 
+						<div class="blogpost cutout">
+							<p style="float: right;"><em>02/09/25</em></p>
+							<header><a href="/blog/02_09_25">zero sea cucumbers in sight</a></header>
+							<hr>
+	
 							<p>i played a game, it's really awesome, i think you should read this blogpost about it :3</p>
 							<p>i must warn you, this blogpost's fairly long.</p>
-						</section>
+						</div>
 
-						<br>
-						<section class="cutout blogpost">
-							<p class="blogDate"><em>01/25/25</em></p>
-							<h2 class="heading">
-								<a href="blogposts/01_25_25">fucked up, big time</a>
-							</h2>
+						<div class="blogpost cutout">
+							<p style="float: right;"><em>01/25/25</em></p>
+							<header><a href="/blog/01_25_25">fucked up, big time</a></header>
 							<hr>
 	
 							<p>semester 1 of school has ended and i didn't like it very much. but i do like pirating adobe products!</p>
-						</section>
-	
-						<br>
-						<section class="cutout blogpost">
-							<p class="blogDate"><em>01/17/25</em></p>
-							<h2 class="heading">
-								<a href="blogposts/01_17_25">look she did it again</a>
-							</h2>
+						</div>
+
+						<div class="blogpost cutout">
+							<p style="float: right;"><em>01/17/25</em></p>
+							<header><a href="/blog/01_17_25">look she did it again</a></header>
 							<hr>
 	
 							<p>i rewrote the website for like the florpzillionth time oops. this is the last time and it's good now so... ya.</p>
-						</section>
+						</div>
+					</section>
+				</main>
 
-						<br>
-						
-					</div>
-
-					<!-- footer -->
-					<a id="bottom"></a>
-					<footer>
-						<p>this website is a work-in-progress, and it will be for the forseeable future. if you encounter any issues please let me know on <a target="_blank" href="https://github.com/backslash127/backslash127.github.io/issues">github</a>.</p>
-						<p>if you want to get in touch, shoot me a message on <a target="_blank" href="https://discord.com/users/467507791553101845">discord</a>!</p>
-						<p><em>BACKSLASH — <span id="year">:3</span></em></p>
-						<script>
-							n =  new Date();
-							y = n.getFullYear();
-							document.getElementById("year").innerHTML = y;
-						</script>
-
-						<a class="button" href="#top">back to top</a>
+				<section>
+					<footer class="indent">
+						<p>this website is a work-in-progress, and it will be for the foreseeable future.</p>
+						<p>if you encounter any issues, bugs, etc. please submit an issue on <a href="https://github.com/backslash127/backslash127.github.io/issues" target="_blank">github</a>.</p>
 					</footer>
-				</div>
+					<button id="pageTop" onclick="toTop();">back to top</button>
+				</section>
 			</div>
 		</div>
-		
-		<!-- side images -->
-		<div id="left"><img src="/media/main/graffitiLeft.png"></div>
-		<div id="right"><img src="/media/main/graffitiRight.png"></div>
 	</body>
 </html>

@@ -1,85 +1,35 @@
-// get your own last.fm api key from https://www.last.fm/api/account/create
-const LASTFM_API_KEY = "e81057841dbc203a1662249a375b780c"
-const username = "backslash127" // change username here
-const url = "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&format=json&extended=true&api_key=" + LASTFM_API_KEY + "&limit=1&user=" + username
+// this script is under the MIT license (https://max.nekoweb.org/resources/license.txt)
+                        
+const USERNAME = "backslash127"; // Put your LastFM username here
+const BASE_URL = `https://lastfm-last-played.biancarosa.com.br/${USERNAME}/latest-song`;
 
-// make API call
-function httpGet(url) {
-    var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open("GET", url, false);
-	xmlHttp.send(null);
-	return xmlHttp.responseText;
-}
+const getTrack = async () => {
+    const request = await fetch(BASE_URL);
+    const json = await request.json();
+    let status
 
-// converts unix time to relative time text (eg. 2 hours ago)
-function relativeTime(time, time_text) {
-    var time_now = Math.round(Date.now() / 1000)
-    var time_diff = time_now - time
+    let isPlaying = json.track['@attr']?.nowplaying || false;
 
-    let SEC_IN_MIN = 60
-    let SEC_IN_HOUR = SEC_IN_MIN * 60
-    let SEC_IN_DAY = SEC_IN_HOUR * 24
-
-    if (time_diff < SEC_IN_HOUR) {
-        let minutes = Math.round(time_diff / SEC_IN_MIN)
-        return minutes + " minute" +
-            ((minutes != 1) ? "s" : "") + " ago"
+    if(!isPlaying) {
+        // Trigger if a song isn't playing
+        return;
+    } else {
+        // Trigger if a song is playing
     }
-    if (time_diff >= SEC_IN_HOUR && time_diff < SEC_IN_DAY) {
-        let hours = Math.round(time_diff / SEC_IN_HOUR)
-        return hours + " hour" +
-            ((hours != 1) ? "s" : "") + " ago"
-    }
-    if (time_diff >= SEC_IN_DAY)
-        return time_text
-}
 
-var json = JSON.parse(httpGet(url));
-var last_track = json.recenttracks.track[0]
-var track = last_track.name
-var trackLink = last_track.url
-var artistLink = last_track.artist.url
-var artist = last_track.artist.name
-let relative_time = null
-if (last_track.date) {
-    var unix_date = last_track.date.uts
-    var date_text = last_track.date["#text"]
-    relative_time = relativeTime(unix_date, date_text)
-}
-var now_playing = (last_track["@attr"] == undefined) ? false : true
-var imageLink = last_track.image[1]["#text"]
+    // Values:
+    // COVER IMAGE: json.track.image[1]['#text']
+    // TITLE: json.track.name
+    // ARTIST: json.track.artist['#text']
 
+    document.getElementById("listening").innerHTML = `
+    <img class="indent" src="${json.track.image[1]['#text']}">
+    <div id="trackInfo">
+    <p id="trackName"><strong><em>${json.track.name}</em></strong></p>
+    <p id="artistName">${json.track.artist['#text']}</p>
+    </div>
+    `
+};
 
-trackElem = document.getElementById('track')
-artistElem = document.getElementById('artist')
-dateElem = document.getElementById('date')
-nowplayingElem = document.getElementById('now-playing')
-albumcoverElem = document.getElementById('album-cover')
-
-trackLinkElem = document.createElement('a')
-trackLinkElem.id = "track"
-trackLinkElem.href = trackLink
-trackLinkElem.target = "_blank"
-trackLinkElem.textContent = track
-
-artistLinkElem = document.createElement('a')
-artistLinkElem.id = 'artist'
-artistLinkElem.href = artistLink
-artistLinkElem.target = "_blank"
-artistLinkElem.textContent = artist
-
-userLinkElem = document.createElement('a')
-userLinkElem.href = "https://www.last.fm/user/" + username
-userLinkElem.target = "_blank"
-userLinkElem.textContent = (relative_time != null) ? relative_time : "Now playing..."
-
-trackElem.appendChild(trackLinkElem)
-artistElem.appendChild(artistLinkElem)
-dateElem.appendChild(userLinkElem)
-albumcoverElem.src = imageLink
-
-console.log(
-    "Artist: " + artist + "\n" +
-    "Track: " + track + "\n" +
-    "Date: " + relative_time + "\n" +
-    "Now playing: " + now_playing + "\n")
+getTrack();
+setInterval(() => { getTrack(); }, 10000);

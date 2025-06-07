@@ -1,131 +1,103 @@
 <!DOCTYPE html>
 <!-- HTML -->
 <html lang="en">
-	<!-- head -->
 	<head>
 		<!-- metadata -->
-		<title>01011100 — home</title>
+		<title>01011100 -- Home</title>
 
-		<!-- stylesheets -->
+		<!-- CSS -->
 		<link href="/stylesheets/main.css" rel="stylesheet" type="text/css">
+		<link href="/stylesheets/fonts.css" rel="stylesheet" type="text/css">
 		<link href="/stylesheets/index.css" rel="stylesheet" type="text/css">
-		<link href="/stylesheets/blog.css" rel="stylesheet" type="text/css">
 
-		<!-- font -->
-		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-		</style>
+		<!-- JS -->
+		<script src="/javascript/quickJump.js"></script>
 	</head>
 
-	<!-- body -->
 	<body>
-		<div id="vignette"></div>
-		
 		<!-- sidebar -->
 		<div id="sidebar">
-			<iframe src="/sidebar.html">iframe failed to load... sorry! X_X</iframe>
+			<iframe src="/sidebar.html"></iframe>
 		</div>
 
-		<!-- main page content -->
-		<div id="mainFlex">
-			<div id="main" class="window">
-				<div class="titleBar">
-					<p>homepage</p>
-					
-					<a href="#bottom"><img class="barButton" src="/media/main/bottom.png" draggable="false"></a>
-					<a href="/"><img class="barButton" src="/media/main/home.png" draggable="false"></a>
-					<img class="barButton" src="/media/main/paw.png" draggable="false">
-				</div>
+		<!-- main window -->
+		<div id="main" class="window">
+			<!-- titlebar -->
+			<div class="titleBar">
+				<img id="barIcon" src="/media/icons/home.png">
+				<p class="title">Home</p>
+				<span class="barSeparator"></span>
+				<button id="pageBottom" class="barButton" onclick="toBottom();"><img draggable="false" src="/media/titlebar/arrow.png"></button>
+				<button class="barButton"><img draggable="false" src="/media/titlebar/paw.png"></button>
+			</div>
+
+			<!-- content -->
+			<div id="mainContent" class="windowContent">
+				<!-- nav -->
+				<nav>
+					<ul id="navLinks" class="cutout">
+						<li><a href="/">HOME</a></li>
+						<li><a href="/blog">BLOG</a></li>
+						<li><a href="/gallery">GALLERY</a></li>
+						<li><a href="/about">ABOUT</a></li>
+						<li><a href="/extras">EXTRAS</a></li>
+					</ul>
+				</nav>
+
+				<!-- actual stuff -->
+				<main>
+					<section>
+						<header>Welcome!</header>
+						<hr>
 	
-				<div class="content">
-					<!-- header -->
-					<a id="top"></a>
-					<header>
-						<div id="banner" class="cutout">
-							<a href="/"><img src="/media/main/banner.png" alt="\\ BACKSLASH \\"></a>
-							<iframe src="/nav.html">iframe failed to load... sorry! X_X</iframe>
-						</div>
-
-						<br>
-					</header>
-					
-					<!-- welcome -->
-					<section>
-						<h2 class="heading">WELCOME!</h2>
-						<hr>
-						
-						<p>hello!!! welcome to my website. this is a small personal project of mine where i'll be keeping my art, hosting a blog, and doing really anything else i want lol. thanks for stopping by! :3</p>
-
-						<br>
+						<p>hello! welcome to my website, thanks for stopping by. here i'm hosting a blog, keeping my art, and probably doing some other stuff too.</p>
 					</section>
 
-					<!-- art showcase -->
 					<section>
-						<h2 class="heading">ART SHOWCASE</h2>
+						<header>Art Showcase</header>
 						<hr>
-						
-						<p>here's a small selection of artworks that i want to show off.</p>
-						<p><em>some works will be cropped, clicking on one will open it's raw file in a new tab.</em></p>
-
+	
+						<p>a small selection of works i want to show off.</p>
+	
 						<div id="artShowcase" class="cutout">
-							<div id="overflow">
-								<a target="_blank" href="/gallery/LOVE.png">
-									<img src="/gallery/LOVE.png">
-								</a>
-
-								<a target="_blank" href="/gallery/PLUM.png">
-									<img src="/gallery/PLUM.png">
-								</a>
-								
-								<a target="_blank" href="/gallery/katmisc.png">
-									<img src="/gallery/katmisc.png">
-								</a>
-							</div>
+							<a class="artCard" href="/media/gallery/G-STOP_magazine.png" target="_blank">
+								<img class="cardThumbnail" src="/media/gallery/G-STOP_magazine.png">
+							</a>
+							<a class="artCard" href="/media/gallery/PLUM.png" target="_blank">
+								<img class="cardThumbnail" src="/media/gallery/PLUM.png">
+							</a>
+							<a class="artCard" href="/media/gallery/DROPDEAD.jpg" target="_blank">
+								<img class="cardThumbnail" src="/media/gallery/DROPDEAD.jpg">
+							</a>
 						</div>
-
-						<br>
+	
+						<p style="text-align: center;"><em>some works will be cropped. click on them to view the raw file in a new tab.</em></p>
 					</section>
 
-					<!-- blogpost -->
 					<section>
-						<h2 class="heading">MOST RECENT BLOGPOST</h2>
+						<header>Most Recent Blogpost</header>
 						<hr>
-						
+	
 						<p>pretty self-explanatory.</p>
-
-						<section class="cutout blogpost">
-							<p class="blogDate"><em>06/04/25</em></p>
-							<h2 class="heading">
-								<a href="blogposts/06_04_25">adventure!</a>
-							</h2>
+	
+						<div class="blogpost cutout">
+							<p style="float: right;"><em>06/07/25</em></p>
+							<header><a href="/blog/06_07_25">good lird i did it AGAIN</a></header>
 							<hr>
-							
-							<p>any y'all mfs remember minecraft story mode? i did, and i just finished Season 1.</p>
-						</section>
-
-						<br>
+	
+							<p>siggh... okay.. fine yeah whateverrr i lied,,, i rewrote the website again.... smh...</p>
+						</div>
 					</section>
+				</main>
 
-					<!-- footer -->
-					<a id="bottom"></a>
-					<footer>
-						<p>this website is a work-in-progress, and it will be for the forseeable future. if you encounter any issues please let me know on <a target="_blank" href="https://github.com/backslash127/backslash127.github.io/issues">github</a>.</p>
-						<p>if you want to get in touch, shoot me a message on <a target="_blank" href="https://discord.com/users/467507791553101845">discord</a>!</p>
-						<p><em>BACKSLASH — <span id="year">:3</span></em></p>
-						<script>
-							n =  new Date();
-							y = n.getFullYear();
-							document.getElementById("year").innerHTML = y;
-						</script>
-
-						<a class="button" href="#top">back to top</a>
+				<section>
+					<footer class="indent">
+						<p>this website is a work-in-progress, and it will be for the foreseeable future.</p>
+						<p>if you encounter any issues, bugs, etc. please submit an issue on <a href="https://github.com/backslash127/backslash127.github.io/issues" target="_blank">github</a>.</p>
 					</footer>
-				</div>
+					<button id="pageTop" onclick="toTop();">back to top</button>
+				</section>
 			</div>
 		</div>
-		
-		<!-- side images -->
-		<div id="left"><img src="/media/main/graffitiLeft.png"></div>
-		<div id="right"><img src="/media/main/graffitiRight.png"></div>
 	</body>
 </html>

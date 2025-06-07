@@ -1,138 +1,91 @@
 <!DOCTYPE html>
 <!-- HTML -->
 <html lang="en">
-	<!-- head -->
 	<head>
 		<!-- metadata -->
-		<title>01011100 — gallery</title>
+		<title>01011100 -- Gallery</title>
 
-		<!-- stylesheets -->
+		<!-- CSS -->
 		<link href="/stylesheets/main.css" rel="stylesheet" type="text/css">
+		<link href="/stylesheets/fonts.css" rel="stylesheet" type="text/css">
 		<link href="/stylesheets/gallery.css" rel="stylesheet" type="text/css">
 
-		<!-- font -->
-		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-		</style>
-
+		<!-- JS -->
+		<script src="/javascript/quickJump.js"></script>
 	</head>
 
-	<!-- body -->
 	<body>
-		<div id="vignette"></div>
-		
 		<!-- sidebar -->
 		<div id="sidebar">
-			<iframe src="/sidebar.html">iframe failed to load... sorry! X_X</iframe>
+			<iframe src="/sidebar.html"></iframe>
 		</div>
 
-		<!-- main page content -->
-		<div id="mainFlex">
-			<div id="main" class="window">
-				<div class="titleBar">
-					<p>gallery</p>
-					
-					<a href="#bottom"><img class="barButton" src="/media/main/bottom.png" draggable="false"></a>
-					<a href="/"><img class="barButton" src="/media/main/home.png" draggable="false"></a>
-					<img class="barButton" src="/media/main/paw.png" draggable="false">
-				</div>
-	
-				<div class="content">
-					<!-- header -->
-					<a id="top"></a>
-					<header>
-						<div id="banner" class="cutout">
-							<a href="/"><img src="/media/main/banner.png" alt="\\ BACKSLASH \\"></a>
-							<iframe src="/nav.html">iframe failed to load... sorry! X_X</iframe>
-						</div>
+		<!-- main window -->
+		<div id="main" class="window">
+			<!-- titlebar -->
+			<div class="titleBar">
+				<img id="barIcon" src="/media/icons/gallery.png">
+				<p class="title">Gallery</p>
+				<span class="barSeparator"></span>
+				<button id="pageBottom" class="barButton" onclick="toBottom();"><img draggable="false" src="/media/titlebar/arrow.png"></button>
+				<button class="barButton"><img draggable="false" src="/media/titlebar/paw.png"></button>
+			</div>
 
-						<br>
-					</header>
+			<!-- content -->
+			<div id="mainContent" class="windowContent">
+				<!-- nav -->
+				<nav>
+					<ul id="navLinks" class="cutout">
+						<li><a href="/">HOME</a></li>
+						<li><a href="/blog">BLOG</a></li>
+						<li><a href="/gallery">GALLERY</a></li>
+						<li><a href="/about">ABOUT</a></li>
+						<li><a href="/extras">EXTRAS</a></li>
+					</ul>
+				</nav>
 
-					<!-- info -->
+				<!-- actual stuff -->
+				<main>
 					<section>
-						<h2 class="heading">GALLERY</h2>
+						<header>Gallery</header>
 						<hr>
-
-						<p>i'll be putting things i create here. everything will be put into descending chronological order. (newest near the top, oldest towards the bottom.)</p>
-					</section>
-
-					<!-- grid -->
-					<div id="artGrid" class="cutout">
-						<div class="column">
-							<a class="gridImage" target="_blank" href="/gallery/LOVE.png">
-								<img src="/gallery/LOVE.png">
-							</a>
-							
-							<a class="gridImage" target="_blank" href="/gallery/katmisc.png">
-								<img src="/gallery/katmisc.png">
-							</a>
-
-							<a class="gridImage" target="_blank" href="/gallery/KUIPER.png">
-								<img src="/gallery/KUIPER.png">
-							</a>
-							
-							<a class="gridImage" target="_blank" href="/gallery/G-STOP_magazine.png">
-								<img src="/gallery/G-STOP_magazine.png">
-							</a>
-						</div>
-
-						<div class="column">
-							<a class="gridImage" target="_blank" href="/gallery/PLUM.png">
-								<img src="/gallery/PLUM.png">
-							</a>
-
-							<a class="gridImage" target="_blank" href="/gallery/KAT.png">
-								<img src="/gallery/KAT.png">
-							</a>
-							
-							<a class="gridImage" target="_blank" href="/gallery/GREYMATTER.png">
-								<img src="/gallery/GREYMATTER.png">
-							</a>
 					
-							<a class="gridImage" target="_blank" href="/gallery/photoAssignment.png">
-								<img src="/gallery/photoAssignment.png">
-							</a>
+						<p>this is the gallery, a collection of works ive made!</p>
+						<p>art will be put into descending chronological order. (newest near the top, oldest towards the bottom)</p>
+						
+						<details class="cutout">
+							<summary>layout broken?</summary>
+							<p>you may notice the layout of the grid looks broken, that's not really my fault.</p>
+							<p>currently, i'm using the built in masonry row layout in CSS but it isn't fully supported in most browsers yet for some reason?</p>
+							<p>it's been unsupported for literal years at this point and i'm convinced they've just forgotten about it. but on the off-chance they haven't, i'll be waiting patiently for my gallery to look like how it's supposed to.</p>
+							<p>if you're wondering why i don't just use JS or something to make the grid properly viewable by everyone -- i have tried on-and-off for months to get ANY masonry grid resource to work but none of them have, ever.</p>
+							<p>on another note, if you want to actually view the gallery properly, then open firefox (or install it if you haven't), type "about:config" into the URL bar, and then type in "masonry" into the search bar there. it should be the only option that shows up. toggle that to true, come back to this page, then reload.</p>
+						</details>
+					</section>
+					
+					<section>
+						<div class="masonryGrid cutout">
+							<div class="masonryContent">
+								<a class="gridItem" href="/media/gallery/LOVE.png" target="_blank"><img src="/media/gallery/LOVE.png"></a>
+								<a class="gridItem" href="/media/gallery/PLUM.png" target="_blank"><img src="/media/gallery/PLUM.png"></a>
+								<a class="gridItem" href="/media/gallery/katmisc.png" target="_blank"><img src="/media/gallery/katmisc.png"></a>
+								<a class="gridItem" href="/media/gallery/loveSpectrum.png" target="_blank"><img src="/media/gallery/loveSpectrum.png"></a>
+								<a class="gridItem" href="/media/gallery/DROPDEAD.jpg" target="_blank"><img src="/media/gallery/DROPDEAD.jpg"></a>
+								<a class="gridItem" href="/media/gallery/G-STOP_magazine.png" target="_blank"><img src="/media/gallery/G-STOP_magazine.png"></a>
+								<a class="gridItem" href="/media/gallery/photoAssignment.png" target="_blank"><img src="/media/gallery/photoAssignment.png"></a>
+							</div>
 						</div>
+					</section>
+				</main>
 
-						<div class="column">
-														
-							<a class="gridImage" target="_blank" href="/gallery/soundsOfTheFuture.png">
-								<img src="/gallery/soundsOfTheFuture.png">
-							</a>
-							
-							<a class="gridImage" target="_blank" href="/gallery/loveSpectrum.png">
-								<img src="/gallery/loveSpectrum.png">
-							</a>
-							
-							<a class="gridImage" target="_blank" href="/gallery/DROPDEAD.jpg">
-								<img src="/gallery/DROPDEAD.jpg">
-							</a>
-						</div>
-					</div>
-
-					<br>
-
-					<!-- footer -->
-					<a id="bottom"></a>
-					<footer>
-						<p>this website is a work-in-progress, and it will be for the forseeable future. if you encounter any issues please let me know on <a target="_blank" href="https://github.com/backslash127/backslash127.github.io/issues">github</a>.</p>
-						<p>if you want to get in touch, shoot me a message on <a target="_blank" href="https://discord.com/users/467507791553101845">discord</a>!</p>
-						<p><em>BACKSLASH — <span id="year">:3</span></em></p>
-						<script>
-							n =  new Date();
-							y = n.getFullYear();
-							document.getElementById("year").innerHTML = y;
-						</script>
-
-						<a class="button" href="#top">back to top</a>
+				<section>
+					<footer class="indent">
+						<p>this website is a work-in-progress, and it will be for the foreseeable future.</p>
+						<p>if you encounter any issues, bugs, etc. please submit an issue on <a href="https://github.com/backslash127/backslash127.github.io/issues" target="_blank">github</a>.</p>
 					</footer>
-				</div>
+					<button id="pageTop" onclick="toTop();">back to top</button>
+				</section>
 			</div>
 		</div>
-		
-		<!-- side images -->
-		<div id="left"><img src="/media/main/graffitiLeft.png"></div>
-		<div id="right"><img src="/media/main/graffitiRight.png"></div>
 	</body>
 </html>

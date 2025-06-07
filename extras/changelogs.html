@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- HTML -->
+<html lang="en">
+	<head>
+		<!-- metadata -->
+		<title>01011100 -- Changelogs</title>
+
+		<!-- CSS -->
+		<link href="/stylesheets/main.css" rel="stylesheet" type="text/css">
+		<link href="/stylesheets/fonts.css" rel="stylesheet" type="text/css">
+
+		<!-- JS -->
+		<script src="/javascript/quickJump.js"></script>
+	</head>
+
+	<body>
+		<!-- sidebar -->
+		<div id="sidebar">
+			<iframe src="/sidebar.html"></iframe>
+		</div>
+
+		<!-- main window -->
+		<div id="main" class="window">
+			<!-- titlebar -->
+			<div class="titleBar">
+				<img id="barIcon" src="/media/icons/changelog.png">
+				<p class="title">Changelogs</p>
+				<span class="barSeparator"></span>
+				<button id="pageBottom" class="barButton" onclick="toBottom();"><img draggable="false" src="/media/titlebar/arrow.png"></button>
+				<button class="barButton"><img draggable="false" src="/media/titlebar/paw.png"></button>
+			</div>
+
+			<!-- content -->
+			<div id="mainContent" class="windowContent">
+				<!-- nav -->
+				<nav>
+					<ul id="navLinks" class="cutout">
+						<li><a href="/">HOME</a></li>
+						<li><a href="/blog">BLOG</a></li>
+						<li><a href="/gallery">GALLERY</a></li>
+						<li><a href="/about">ABOUT</a></li>
+						<li><a href="/extras">EXTRAS</a></li>
+					</ul>
+				</nav>
+
+				<!-- actual stuff -->
+				<main>
+					<section>
+						<header>Changelogs</header>
+						<hr>
+
+						<p>full list of changelogs for "big" website updates.</p>
+						<p>each update is listed in descending chronological order. (newest first, oldest last)</p>
+					</section>
+
+					<section class="cutout">
+						<p><strong>UPDATE :: 06/xx/25</strong></p>
+						<ul>
+							<li>rewrote all the code for the website. (this is like the 6th time already)</li>
+							<li>refreshed most of the visuals while keeping things relatively the same.</li>
+							<li>the guestbook is now an embedded iframe on its own page instead of just taking you to the atabook page.</li>
+							<li>the gallery uses a different masonry grid method (very likely that it will not work on your browser, sorry!)</li>
+							<li>"quickjump" navigation buttons now use JS.</li>
+							<li>last.fm sidebar window uses different JS. (and it looks better!)</li>
+							<li>new changelogs extras page has been added, just for organization.</li>
+						</ul>
+					</section>
+
+					<section class="cutout">
+						<p><strong>UPDATE :: 01/25/25</strong></p>
+						<hr>
+
+						<ul>
+							<li>new blogpost.</li>
+							<li>added new navigation buttons that let you quickly move to the bottom or the top of a page.</li>
+							<li>added in a guestbook, you can find it at the extras page. feel free to sign it! just don't be an asshole.</li>
+							<li>the website is now being mirrored over at <a target="_blank" href="https://backslash.nekoweb.org/">nekoweb</a>! why? i dunno lol.</li>
+						</ul>
+					</section>
+
+					<section class="cutout">
+						<p><strong>UPDATE :: 01/17/25</strong></p>
+						<hr>
+
+						<ul>
+							<li>rewrote the whole website</li>
+							<li>sidebar hath returned</li>
+							<li>gallery has been updated to be considerably better lol (no more categories but i didn't want them anyways)</li>
+							<li>new extras page, i'll be putting some other gunk in there idk lol</li>
+							<li>uhmm idk, code cleanup i guess? not very interesting</li>
+							<li>ditched the RSS feed because i don't think anyone used it and it was a pain in the ass to update</li>
+							<li>everything's generally nicer looking (i think)</li>
+							<li>if you stumble upon an issue or something like that PLEASE tell me on <a target="_blank" href="https://github.com/backslash127/backslash127.github.io/issues">github</a> or <a target="_blank" href="https://discord.com/users/467507791553101845">discord</a></li>
+						</ul>
+					</section>
+				</main>
+
+				<section>
+					<footer class="indent">
+						<p>this website is a work-in-progress, and it will be for the foreseeable future.</p>
+						<p>if you encounter any issues, bugs, etc. please submit an issue on <a href="https://github.com/backslash127/backslash127.github.io/issues" target="_blank">github</a>.</p>
+					</footer>
+					<button id="pageTop" onclick="toTop();">back to top</button>
+				</section>
+			</div>
+		</div>
+	</body>
+</html>

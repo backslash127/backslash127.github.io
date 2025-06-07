@@ -1,34 +1,49 @@
-html
+html, body
 {
-	background: none transparent;
+	padding: 0;
+	margin: 0;
+
+	background: transparent;
 }
 
 body
 {
-	justify-content: left;
-
-	padding: 0;
-	margin: 0;
-
-	overflow: hidden;
-}
-
-.content
-{
-	display: flex;
+	display: inline-flex;
 	flex-direction: column;
 
-	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
+
+	aspect-ratio: unset;
 }
 
-/* YT embed */
-#youtubeEmbed
+body div:first-of-type
 {
-	width: 100vw;
-	height: auto;
+	margin-top: 0;
+}
+
+body div:last-of-type
+{
+	margin-bottom: 0;
+}
+
+.window
+{
+	width: 100%;
 
 	padding: 0;
-	margin: 0;
+	margin: 5px 0;
+}
+
+.windowContent
+{
+	overflow-y: hidden;
+}
+
+/* youtube embed */
+#youtubeEmbed .windowContent
+{
+	padding: 0;
 }
 
 #youtubeEmbed iframe
@@ -38,123 +53,57 @@ body
 
 	padding: 0;
 	margin: 0;
-
-	border: solid 3px;
-	border-color: #000000 #ffffff #ffffff #000000;
 }
 
-#youtubeEmbed .content
+/* web buttons */
+#webButtons .windowContent
 {
-	padding: 0;
+	padding: 10px;
 }
 
-/* buttons */
-#buttonMarquee
+/* last.fm */
+.windowContent:has(#listening)
 {
-	width: 100vw;
+	min-height: 110px;
+
+	padding: 20px;
+}
+
+#listening
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	width: 100%;
+	height: 100%;
+}
+
+#listening img
+{
+	width: auto;
 	height: auto;
-	
-	margin: 10px 0 0 0;
+
+	padding: 0;
+	margin: 0 20px 0 0;
 }
 
-#buttonMarquee .marquee
+#trackName, #artistName
 {
-	font-size: 0;
-	line-height: 0;
-	
-	border: solid 3px;
-	border-color: #000000 #ffffff #ffffff #000000;
+	margin: 0;
 }
 
 /* changelog */
 #changelog
 {
-	display: flex;
-	flex-direction: column;
 	flex-grow: 1;
 
-	width: 100vw;
-	height: 0;
-
-	margin: 10px 0 0 0;
+	overflow: hidden;
 }
 
-#changelog .content
+#changelog .windowContent
 {
-	padding: 0;
-	margin: 0
-}
-
-#logOverflow
-{
-	width: auto;
 	height: 100%;
 
-	padding: 15px 20px;
-	margin: 0;
-	
-	scrollbar-gutter: stable;
 	overflow-y: scroll;
-
-	line-height: 1.5em;
-}
-
-#logOverflow ul
-{
-	margin: 15px 0;
-
-	font-size :small;
-}
-
-#logOverflow hr
-{
-	margin: 5px 25% 0 0;
-
-	border-width: 1px;
-}
-
-/* last.fm */
-#lastfm
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-	width: 100vw;
-	height: auto;
-
-	margin: 10px 0 0 0;
-}
-
-#lastfm .content
-{
-	font-size: .75rem;
-}
-
-#album-cover
-{
-    margin-right: 25px;
-}
-
-#lastfm a
-{
-    color: #000000;
-
-    text-decoration: none;
-    font-weight: normal;
-
-    transition: all 50ms ease-in-out;
-}
-
-#lastfm a:hover
-{
-    color: #9460a9;
-
-    font-weight: bold;
-}
-
-#refresh
-{
-
-    text-decoration: underline #9460a9;
 }

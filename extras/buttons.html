@@ -1,159 +1,148 @@
 <!DOCTYPE html>
 <!-- HTML -->
 <html lang="en">
-	<!-- head -->
 	<head>
 		<!-- metadata -->
-		<title>01011100 — buttons</title>
+		<title>01011100 -- Buttons</title>
 
-		<!-- stylesheets -->
+		<!-- CSS -->
 		<link href="/stylesheets/main.css" rel="stylesheet" type="text/css">
+		<link href="/stylesheets/fonts.css" rel="stylesheet" type="text/css">
 		<link href="/stylesheets/buttons.css" rel="stylesheet" type="text/css">
 
-		<!-- font -->
-		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-		</style>
-
+		<!-- JS -->
+		<script src="/javascript/quickJump.js"></script>
 	</head>
 
-	<!-- body -->
 	<body>
-		<div id="vignette"></div>
-		
 		<!-- sidebar -->
 		<div id="sidebar">
-			<iframe src="/sidebar.html">iframe failed to load... sorry! X_X</iframe>
+			<iframe src="/sidebar.html"></iframe>
 		</div>
 
-		<!-- main page content -->
-		<div id="mainFlex">
-			<div id="main" class="window">
-				<div class="titleBar">
-					<p>buttonCollection</p>
-					
-					<a href="#bottom"><img class="barButton" src="/media/main/bottom.png" draggable="false"></a>
-					<a href="/"><img class="barButton" src="/media/main/home.png" draggable="false"></a>
-					<img class="barButton" src="/media/main/paw.png" draggable="false">
-				</div>
-	
-				<div class="content">
-					<!-- header -->
-					<a id="top"></a>
-					<header>
-						<div id="banner" class="cutout">
-							<a href="/"><img src="/media/main/banner.png" alt="\\ BACKSLASH \\"></a>
-							<iframe src="/nav.html">iframe failed to load... sorry! X_X</iframe>
-						</div>
+		<!-- main window -->
+		<div id="main" class="window">
+			<!-- titlebar -->
+			<div class="titleBar">
+				<img id="barIcon" src="/media/icons/webButtons.png">
+				<p class="title">Buttons</p>
+				<span class="barSeparator"></span>
+				<button id="pageBottom" class="barButton" onclick="toBottom();"><img draggable="false" src="/media/titlebar/arrow.png"></button>
+				<button class="barButton"><img draggable="false" src="/media/titlebar/paw.png"></button>
+			</div>
 
-						<br>
-					</header>
+			<!-- content -->
+			<div id="mainContent" class="windowContent">
+				<!-- nav -->
+				<nav>
+					<ul id="navLinks" class="cutout">
+						<li><a href="/">HOME</a></li>
+						<li><a href="/blog">BLOG</a></li>
+						<li><a href="/gallery">GALLERY</a></li>
+						<li><a href="/about">ABOUT</a></li>
+						<li><a href="/extras">EXTRAS</a></li>
+					</ul>
+				</nav>
 
-					<!-- info -->
+				<!-- actual stuff -->
+				<main>
 					<section>
-						<h2 class="heading">BUTTONS</h2>
+						<header>Buttons</header>
 						<hr>
-
-						<p>this is an entire page dedicated to every button i've collected from my internet travels. if you want to take one, feel free but if a button is attached to a link please keep the link with it.</p>
+						
+						<p>a collection of every web button i've found during my internet travels. feel free to take any!</p>
+						<p>if you are to take any, please do keep links attached to buttons that have them.</p>
 					</section>
 
-					<!-- buttons -->
-					<div id="buttonWall">
-						<!-- A -->
-						<a title="A Tribe Called Quest" class="webButton" target="_blank" href="https://atribecalledquest.com"><img src="/media/buttons/ATCQ.gif"></a>
+					<section>
+						<div id="buttonWall">
+							<a class="webButton" href="https://atribecalledquest.com/" target="_blank" title="A Tribe Called Quest">
+								<img src="/media/buttons/ATCQ.gif">
+							</a>
 
-						<!-- B -->
-						<a title="me!" class="webButton" target="_blank" href="/"><img src="/media/buttons/backslash.gif"></a>
-						<a title="blinkies.cafe" class="webButton" target="_blank" href="https://blinkies.cafe"><img src="/media/buttons/blinkiesCafe-badge.gif"></a>
+							<a class="webButton" href="https://backslash127.github.io/" target="_blank" title="me!">
+								<img src="/media/buttons/backslash.gif">
+							</a>
 
-						<!-- C -->
+							<a class="webButton" href="https://blinkies.cafe/" target="_blank" title="blinkies.cafe">
+								<img src="/media/buttons/blinkiesCafe-badge.gif">
+							</a>
 
-						<!-- D -->
-						<a title="dimden" class="webButton" target="_blank" href="https://dimden.dev/"><img src="https://dimden.dev/services/images/88x31.gif"></a>
+							<a class="webButton" href="https://dimden.dev/" target="_blank" title="Dimden">
+								<img src="https://dimden.dev/services/images/88x31.gif">
+							</a>
 
-						<!-- E -->
+							<a class="webButton" target="_blank">
+								<img src="/media/buttons/firefox2.gif">
+							</a>
 
-						<!-- F -->
-						<img class="webButton" src="/media/buttons/firefox2.gif">
+							<a class="webButton" href="https://item64.neocities.org/" target="_blank" title="ITEM64">
+								<img src="/media/buttons/item64.gif">
+							</a>
 
-						<!-- G -->
+							<a class="webButton" href="https://juneish.neocities.org/" target="_blank" title="Juneish">
+								<img src="/media/buttons/webcatz.gif">
+							</a>
 
-						<!-- H -->
+							<a class="webButton" href="https://kitmeow.neocities.org/" target="_blank" title="KITMEOW">
+								<img src="/media/buttons/kitdoombutton1.gif">
+							</a>
 
-						<!-- I -->
-						<a title="ITEM64" class="webButton" target="_blank" href="https://item64.neocities.org/"><img src="/media/buttons/item64.gif"></a>
+							<a class="webButton" href="https://mukkysworld.neocities.org/" target="_blank" title="Mukky's World">
+								<img src="/media/buttons/MukkysWorld_Button.gif">
+							</a>
 
-						<!-- J -->
-						<a title="juneish" class="webButton" target="_blank" href="https://juneish.neocities.org/"><img src="/media/buttons/webcatz.gif"></a>
+							<a class="webButton" href="https://nekoweb.org/" target="_blank" title="Nekoweb">
+								<img src="https://nekoweb.org/assets/buttons/button11.gif">
+							</a>
 
-						<!-- K -->
-						<a title="KITMEOW" class="webButton" target="_blank" href="https://kitmeow.neocities.org/"><img src="/media/buttons/kitdoombutton1.gif"></a>
+							<a class="webButton" href="https://nekoweb.org/" target="_blank" title="OLIVEEN">
+								<img src="/media/buttons/olliveen.gif">
+							</a>
 
-						<!-- L -->
+							<a class="webButton" target="_blank">
+								<img src="/media/buttons/paws.png">
+							</a>
 
-						<!-- M -->
-						<a title="mukky's world" class="webButton" target="_blank" href="https://mukkysworld.neocities.org/"><img src="/media/buttons/MukkysWorld_Button.gif"></a>
+							<a class="webButton" href="https://ribo.zone/" target="_blank" title="Ribozone">
+								<img src="/media/buttons/ribose.png">
+							</a>
 
-						<!-- N -->
-						<a title="nekoweb.org" class="webButton" target="_blank" href="https://nekoweb.org/"><img src="https://nekoweb.org/assets/buttons/button11.gif"></a> <!-- button by milkyway.moe -->
+							<a class="webButton" href="https://www.rickys.place/" target="_blank" title="RICKY'S PLACE">
+								<img src="/media/buttons/rickys.place_button-Xsmall.gif">
+							</a>
 
-						<!-- O -->
-						<a title="OLLIVEEN" class="webButton" target="_blank" href="https://olliveen.neocities.org/"><img src="/media/buttons/olliveen.gif"></a>
+							<a class="webButton" href="https://thepersonever.net/" target="_blank" title="thepersonever">
+								<img src="/media/buttons/thepersoneverbutton.gif">
+							</a>
 
-						<!-- P -->
-						<img class="webButton" src="/media/buttons/paws.png">
+							<a class="webButton" href="https://capstasher.neocities.org/88x31collection-page1" target="_blank" title="The Largest 88x31 Collection">
+								<img src="/media/buttons/the-largest-88x31-collection-2.png">
+							</a>
 
-						<!-- Q -->
+							<a class="webButton" href="https://ublockorigin.com/" target="_blank" title="uBlock Origin">
+								<img src="/media/buttons/ublock-now.png">
+							</a>
+							
+							<a class="webButton" href="https://wiby.me/" target="_blank" title="wiby.me">
+								<img src="/media/buttons/wiby.gif">
+							</a>
 
-						<!-- R -->
-						<a title="ribozone" class="webButton" target="_blank" href="https://ribo.zone/"><img src="/media/buttons/ribose.png"></a>
+							<a class="webButton" href="https://00s.neocities.org/" target="_blank" title="00s">
+								<img src="/media/buttons/00s.gif">
+							</a>
+						</div>
+					</section>
+				</main>
 
-						<!-- S -->
-
-						<!-- T -->
-						<a title="thepersonever" class="webButton" target="_blank" href="https://thepersonever.net/"><img src="/media/buttons/thepersoneverbutton.gif"></a>
-						<a title="The Largest 88x31 Collection" class="webButton" target="_blank" href="https://capstasher.neocities.org/88x31collection-page1"><img src="/media/buttons/the-largest-88x31-collection-2.png"></a>
-
-						<!-- U -->
-						<img class="webButton" src="/media/buttons/ublock-now.png">
-
-						<!-- V -->
-
-						<!-- W -->
-						<a title="Wiby" class="webButton" target="_blank" href="https://wiby.me"><img src="/media/buttons/wiby.gif"></a>
-
-						<!-- X -->
-
-						<!-- Y -->
-
-						<!-- Z -->
-
-						<!-- # -->
-						<a title="00s" class="webButton" target="_blank" href="https://00s.neocities.org/"><img src="/media/buttons/00s.gif"></a>
-
-					</div>
-
-					<br>
-
-					<!-- footer -->
-					<a id="bottom"></a>
-					<footer>
-						<p>this website is a work-in-progress, and it will be for the forseeable future. if you encounter any issues please let me know on <a target="_blank" href="https://github.com/backslash127/backslash127.github.io/issues">github</a>.</p>
-						<p>if you want to get in touch, shoot me a message on <a target="_blank" href="https://discord.com/users/467507791553101845">discord</a>!</p>
-						<p><em>BACKSLASH — <span id="year">:3</span></em></p>
-						<script>
-							n =  new Date();
-							y = n.getFullYear();
-							document.getElementById("year").innerHTML = y;
-						</script>
-
-						<a class="button" href="#top">back to top</a>
+				<section>
+					<footer class="indent">
+						<p>this website is a work-in-progress, and it will be for the foreseeable future.</p>
+						<p>if you encounter any issues, bugs, etc. please submit an issue on <a href="https://github.com/backslash127/backslash127.github.io/issues" target="_blank">github</a>.</p>
 					</footer>
+					<button id="pageTop" onclick="toTop();">back to top</button>
+				</section>
 			</div>
 		</div>
-		
-		<!-- side images -->
-		<div id="left"><img src="/media/main/graffitiLeft.png"></div>
-		<div id="right"><img src="/media/main/graffitiRight.png"></div>
 	</body>
 </html>
