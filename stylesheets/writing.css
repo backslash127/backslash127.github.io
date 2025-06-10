@@ -1,0 +1,42 @@
+.file
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	padding: 0;
+	margin: 20px 0;
+}
+
+.file img
+{
+	margin-right: 20px;
+}
+
+.file a
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	width: 100%;
+	height: 100%;
+
+	padding: 5px 20px;
+
+	color: #000000;
+	line-height: normal;
+	font-size: 1.125em;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.file:hover
+{
+	background-color: #dddddd;
+}
+
+.date
+{
+	margin-left: auto;
+}

@@ -351,9 +351,14 @@ header
 	color: #ffffff;
 }
 
-p
+p, pre
 {
 	margin: 20px 0;
+}
+
+pre
+{
+	font-size: 1.125em;
 }
 
 a
