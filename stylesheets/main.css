@@ -372,6 +372,23 @@ a
 	color: #ffffff;
 }
 
+a.indent
+{
+	padding: 0 15px;
+	margin: 10px 0;
+
+	color: #000000;
+	line-height: normal;
+	font-size: 1.125em;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+a.indent:hover
+{
+	background-color: #dddddd;
+}
+
 a:has(img)
 {
 	display: block;
