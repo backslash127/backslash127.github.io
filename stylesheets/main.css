@@ -402,12 +402,19 @@ a:hover
 	text-decoration-thickness: .175em;
 }
 
+img.intext
+{
+	margin: 20px 0;
+	padding: 0;
+}
+
 hr
 {
 	margin: 0;
 	margin-right: 37.5%;
 
 	border: solid 2px #9460a9;
+	border-radius: 100em;
 }
 
 .cutout hr
@@ -461,4 +468,14 @@ button:active
 	padding: 3px;
 	
 	border-color: #000000 #ffffff #ffffff #000000;
+}
+
+.signature
+{
+	color: #9460a9;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 1.75em;
+
+	text-align: right;
 }
