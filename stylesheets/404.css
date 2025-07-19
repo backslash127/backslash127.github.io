@@ -1,6 +1,7 @@
 .windowContent
 {
 	overflow: hidden;
+	padding-bottom: 20px;
 }
 
 #return
@@ -16,7 +17,7 @@
 	height: 2.5em;
 
 	padding: 4px;
-	margin: 0 0 20px 0;
+	margin: 0;
 }
 
 #return button:active
