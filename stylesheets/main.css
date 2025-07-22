@@ -367,6 +367,11 @@ a
 	font-weight: bold;
 }
 
+a:hover
+{
+	text-decoration-thickness: .175em;
+}
+
 .cutout a
 {
 	color: #ffffff;
@@ -397,9 +402,9 @@ a:has(img)
 	line-height: 0;
 }
 
-a:hover
+a:has(button) button
 {
-	text-decoration-thickness: .175em;
+	font-size: inherit;
 }
 
 img.intext
@@ -453,7 +458,14 @@ strong
 
 button
 {
+	width: 100%;
+	height: 2.5em;
+	
 	padding: 1px;
+	margin: 0 0 20px 0;
+
+	color: #000000;
+	font-family: "Courier Prime Code";
 
 	background-color: #dddddd;
 
@@ -465,7 +477,19 @@ button
 
 button:active
 {
-	padding: 3px;
+	padding: 4px;
+	
+	border-color: #000000 #ffffff #ffffff #000000;
+}
+
+button:not(.barButton)
+{
+	font-size: calc(1em / 1.25);
+}
+
+button:not(.barButton):active
+{
+	padding: 9px;
 	
 	border-color: #000000 #ffffff #ffffff #000000;
 }
