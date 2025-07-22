@@ -181,8 +181,9 @@ nav
 
 	list-style: none;
 
-	font-size: 1.25em;
-	font-weight: bold;
+	font-family: "Days One";
+	font-size: 1em;
+	font-weight: normal;
 	text-align: center;
 }
 
@@ -195,7 +196,7 @@ nav
 
 	padding: 0;
 	margin: 0 auto;
-	
+
 	transition: all 75ms ease-out;
 }
 
@@ -213,14 +214,17 @@ nav
 
 	padding: 20px 0;
 	margin: 0;
-
+	
 	text-decoration: none;
-
+	
+	transition: all 75ms ease-out;
 }
 
-#navLinks li:hover
+#navLinks li:hover a
 {
-	background: #9460a9;
+	scale: 115%;
+
+	text-shadow: 3px 3px 8px #3b1f45;
 }
 
 footer
@@ -333,7 +337,7 @@ footer
 
 header
 {
-	margin: 20px 0;
+	margin: 20px 0 10px 0;
 
 	color: #9460a9;
 
@@ -379,6 +383,10 @@ a:hover
 
 a.indent
 {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
 	padding: 0 15px;
 	margin: 10px 0;
 
@@ -392,6 +400,11 @@ a.indent
 a.indent:hover
 {
 	background-color: #dddddd;
+}
+
+a.indent img
+{
+	margin: 0 15px 0 0;
 }
 
 a:has(img)
@@ -489,7 +502,7 @@ button:not(.barButton)
 
 button:not(.barButton):active
 {
-	padding: 9px;
+	padding: 8px;
 	
 	border-color: #000000 #ffffff #ffffff #000000;
 }
