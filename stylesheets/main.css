@@ -477,7 +477,7 @@ button
 
 button:active
 {
-	padding: 4px;
+	padding: 3px;
 	
 	border-color: #000000 #ffffff #ffffff #000000;
 }
