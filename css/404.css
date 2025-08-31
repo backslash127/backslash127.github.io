@@ -3,3 +3,8 @@
 	width: 32.5%;
 	height: auto;
 }
+
+.windowContent
+{
+	overflow: hidden;
+}
