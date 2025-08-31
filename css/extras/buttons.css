@@ -1,0 +1,17 @@
+#buttonWall
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+#buttonWall .webButton:hover img
+{
+	transition: all 32.5ms ease-in-out;
+
+	transform: scale(1.05);
+
+	box-shadow: 2px 2px 8px #2a1e2d6c;
+}

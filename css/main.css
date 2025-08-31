@@ -1,0 +1,487 @@
+*
+{
+	box-sizing: border-box;
+
+	font-family: "Courier Prime Code";
+}
+
+::selection
+{
+	color: #ffffff;
+
+	background-color: #9460a9;
+}
+
+html
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	width: 100vw;
+	height: 100vh;
+
+	padding: 0;
+	margin: 0;
+
+	overflow: hidden;
+
+	background: #000000;
+}
+
+body
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+
+	width: auto;
+	height: 100vh;
+
+	aspect-ratio: 4 / 3;
+
+	padding: 20px 0;
+	margin: 0;
+
+	overflow: hidden;
+
+	background: #9460a9 url(/media/main/jeju.png) no-repeat center;
+}
+/* window styling */
+.window
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	width: auto;
+	height: 100%;
+
+	padding: 0;
+	margin: 0 10px;
+
+	background: linear-gradient(#eeeeee, #dddddd) fixed;
+
+	border: solid 3px;
+	border-color: #ffffff #000000 #000000 #ffffff;
+}
+
+.titlebar
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex: 1 0 auto;
+
+	width: 100%;
+	height: 36px;
+
+	padding: 0 11px;
+	margin: 0;
+
+	color: #ffffff;
+
+	background: linear-gradient(90deg, #9460a9, #bc8dcf);
+
+	user-select: none;
+}
+
+.titlebar p
+{
+	width: auto;
+	height: auto;
+
+	margin-right: auto;
+
+	line-height: 0;
+	text-wrap: nowrap;
+}
+
+.titleIcon
+{
+	width: 16px;
+	height: 16px;
+
+	margin-right: 8px;
+}
+
+.barButtons
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.barButtons button
+{
+	aspect-ratio: 1 / 1;
+
+	width: auto;
+	height: 100%;
+}
+
+.windowContent
+{
+	width: 100%;
+	height: 100%;
+
+	padding: 20px;
+	margin: 0;
+
+	overflow-y: scroll;
+
+	scrollbar-color: #9460a9 transparent;
+}
+
+/* universal elements */
+#mainWindow
+{
+	width: 62.5%;
+}
+
+#sidebar
+{
+	width: 25%;
+
+	background: transparent;
+	border: none transparent;
+}
+
+#sidebar iframe
+{
+	width: 100%;
+	height: 100%;
+
+	padding: 0;
+	margin: 0;
+
+	background: transparent;
+	border: none transparent;
+}
+
+#banner
+{
+	width: 100%;
+	display: block;
+
+	padding: 0;
+	margin: 0;
+}
+
+nav
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.navContainer
+{
+	width: 100%;
+	height: 4rem;
+
+	padding: 0;
+	margin: 0 5px;
+
+	position: relative;
+}
+
+.navContainer a
+{
+	display: block;
+
+	width: 100%;
+	height: 100%;
+
+	color: #000000;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+}
+
+.navContainer:has(a:hover)
+{
+	background-color: #dddddd;
+}
+
+.navContainer img
+{
+	display: block;
+	object-fit: contain;
+	opacity: 25%;
+
+	width: 100%;
+	height: 32px;
+}
+
+.navOverflow
+{
+	width: 100%;
+	height: 100%;
+
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+
+	overflow: hidden;
+}
+
+nav :first-child
+{
+	margin-left: 0;
+}
+
+nav :last-child
+{
+	margin-right: 0;
+}
+
+footer
+{
+	text-align: center;
+}
+
+/* special styles */
+.indent, .cutout
+{
+	height: fit-content;
+
+	padding: 10px 20px;
+
+	border: solid 3px;
+	border-color: #000000 #ffffff #ffffff #000000;
+}
+
+.indent
+{
+	color: #000000;
+
+	background: transparent;
+}
+
+.cutout
+{
+	color: #ffffff;
+
+	background: url(/media/main/purpleBricks.png) fixed;
+}
+
+
+.cutout header p, .cutout a
+{
+	color: #ffffff;
+}
+
+.cutout hr
+{
+	border-color: #ffffff;
+}
+
+/* marquee */
+.marquee
+{
+	display: flex;
+
+	width: auto;
+	height: auto;
+
+	padding: 0;
+	margin: 0;
+
+	--gap: 1rem;
+	gap: var(--gap);
+
+	overflow: hidden;
+}
+
+.marquee .marqueeContent
+{
+	display: flex;
+	flex-shrink: 0;
+	justify-content: space-around;
+
+	min-width: 100%;
+
+	padding: 0;
+	margin: 0;
+
+	gap: var(--gap);
+
+	animation: marquee var(--animation-duration) linear infinite;
+	animation-play-state: paused;
+}
+
+@keyframes marquee
+{
+	0%
+	{
+		transform: translateX(0);
+	}
+
+	100%
+	{
+		transform: translateX(calc(-100% - var(--gap)));
+	}
+}
+
+/* misc elements */
+.webButton
+{
+	width: 88px;
+	height: 31px;
+
+	padding: 0;
+	margin: 0;
+
+	image-rendering: auto;
+}
+
+a
+{
+	margin: 16px 0;
+
+	color: #9460a9;
+	font-weight: bold;
+}
+
+a:hover
+{
+	text-decoration-style: double;
+}
+
+a.indent
+{
+	display: block;
+
+	font-weight: normal;
+	text-decoration: none;
+}
+
+a.indent:hover
+{
+	background-color: #dddddd;
+}
+
+a:has(img) a:not(.linkchip)
+{
+	display: block;
+
+	font-size: 0;
+	line-height: 0;
+}
+
+.chipContent
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	
+	width: 100%;
+	height: 100%;
+
+	font-weight: bold;
+}
+
+.chipIcon
+{
+	width: 32px;
+	height: 32px;
+
+	margin-right: 20px;
+
+	user-select: none;
+}
+
+button
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	width: 100%;
+	height: 3rem;
+
+	padding: 0;
+	margin: 0;
+
+	font-size: inherit;
+
+	background: linear-gradient(#eeeeee, #dddddd) fixed;
+
+	border: solid 3px;
+	border-color: #ffffff #000000 #000000 #ffffff;
+
+	cursor: pointer;
+}
+
+button:active
+{
+	padding-top: 6px;
+
+	border-color: #000000 #ffffff #ffffff #000000;
+}
+
+button:has(img)
+{
+	width: auto;
+	height: auto;
+
+	padding: 2px;
+}
+
+button:has(img):active img
+{
+	transform: scale(98.75%);
+}
+
+button img
+{
+	display: block;
+	object-fit: contain;
+
+	width: 100%;
+	height: 100%;
+
+	padding: 0;
+	margin: 0;
+}
+
+a:has(button)
+{
+	text-decoration: none;
+}
+
+header p
+{
+	margin: 16px 0;
+
+	color: #9460a9;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+hr
+{
+	padding: 0;
+	margin: 0 50% 0 0;
+
+	border: #9460a9 2px solid;
+	border-radius: 80em;
+}
+
+iframe
+{
+	display: block;
+}
+
+img.intext
+{
+	margin: 20px 0;
+	padding: 0;
+}

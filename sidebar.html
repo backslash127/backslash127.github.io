@@ -1,61 +1,68 @@
 <!DOCTYPE html>
-<!-- HTML -->
+
 <html lang="en">
 	<head>
 		<!-- metadata -->
-		<title>01011100 -- Sidebar?</title>
+		<title>01011100 : Sidebar????? whatre you doing here</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-		<!-- CSS -->
-		<link href="/stylesheets/main.css" rel="stylesheet" type="text/css">
-		<link href="/stylesheets/fonts.css" rel="stylesheet" type="text/css">
-		<link href="/stylesheets/sidebar.css" rel="stylesheet" type="text/css">
+		<!-- css -->
+		<link href="/css/main.css" rel="stylesheet" type="text/css">
+		<link href="/css/fonts.css" rel="stylesheet" type="text/css">
 
-		<!-- JS -->
-		<script src="/javascript/lastfm.js"></script>
-		<script src="/javascript/marquee.js"></script>
+		<link href="/css/sidebar.css" rel="stylesheet" type="text/css">
+		
+		<!-- js -->
+		<script src="/js/lastfm.js"></script>
+		<script src="/js/marquee.js"></script>
 	</head>
 
 	<body>
-		<!-- stuff -->
-		<!-- youtube -->
+		<!-- youtube embed -->
 		<div id="youtubeEmbed" class="window">
-			<div class="titleBar">
-				<img id="barIcon" src="/media/icons/youtubeEmbed.png">
-				<p class="title">Youtube Embed</p>
-				<span class="barSeparator"></span>
-				<button class="barButton"><img draggable="false" src="/media/titlebar/paw.png"></button>
+			<div class="titlebar">
+				<img class="titleIcon" src="/media/icons/small/youtubeVideo.png" draggable="false">
+
+				<p>Youtube Video</p>
+
+				<div class="barButtons">
+					<button><img src="/media/titlebar/paw.png" draggable="false"></button>
+				</div>
 			</div>
+
 			<div class="windowContent">
-				<iframe class="indent" width="560" height="315" src="https://www.youtube-nocookie.com/embed/cxN4nKk2cfk?si=im2O38ZV_OVafiW6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				<iframe src="https://www.youtube-nocookie.com/embed/1QWEPdgS3As?si=DcSQvVtBj1UAz8Ug" title="YouTube Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 			</div>
 		</div>
 
-		<!-- buttons -->
+		<!-- web buttons -->
 		<div id="webButtons" class="window">
-			<div class="titleBar">
-				<img id="barIcon" src="/media/icons/webButtons.png">
-				<p class="title">Buttons</p>
-				<span class="barSeparator"></span>
-				<button class="barButton"><img draggable="false" src="/media/titlebar/paw.png"></button>
+			<div class="titlebar">
+				<img class="titleIcon" src="/media/icons/small/buttons.png" draggable="false">
+
+				<p>Buttons</p>
+
+				<div class="barButtons">
+					<button><img src="/media/titlebar/paw.png" draggable="false"></button>
+				</div>
 			</div>
+
 			<div class="windowContent">
-				<!-- top -->
-				<div class="marquee indent" onmouseenter="pause();" onmouseleave="unpause();">
-					<div id="content" style="animation-duration: 30s; animation-play-state: paused;">
-						<a class="webButton" href="https://atribecalledquest.com/" target="_blank" title="A Tribe Called Quest">
+				<div class="marquee indent" onmouseenter="pause();" onmouseleave="play();">
+					<div class="marqueeContent">
+						<a class="webButton" href="https://atribecalledquest.com/" target="_blank">
 							<img src="/media/buttons/ATCQ.gif">
 						</a>
 
-						<a class="webButton" href="https://backslash127.github.io/" target="_blank" title="me!">
+						<a class="webButton" href="https://backslash127.github.io/" target="_blank">
 							<img src="/media/buttons/backslash.gif">
 						</a>
 
-						<a class="webButton" href="https://blinkies.cafe/" target="_blank" title="blinkies.cafe">
+						<a class="webButton" href="https://blinkies.cafe/" target="_blank">
 							<img src="/media/buttons/blinkiesCafe-badge.gif">
 						</a>
 
-						<a class="webButton" href="https://dimden.dev/" target="_blank" title="Dimden">
+						<a class="webButton" href="https://dimden.dev/" target="_blank">
 							<img src="https://dimden.dev/services/images/88x31.gif">
 						</a>
 
@@ -63,31 +70,26 @@
 							<img src="/media/buttons/firefox2.gif">
 						</a>
 
-						<a class="webButton" href="https://item64.neocities.org/" target="_blank" title="ITEM64">
+						<a class="webButton" href="https://item64.neocities.org/" target="_blank">
 							<img src="/media/buttons/item64.gif">
 						</a>
 
-						<a class="webButton" href="https://juneish.neocities.org/" target="_blank" title="Juneish">
-							<img src="/media/buttons/webcatz.gif">
-						</a>
-
-						<a class="webButton" href="https://kitmeow.neocities.org/" target="_blank" title="KITMEOW">
+						<a class="webButton" href="https://kitmeow.neocities.org/" target="_blank">
 							<img src="/media/buttons/kitdoombutton1.gif">
 						</a>
-
-						<a class="webButton" href="https://mukkysworld.neocities.org/" target="_blank" title="Mukky's World">
+						<a class="webButton" href="https://mukkysworld.neocities.org/" target="_blank">
 							<img src="/media/buttons/MukkysWorld_Button.gif">
 						</a>
 
-						<a class="webButton" href="https://nekoweb.org/" target="_blank" title="Nekoweb">
+						<a class="webButton" href="https://nekoweb.org/" target="_blank">
 							<img src="https://nekoweb.org/assets/buttons/button11.gif">
 						</a>
 
-						<a class="webButton" href="https://nondmo.online/" target="_blank" title="non dmo zone">
+						<a class="webButton" href="https://nondmo.online/" target="_blank">
 							<img src="/media/buttons/nondmo.png">
 						</a>
 
-						<a class="webButton" href="https://olliveen.neocities.org/" target="_blank" title="OLIVEEN">
+						<a class="webButton" href="https://olliveen.neocities.org/" target="_blank">
 							<img src="/media/buttons/olliveen.gif">
 						</a>
 
@@ -95,50 +97,56 @@
 							<img src="/media/buttons/paws.png">
 						</a>
 
-						<a class="webButton" href="https://ribo.zone/" target="_blank" title="Ribozone">
+						<a class="webButton" href="https://ribo.zone/" target="_blank">
 							<img src="/media/buttons/ribose.png">
 						</a>
 
-						<a class="webButton" href="https://www.rickys.place/" target="_blank" title="RICKY'S PLACE">
+						<a class="webButton" href="https://www.rickys.place/" target="_blank">
 							<img src="/media/buttons/rickys.place_button-Xsmall.gif">
 						</a>
 
-						<a class="webButton" href="https://thepersonever.net/" target="_blank" title="thepersonever">
-							<img src="/media/buttons/thepersoneverbutton.gif">
-						</a>
-
-						<a class="webButton" href="https://capstasher.neocities.org/88x31collection-page1" target="_blank" title="The Largest 88x31 Collection">
+						<a class="webButton" href="https://capstasher.neocities.org/88x31collection-page1" target="_blank">
 							<img src="/media/buttons/the-largest-88x31-collection-2.png">
 						</a>
 
-						<a class="webButton" href="https://thumtacka.nekoweb.org/" target="_blank" title="THUMBTACKA'S HALF-ASSED DOMAIN">
+						<a class="webButton" href="https://thepersonever.net/" target="_blank">
+							<img src="/media/buttons/thepersoneverbutton.gif">
+						</a>
+
+						<a class="webButton" href="https://thumtacka.nekoweb.org/" target="_blank">
 							<img src="/media/buttons/thumtackaAlt.gif">
 						</a>
 
-						<a class="webButton" href="https://ublockorigin.com/" target="_blank" title="uBlock Origin">
+						<a class="webButton" href="https://ublockorigin.com/" target="_blank">
 							<img src="/media/buttons/ublock-now.png">
 						</a>
-						
-						<a class="webButton" href="https://wiby.me/" target="_blank" title="wiby.me">
+
+						<a class="webButton" href="https://juneish.neocities.org/" target="_blank">
+							<img src="/media/buttons/webcatz.gif">
+						</a>
+
+						<a class="webButton" href="https://wiby.me/" target="_blank">
 							<img src="/media/buttons/wiby.gif">
 						</a>
 
-						<a class="webButton" href="https://00s.neocities.org/" target="_blank" title="00s">
+						<a class="webButton" href="https://00s.neocities.org/" target="_blank">
 							<img src="/media/buttons/00s.gif">
 						</a>
 					</div>
 				</div>
-
 			</div>
 		</div>
 
-		<!-- last.fm -->
-		<div id="lastFM" class="window">
-			<div class="titleBar">
-				<img id="barIcon" src="/media/icons/lastFm.png">
-				<p class="title">Last.fm</p>
-				<span class="barSeparator"></span>
-				<button class="barButton"><img draggable="false" src="/media/titlebar/paw.png"></button>
+		<!-- lastfm status -->
+		<div id="lastfm" class="window">
+			<div class="titlebar">
+				<img class="titleIcon" src="/media/icons/small/music.png" draggable="false">
+
+				<p>Last.fm</p>
+
+				<div class="barButtons">
+					<button><img src="/media/titlebar/paw.png" draggable="false"></button>
+				</div>
 			</div>
 			<div class="windowContent">
 				<div id="listening">
@@ -147,23 +155,37 @@
 			</div>
 		</div>
 
-		<!-- changelog -->
+		<!-- changelogs -->
 		<div id="changelog" class="window">
-			<div class="titleBar">
-				<img id="barIcon" src="/media/icons/changelog.png">
-				<p class="title">Changelog</p>
-				<span class="barSeparator"></span>
-				<button class="barButton"><img draggable="false" src="/media/titlebar/paw.png"></button>
+			<div class="titlebar">
+				<img class="titleIcon" src="/media/icons/small/changelogs.png" draggable="false">
+
+				<p>Changelog</p>
+
+				<div class="barButtons">
+					<button><img src="/media/titlebar/paw.png" draggable="false"></button>
+				</div>
 			</div>
+
 			<div class="windowContent">
 				<section>
-					<header>08/03/25</header>
+					<header><p>08/30/25</p></header>
 					<hr>
 					<ul>
-						<li>added piece, "REFLEX" to gallery.</li>
+						<li>new Blogpost</li>
+						<li>something something... website rewrite.. cough cough</li>
+						<li>the Gallery is now split up into categories</li>
+						<li>moved Writings Extra to Gallery</li>
+						<li>added Music section to Gallery</li>
+						<li>more Art added to Gallery</li>
 					</ul>
 				</section>
-				<a href="/extras/changelogs" target="_parent"><button>view all changelogs</button></a>
+
+				<br>
+
+				<a href="/extras/changelog" target="_parent">
+					<button><p>view all changelogs</p></button>
+				</a>
 			</div>
 		</div>
 	</body>

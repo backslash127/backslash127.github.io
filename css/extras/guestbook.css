@@ -1,0 +1,31 @@
+.windowContent
+{
+	display: flex;
+	flex-direction: column;
+}
+
+#frameWrapper
+{	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	flex: 1 0 auto;
+
+	width: 100%;
+	height: auto;
+
+	padding: 0;
+	margin: 0;
+}
+
+#frameWrapper iframe
+{
+	flex: 1 0 auto;
+
+	width: 100%;
+	height: 100%;
+
+	border: none;
+}

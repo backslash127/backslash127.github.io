@@ -1,128 +1,216 @@
 <!DOCTYPE html>
-<!-- HTML -->
+
 <html lang="en">
 	<head>
 		<!-- metadata -->
-		<title>01011100 -- About</title>
+		<title>01011100 : About</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-		<!-- CSS -->
-		<link href="/stylesheets/main.css" rel="stylesheet" type="text/css">
-		<link href="/stylesheets/fonts.css" rel="stylesheet" type="text/css">
-		<link href="/stylesheets/screenSizing.css" rel="stylesheet" type="text/css">
-		<link href="/stylesheets/about.css" rel="stylesheet" type="text/css">
+		<!-- css -->
+		<link href="/css/main.css" rel="stylesheet" type="text/css">
+		<link href="/css/fonts.css" rel="stylesheet" type="text/css">
 
-		<!-- JS -->
-		<script src="/javascript/quickJump.js"></script>
+		<link href="/css/about.css" rel="stylesheet" type="text/css">
+
+		<!-- js -->
+		<script src="/js/quickJump.js"></script>
 	</head>
 
 	<body>
 		<!-- sidebar -->
-		<div id="sidebar">
+		<div id="sidebar" class="window">
 			<iframe src="/sidebar.html"></iframe>
 		</div>
 
-		<!-- main window -->
-		<div id="main" class="window">
-			<!-- titlebar -->
-			<div class="titleBar">
-				<img id="barIcon" src="/media/icons/about.png">
-				<p class="title">About</p>
-				<span class="barSeparator"></span>
-				<button id="pageBottom" class="barButton" onclick="toBottom();"><img draggable="false" src="/media/titlebar/arrow.png"></button>
-				<button class="barButton"><img draggable="false" src="/media/titlebar/paw.png"></button>
+		<!-- main content -->
+		<div id="mainWindow" class="window">
+			<div class="titlebar">
+				<img class="titleIcon" src="/media/icons/small/about.png" draggable="false">
+
+				<p>About</p>
+
+				<div class="barButtons">
+					<button onclick="toBottom();"><img src="/media/titlebar/arrow.png" draggable="false"></button>
+					<button><img src="/media/titlebar/paw.png" draggable="false"></button>
+				</div>
 			</div>
 
-			<!-- content -->
 			<div id="mainContent" class="windowContent">
-				<!-- nav -->
-				<nav>
-					<ul id="navLinks" class="cutout">
-						<li><a href="/">HOME</a></li>
-						<li><a href="/blog">BLOG</a></li>
-						<li><a href="/gallery">GALLERY</a></li>
-						<li><a href="/about">ABOUT</a></li>
-						<li><a href="/extras">EXTRAS</a></li>
-					</ul>
-				</nav>
-
-				<!-- actual stuff -->
-				<main>
-					<section>
-						<header>Bio</header>
-						<hr>
-						<br>
-						<img id="pfp" class="polaroid" src="/media/main/pfp.png" style="float: left;">
-						<p>Backslash or Kat</p>
-						<p>she/her -- trans</p>
-						<p>artist, programmer, musician, animator</p>
-						<p>i love cats, food, and video games....,</p>
-						<p>gay woke anarchist girlthing.</p>
-
-						<br>
-						<br>
-						<br>
-
-						<p><em>^ drawn by a good friend of mine (thx benny)</em></p>
-					</section>
-
-					<section>
-						<header>Games</header>
-						<hr>
-						<br>
-						<img id="BRC" class="polaroid" src="/media/main/BRC.jpg" style="float: right;">
-						<p>FPS, Boomer Shooters, Roguelikes, Immersive Sims, Rhythm, Sandbox</p>
-						<p>ULTRAKILL, Bomb Rush Cyberfunk, Rain World, pretty much every Valve game ever, Mirrors Edge, Minecraft, Roblox, +More</p>
-						<p>indie games rule.</p>
-
-						<br>
-					</section>
-
-					<section>
-						<header>Music</header>
-						<hr>
-						<br>
-						<img id="tribe" class="polaroid" src="/media/main/ATCQ.jpg" style="float: left;">
-						<p>Hip-Hop, Rap, Funk, Jazz, Breakcore, DnB, and other similar genres</p>
-						<p>ATCQ, Jurassic 5, FEMTANYL, HIDEKI NAGANUMA, 2 Mello, Weezer, +More</p>
-						<p>anything that sounds good really.</p>
-
-						<br>
-						<br>
-						<br>
-						<br>
-					</section>
-
-					<section>
-						<header>Socials</header>
-						<hr>
-						<br>
-						<img id="socials" class="polaroid" src="/media/main/alien.png" style="float: right;">
-
-						<a class="social indent" href="https://discord.com/users/467507791553101845" target="_blank">
-							<img class="socialIcon" src="/media/main/discord.png">
-							<p>Discord</p>
-						</a>
-						
-						<a class="social indent" href="https://bsky.app/profile/backslash127.github.io" target="_blank">
-							<img class="socialIcon" src="/media/main/bsky.png">
-							<p>Bluesky</p>
-						</a>
-
-						<a class="social indent" href="https://steamcommunity.com/id/Backslash127/" target="_blank">
-							<img class="socialIcon" src="/media/main/steam.png">
-							<p>Steam</p>
-						</a>
-					</section>
-				</main>
-
+				<!-- navbanner -->
 				<section>
-					<footer class="indent">
-						<p>this website is a work-in-progress, and it will be for the foreseeable future.</p>
-						<p>if you encounter any issues, bugs, etc. please submit an issue on <a href="https://github.com/backslash127/backslash127.github.io/issues" target="_blank">github</a>.</p>
-					</footer>
-					<button id="pageTop" onclick="toTop();">back to top</button>
+					<img class="indent" id="banner" src="/media/main/banner.png">
+
+					<br>
+
+					<nav>
+						<div class="navContainer indent">
+							<img src="/media/icons/large/home.png">
+							<div class="navOverflow">
+								<a href="/">Home</a>
+							</div>
+						</div>
+
+						<div class="navContainer indent">
+							<img src="/media/icons/large/blog.png">
+							<div class="navOverflow">
+								<a href="/blog">Blog</a>
+							</div>
+						</div>
+
+						<div class="navContainer indent">
+							<img src="/media/icons/large/art.png">
+							<div class="navOverflow">
+								<a href="/gallery">Gallery</a>
+							</div>
+						</div>
+
+						<div class="navContainer indent">
+							<img src="/media/icons/large/about.png">
+							<div class="navOverflow">
+								<a href="/about">About</a>
+							</div>
+						</div>
+
+						<div class="navContainer indent">
+							<img src="/media/icons/large/extras.png">
+							<div class="navOverflow">
+								<a href="/extras">Extras</a>
+							</div>
+						</div>
+					</nav>
 				</section>
+
+				<br>
+
+				<main>
+					<!-- socials -->
+					<section>
+						<header><p>Socials</p></header>
+						<hr>
+
+						<a class="linkChip indent" href="/gallery/art">
+							<div class="chipContent">
+								<img class="chipIcon" src="/media/about/discord.png">
+
+								<p class="chipText">Discord</p>
+							</div>
+						</a>
+
+						<a class="linkChip indent" href="/gallery/art">
+							<div class="chipContent">
+								<img class="chipIcon" src="/media/about/bsky.png">
+
+								<p class="chipText">Bluesky</p>
+							</div>
+						</a>
+
+						<a class="linkChip indent" href="/gallery/art">
+							<div class="chipContent">
+								<img class="chipIcon" src="/media/about/steam.png">
+
+								<p class="chipText">Steam</p>
+							</div>
+						</a>
+					</section>
+
+					<br>
+
+					<!-- bio -->
+					<div class="profileSection indent">
+						<section>
+							<header><p>Bio</p></header>
+							<hr>
+		
+							<p>Backslash or Kat</p>
+							<p>She/Her : Trans</p>
+							<p>artist, animator, musician, programmer</p>
+							<p><em>i like food, cats, uhm... and video games :3</em></p>
+							<p>gay woke anarchist girlthing.</p>
+						</section>
+		
+						<img class="profileImg indent" src="/media/about/profileImage.png">
+					</div>
+
+					<br>
+
+					<!-- games -->
+					<div class="profileSection indent">
+						<section>
+							<header><p>Games</p></header>
+							<hr>
+		
+							<ul>
+								<li>FPS</li>
+								<li>Boomer Shooters</li>
+								<li>Roguelike/lites</li>
+								<li>Immersive Sims</li>
+								<li>Rhythm</li>
+								<li>Sandbox</li>
+							</ul>
+		
+							<ul>
+								<li>ULTRAKILL</li>
+								<li>Bomb Rush Cyberfunk</li>
+								<li>Rain World</li>
+								<li>pretty much every VALVe game ever</li>
+								<li>Mirrors Edge</li>
+								<li>Minecraft</li>
+								<li>a lot more probably</li>
+							</ul>
+		
+							<p>indie games rule.</p>
+						</section>
+
+						<img class="profileImg indent" src="/media/about/BRC.jpg">
+					</div>
+
+					<br>
+
+					<!-- music -->
+					<div class="profileSection indent">
+						<section>
+							<header><p>Music</p></header>
+							<hr>
+		
+							<ul>
+								<li>Hip-Hop</li>
+								<li>Rap</li>
+								<li>Funk</li>
+								<li>Jazz</li>
+								<li>Breakcore</li>
+								<li>DnB</li>
+								<li>and other similar genres</li>
+							</ul>
+		
+							<ul>
+								<li>A Tribe Called Quest</li>
+								<li>FEMTANYL</li>
+								<li>HIDEKI NAGANUMA</li>
+								<li>Leaders of The New School</li>
+								<li>Weezer (?)</li>
+								<li>a few more idk lol</li>
+							</ul>
+		
+							<p>i really only liked pinkerton...</p>
+						</section>
+
+						<img class="profileImg indent" src="/media/about/ATCQ.jpg">
+					</div>
+					</main>
+
+					<br>
+					
+					<!-- footer -->
+					<section>
+						<footer class="indent">
+							<p>this website is a work-in-progress, and it will be for the foreseeable future.</p>
+							<p>if you encounter any issues, bugs, etc. please report it on <a href="https://github.com/backslash127/backslash127.github.io/issues" target="_blank">github</a>.</p>
+						</footer>
+		
+						<br>
+		
+						<button onclick="toTop();"><p>return to top</p></button>
+					</section>
 			</div>
 		</div>
 	</body>

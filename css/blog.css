@@ -1,0 +1,15 @@
+.postDate
+{
+	float: right;
+}
+
+a:has(.blogpost)
+{
+	font-weight: initial;
+	text-decoration: none;
+}
+
+.blogpost:hover
+{
+	background: #9460a9;
+}

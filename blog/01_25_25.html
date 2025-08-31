@@ -1,56 +1,92 @@
 <!DOCTYPE html>
-<!-- HTML -->
+
 <html lang="en">
 	<head>
 		<!-- metadata -->
-		<title>01011100 -- fucked up, big time</title>
+		<title>01011100 : fucked up, big time</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-		<!-- CSS -->
-		<link href="/stylesheets/main.css" rel="stylesheet" type="text/css">
-		<link href="/stylesheets/fonts.css" rel="stylesheet" type="text/css">
-		<link href="/stylesheets/screenSizing.css" rel="stylesheet" type="text/css">
+		<!-- css -->
+		<link href="/css/main.css" rel="stylesheet" type="text/css">
+		<link href="/css/fonts.css" rel="stylesheet" type="text/css">
 
-		<!-- JS -->
-		<script src="/javascript/quickJump.js"></script>
+		<link href="/css/about.css" rel="stylesheet" type="text/css">
+
+		<!-- js -->
+		<script src="/js/quickJump.js"></script>
 	</head>
 
 	<body>
 		<!-- sidebar -->
-		<div id="sidebar">
+		<div id="sidebar" class="window">
 			<iframe src="/sidebar.html"></iframe>
 		</div>
 
-		<!-- main window -->
-		<div id="main" class="window">
-			<!-- titlebar -->
-			<div class="titleBar">
-				<img id="barIcon" src="/media/icons/blog.png">
-				<p class="title">Blogpost :: 01/25/25</p>
-				<span class="barSeparator"></span>
-				<button id="pageBottom" class="barButton" onclick="toBottom();"><img draggable="false" src="/media/titlebar/arrow.png"></button>
-				<button class="barButton"><img draggable="false" src="/media/titlebar/paw.png"></button>
+		<!-- main content -->
+		<div id="mainWindow" class="window">
+			<div class="titlebar">
+				<img class="titleIcon" src="/media/icons/small/blog.png" draggable="false">
+
+				<p>01/25/25</p>
+
+				<div class="barButtons">
+					<button onclick="toBottom();"><img src="/media/titlebar/arrow.png" draggable="false"></button>
+					<button><img src="/media/titlebar/paw.png" draggable="false"></button>
+				</div>
 			</div>
 
-			<!-- content -->
 			<div id="mainContent" class="windowContent">
-				<!-- nav -->
-				<nav>
-					<ul id="navLinks" class="cutout">
-						<li><a href="/">HOME</a></li>
-						<li><a href="/blog">BLOG</a></li>
-						<li><a href="/gallery">GALLERY</a></li>
-						<li><a href="/about">ABOUT</a></li>
-						<li><a href="/extras">EXTRAS</a></li>
-					</ul>
-				</nav>
+				<!-- navbanner -->
+				<section>
+					<img class="indent" id="banner" src="/media/main/banner.png">
 
-				<!-- actual stuff -->
+					<br>
+
+					<nav>
+						<div class="navContainer indent">
+							<img src="/media/icons/large/home.png">
+							<div class="navOverflow">
+								<a href="/">Home</a>
+							</div>
+						</div>
+
+						<div class="navContainer indent">
+							<img src="/media/icons/large/blog.png">
+							<div class="navOverflow">
+								<a href="/blog">Blog</a>
+							</div>
+						</div>
+
+						<div class="navContainer indent">
+							<img src="/media/icons/large/art.png">
+							<div class="navOverflow">
+								<a href="/gallery">Gallery</a>
+							</div>
+						</div>
+
+						<div class="navContainer indent">
+							<img src="/media/icons/large/about.png">
+							<div class="navOverflow">
+								<a href="/about">About</a>
+							</div>
+						</div>
+
+						<div class="navContainer indent">
+							<img src="/media/icons/large/extras.png">
+							<div class="navOverflow">
+								<a href="/extras">Extras</a>
+							</div>
+						</div>
+					</nav>
+				</section>
+
+				<br>
+
 				<main>
-					<p>01/25/25 -- fucked up, big time</p>
+					<p>01/25/25 : fucked up, big time</p>
 
 					<section>
-						<header>1st semester</header>
+						<header><p>1st semester</p></header>
 						<hr>
 
 						<p>the first semester of school has ended. how was it? eh, idk it was alright i guess. unfortuately i did fail one of my classes and i'll be needing to make up the lost points for that.</p>
@@ -62,7 +98,7 @@
 					</section>
 
 					<section>
-						<header>i fuckin' love piracy</header>
+						<header><p>i fuckin' love piracy</p></header>
 						<hr>
 						
 						<p>recently i've been cookin' up some really good looking art and that was all thanks to my decision to pirate adobe illustrator.</p>
@@ -74,12 +110,18 @@
 					</section>
 				</main>
 
+				<br>
+				
+				<!-- footer -->
 				<section>
 					<footer class="indent">
 						<p>this website is a work-in-progress, and it will be for the foreseeable future.</p>
-						<p>if you encounter any issues, bugs, etc. please submit an issue on <a href="https://github.com/backslash127/backslash127.github.io/issues" target="_blank">github</a>.</p>
+						<p>if you encounter any issues, bugs, etc. please report it on <a href="https://github.com/backslash127/backslash127.github.io/issues" target="_blank">github</a>.</p>
 					</footer>
-					<button id="pageTop" onclick="toTop();">back to top</button>
+	
+					<br>
+	
+					<button onclick="toTop();"><p>return to top</p></button>
 				</section>
 			</div>
 		</div>

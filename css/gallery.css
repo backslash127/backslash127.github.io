@@ -1,0 +1,35 @@
+#gridContent
+{
+	display: grid;
+	grid-auto-flow: dense;
+
+	grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+	grid-template-rows: masonry;
+
+	width: 100%;
+	height: 100%;
+
+	gap: 15px;
+}
+
+.gridItem
+{
+	width: 100%;
+	height: fit-content;
+
+	padding: 0;
+	margin: 0;
+
+	transition: all 32.5ms ease-in-out;
+}
+
+.gridItem img
+{
+	width: 100%;
+	height: fit-content;
+}
+
+.gridItem:hover
+{
+	transform: scale(105%) rotate(1.40625deg);
+}
