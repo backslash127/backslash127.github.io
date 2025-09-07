@@ -64,7 +64,7 @@ body
 
 	background: linear-gradient(#eeeeee, #dddddd) fixed;
 
-	border: solid 3px;
+	border: solid 2px;
 	border-color: #ffffff #000000 #000000 #ffffff;
 }
 
@@ -78,7 +78,7 @@ body
 	width: 100%;
 	height: 36px;
 
-	padding: 0 11px;
+	padding: 0 5px 0 11px;
 	margin: 0;
 
 	color: #ffffff;
@@ -253,7 +253,7 @@ footer
 
 	padding: 10px 20px;
 
-	border: solid 3px;
+	border: solid 2px;
 	border-color: #000000 #ffffff #ffffff #000000;
 }
 
@@ -380,7 +380,7 @@ a:has(img) a:not(.linkchip)
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	
+
 	width: 100%;
 	height: 100%;
 
@@ -414,7 +414,7 @@ button
 
 	background: linear-gradient(#eeeeee, #dddddd) fixed;
 
-	border: solid 3px;
+	border: solid 2px;
 	border-color: #ffffff #000000 #000000 #ffffff;
 
 	cursor: pointer;
@@ -422,8 +422,6 @@ button
 
 button:active
 {
-	padding-top: 6px;
-
 	border-color: #000000 #ffffff #ffffff #000000;
 }
 

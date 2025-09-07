@@ -50,16 +50,13 @@ body > :last-child
 
 	padding: 0;
 	margin: 0;
-
-	border: solid 3px;
-	border-color: #000000 #ffffff #ffffff #000000;
 }
 
 /* button marquee */
 #webButtons .windowContent
 {
 	padding: 10px;
-	
+
 	overflow-y: hidden;
 }
 
