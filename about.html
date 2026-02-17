@@ -1,217 +1,269 @@
 <!DOCTYPE html>
 
 <html lang="en">
-	<head>
-		<!-- metadata -->
-		<title>01011100 : About</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
 
-		<!-- css -->
-		<link href="/css/main.css" rel="stylesheet" type="text/css">
-		<link href="/css/fonts.css" rel="stylesheet" type="text/css">
+        <title>01011100 : kat's suite - about</title>
 
-		<link href="/css/about.css" rel="stylesheet" type="text/css">
+        <!-- css -->
+        <link href="/css/main.css" rel="stylesheet">
+        <link href="/css/font.css" rel="stylesheet">
+        <link href="/css/windowStyling.css" rel="stylesheet">
 
-		<!-- js -->
-		<script src="/js/quickJump.js"></script>
-	</head>
+        <link href="/css/pages/universal.css" rel="stylesheet">
+        <link href="/css/pages/about.css" rel="stylesheet">
+        <link href="/css/pages/blog.css" rel="stylesheet">
 
-	<body>
-		<!-- sidebar -->
-		<div id="sidebar" class="window">
-			<iframe src="/sidebar.html"></iframe>
-		</div>
+        <!-- js -->
+        <script src="/js/profileStats.js"></script>
+        <script src="/js/lastfm.js"></script>
+    </head>
 
-		<!-- main content -->
-		<div id="mainWindow" class="window">
-			<div class="titlebar">
-				<img class="titleIcon" src="/media/icons/small/about.png" draggable="false">
+    <body>
+        <header>
+            <img id="banner" class="indent" src="/media/main/banner.png">
+        </header>
 
-				<p>About</p>
+        <main>
+            <div id="profileContainer">
+                <div id="leftHalf"> <!-- left side -->
+                    <h1><span class="username"></span></h1> <!-- username -->
 
-				<div class="barButtons">
-					<button onclick="toBottom();"><img src="/media/titlebar/arrow.png" draggable="false"></button>
-					<button><img src="/media/titlebar/paw.png" draggable="false"></button>
-				</div>
-			</div>
+                    <section> <!-- user info -->
+                        <div id="generalSection"> <!-- general -->
+                            <div id="profilePicture">
+                                <img src="/media/pages/about/pfp.png">
+                            </div>
 
-			<div id="mainContent" class="windowContent">
-				<!-- navbanner -->
-				<section>
-					<img class="indent" id="banner" src="/media/main/banner.png">
+                            <div id="statuses">
+                                <p id="activityStat"></p>
+                                <p>trans girlthing she/her</p>
 
-					<br>
+                                <div id="onlineIndicator">
+                                    <img src="/media/pages/about/onlineIndicator.png">
+                                    <p><sub>Always Online</sub></p>
+                                </div>
+                            </div>
+                        </div>
 
-					<nav>
-						<div class="navContainer indent">
-							<img src="/media/icons/large/home.png">
-							<div class="navOverflow">
-								<a href="/">Home</a>
-							</div>
-						</div>
+                        <p id="moodStat"></p> <!-- mood status -->
+                    </section>
 
-						<div class="navContainer indent">
-							<img src="/media/icons/large/blog.png">
-							<div class="navOverflow">
-								<a href="/blog">Blog</a>
-							</div>
-						</div>
+                    <section> <!-- big boxes -->
+                        <div id="contactSection"> <!-- fake contact -->
+                            <p class="tableHeading">Contacting <span class="username"></span></p>
 
-						<div class="navContainer indent">
-							<img src="/media/icons/large/art.png">
-							<div class="navOverflow">
-								<a href="/gallery">Gallery</a>
-							</div>
-						</div>
+                            <div class="tableContent">
+                                <div class="contactLink">
+                                    <img src="/media/pages/about/icons/add.png">
+                                    <p>Add Friend</p>
+                                </div>
 
-						<div class="navContainer indent">
-							<img src="/media/icons/large/about.png">
-							<div class="navOverflow">
-								<a href="/about">About</a>
-							</div>
-						</div>
+                                <div class="contactLink">
+                                    <img src="/media/pages/about/icons/award_star_add.png">
+                                    <p>Add Favorite</p>
+                                </div>
 
-						<div class="navContainer indent">
-							<img src="/media/icons/large/extras.png">
-							<div class="navOverflow">
-								<a href="/extras">Extras</a>
-							</div>
-						</div>
-					</nav>
-				</section>
+                                <div class="contactLink">
+                                    <img src="/media/pages/about/icons/comment.png">
+                                    <p>Direct Message</p>
+                                </div>
 
-				<br>
+                                <div class="contactLink">
+                                    <img src="/media/pages/about/icons/user_go.png">
+                                    <p>Forward</p>
+                                </div>
 
-				<main>
-					<!-- socials -->
-					<section>
-						<header><p>Socials</p></header>
-						<hr>
+                                <div class="contactLink">
+                                    <img src="/media/pages/about/icons/email.png">
+                                    <p>Send Message</p>
+                                </div>
 
-						<a class="linkChip indent" href="/gallery/art">
-							<div class="chipContent">
-								<img class="chipIcon" src="/media/about/discord.png">
+                                <div class="contactLink">
+                                    <img src="/media/pages/about/icons/stop.png">
+                                    <p>Block User</p>
+                                </div>
 
-								<p class="chipText">Discord</p>
-							</div>
-						</a>
+                                <div class="contactLink">
+                                    <img src="/media/pages/about/icons/group_add.png">
+                                    <p>Add to Group</p>
+                                </div>
 
-						<a class="linkChip indent" href="/gallery/art">
-							<div class="chipContent">
-								<img class="chipIcon" src="/media/about/bsky.png">
+                                <div class="contactLink">
+                                    <img src="/media/pages/about/icons/flag_red.png">
+                                    <p>Report User</p>
+                                </div>
+                            </div>
+                        </div>
 
-								<p class="chipText">Bluesky</p>
-							</div>
-						</a>
+                        <br>
 
-						<a class="linkChip indent" href="/gallery/art">
-							<div class="chipContent">
-								<img class="chipIcon" src="/media/about/steam.png">
+                        <div id="webspaceURL"> <!-- webspace url -->
+                            <p><strong>WebSpace URL:</strong></p>
+                            <p id="urlTag"></p>
+                        </div>
 
-								<p class="chipText">Steam</p>
-							</div>
-						</a>
-					</section>
+                        <br>
 
-					<br>
+                        <div> <!-- interests -->
+                            <p class="tableHeading"><span class="username"></span>'s Interests</p>
 
-					<!-- bio -->
-					<div class="profileSection indent">
-						<section>
-							<header><p>Bio</p></header>
-							<hr>
-		
-							<p>Backslash or Kat</p>
-							<p>She/Her : Trans</p>
-							<p>artist, animator, musician, programmer</p>
-							<p><em>i like food, cats, uhm... and video games :3</em></p>
-							<p>gay woke anarchist girlthing.</p>
-						</section>
-		
-						<img class="profileImg indent" src="/media/about/profileImage.png">
-					</div>
+                            <div class="tableContent">
+                                <section> <!-- general -->
+                                    <h4>General</h4>
 
-					<br>
+                                    <ul>
+                                        <li>art, and graphic design</li>
+                                        <li>listening to, and making music</li>
+                                        <li>video games!</li>
+                                        <li>occasional photography</li>
+                                        <li>crimes</li>
+                                    </ul>
+                                </section>
 
-					<!-- games -->
-					<div class="profileSection indent">
-						<section>
-							<header><p>Games</p></header>
-							<hr>
-		
-							<ul>
-								<li>FPS</li>
-								<li>Boomer Shooters</li>
-								<li>Roguelike/lites</li>
-								<li>Immersive Sims</li>
-								<li>Rhythm</li>
-								<li>Sandbox</li>
-							</ul>
-		
-							<ul>
-								<li>ULTRAKILL</li>
-								<li>Bomb Rush Cyberfunk</li>
-								<li>Rain World</li>
-								<li>pretty much every VALVe game ever</li>
-								<li>Mirrors Edge</li>
-								<li>Minecraft</li>
-								<li>a lot more probably</li>
-							</ul>
-		
-							<p>indie games rule.</p>
-						</section>
+                                <section> <!-- games -->
+                                    <h4>Games</h4>
 
-						<img class="profileImg indent" src="/media/about/BRC.jpg">
-					</div>
+                                    <ul>
+                                        <li>UNBEATABLE</li>
+                                        <li>ULTRAKILL</li>
+                                        <li>Rain World</li>
+                                        <li>Bomb Rush Cyberfunk</li>
+                                        <li>Hollow Knight</li>
+                                        <ul>
+                                            <li>...and Silksong</li>
+                                        </ul>
+                                        <li>Deltarune</li>
+                                        <li>Signalis</li>
+                                        <li>VALVe</li>
+                                        <ul>
+                                            <li>Half-Life</li>
+                                            <li>Portal</li>
+                                            <li>TF2</li>
+                                            <li>i guess gmod counts too</li>
+                                        </ul>
+                                        <li>Minecraft</li>
+                                        <li>...and more too!</li>
+                                    </ul>
+                                </section>
 
-					<br>
+                                <section> <!-- music -->
+                                    <h4>Music</h4>
 
-					<!-- music -->
-					<div class="profileSection indent">
-						<section>
-							<header><p>Music</p></header>
-							<hr>
-		
-							<ul>
-								<li>Hip-Hop</li>
-								<li>Rap</li>
-								<li>Funk</li>
-								<li>Jazz</li>
-								<li>Breakcore</li>
-								<li>DnB</li>
-								<li>and other similar genres</li>
-							</ul>
-		
-							<ul>
-								<li>A Tribe Called Quest</li>
-								<li>FEMTANYL</li>
-								<li>HIDEKI NAGANUMA</li>
-								<li>Leaders of The New School</li>
-								<li>Weezer (?)</li>
-								<li>a few more idk lol</li>
-							</ul>
-		
-							<p>i really only liked pinkerton...</p>
-						</section>
+                                    <ul>
+                                        <li>hip-hop</li>
+                                        <li>funk</li>
+                                        <li>alternative</li>
+                                        <li>jazz</li>
+                                        <li>rock</li>
+                                        <li>breakcore, dnb, jungle</li>
+                                        <li>just whatever sounds good</li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
 
-						<img class="profileImg indent" src="/media/about/ATCQ.jpg">
-					</div>
-					</main>
+                        <br>
 
-					<br>
-					
-					<!-- footer -->
-					<section>
-						<footer class="indent">
-							<p>this website is a work-in-progress, and it will be for the foreseeable future.</p>
-							<p>if you encounter any issues, bugs, etc. please report it on <a href="https://github.com/backslash127/backslash127.github.io/issues" target="_blank">github</a>.</p>
-						</footer>
-		
-						<br>
-		
-						<button onclick="toTop();"><p>return to top</p></button>
-					</section>
-			</div>
-		</div>
-	</body>
+                        <div id="socialLinks"> <!-- links -->
+                            <p class="tableHeading"><span class="username"></span>'s Links</p>
+
+                            <div class="tableContent">
+                                <div class="socialLink"> <!-- bsky -->
+                                    <img src="/media/pages/about/links/bluesky.png">
+                                    <a href="https://bsky.app/profile/backslash127.github.io" target="_blank"><p>Bluesky</p></a>
+                                </div>
+
+                                <div class="socialLink"> <!-- discord -->
+                                    <img src="/media/pages/about/links/discord.png">
+                                    <a href="https://discord.com/users/467507791553101845" target="_blank"><p>Discord</p></a>
+                                </div>
+
+                                <div class="socialLink"> <!-- steam -->
+                                    <img src="/media/pages/about/links/steam.png">
+                                    <a href="https://steamcommunity.com/id/Backslash127/" target="_blank"><p>Steam</p></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <br>&nbsp;
+                </div>
+
+                <div id="rightHalf"> <!-- right side -->
+                    <br>
+
+                    <section> <!-- blogspot -->
+                        <p><strong>Latest Blog Entry</strong> [<a href="/blog.html">View Blog</a>]</p>
+
+                        <div class="simplePost">
+                            <a href="/blogposts/02-17-2026.html">
+                                <span class="blogpostTitle">welcome back!</span>
+                                <span class="blogpostDate">02/17/2026</span>
+                            </a>
+                        </div>
+                    </section>
+
+                    <br>&nbsp;
+
+                    <section> <!-- blurb -->
+                        <div class="sectionHeading">
+                            <p class="section"><span class="username"></span>'s Blurbs</p>
+                        </div>
+
+                        <section class="sectionInner">
+                            <section> <!-- about me -->
+                                <h4>About Me:</h4>
+
+                                <p>yo! welcome to my profile. i'm backslash, but i also go by kat sometimes.</p>
+                                <p>i really like creating things, and i'm really thankful that i'm able to do what i do!</p>
+                                <p>i have a lot of hobbies and honestly i can't juggle them all sometimes.</p>
+                                <p>i hail from a far off land called Minnesota. it's really fucking cold here!!! (except in the summer, it gets really hot then.)</p>
+                                <p>thanks for paying my website a visit, i really appreciate it.</p>
+                            </section>
+
+                            <section> <!-- website info -->
+                                <h4>Website Info:</h4>
+
+                                <p>this website is pretty much a portfolio for all my art n' stuff, but it's also where i keep a blog too!</p>
+                                <p>the earliest saved archive of the site dates all the way back to 11/09/2024! (so old)</p>
+                                <p>there's currently 6 other versions of the website i have archived right now (7 versions total if you include this current one).</p>
+                            </section>
+                        </section>
+                    </section>
+
+                    <section id="commentsSection"> <!-- comments -->
+                        <div class="sectionHeading">
+                            <p class="section"><span class="username"></span>'s Comments</p>
+                        </div>
+
+                        <div class="sectionInner">
+                            <p>please refrain from having full-blown conversations here. and be nice too!!!</p>
+
+                            <div id="c_widget"></div>
+                            <script src="/js/commentWidget.js"></script>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div id="lastFmStats">
+                <img class="sticker" src="/media/main/stickers/sticker_jammin.png">
+
+                <div id="listening">
+                    <p>nothing's playing...</p>
+                </div>
+            </div>
+
+            <br>
+        </main>
+
+        <footer class="indent">
+            <p>this website is a work-in-progress, and it will be for the foreseeable future.</p>
+            <p>if you encounter any bugs, issues, etc. please report them on <a href="https://github.com/backslash127/backslash127.github.io/issues" target="_blank">github</a>.</p>
+        </footer>
+    </body>
 </html>

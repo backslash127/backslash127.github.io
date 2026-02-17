@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+
+        <title>01011100 : kat's suite - home</title>
+
+        <!-- css -->
+        <link href="/css/main.css" rel="stylesheet">
+        <link href="/css/font.css" rel="stylesheet">
+        <link href="/css/windowStyling.css" rel="stylesheet">
+
+        <link href="/css/pages/universal.css" rel="stylesheet">
+        <link href="/css/pages/home.css" rel="stylesheet">
+        <link href="/css/pages/blog.css" rel="stylesheet">
+        <link href="/css/pages/gallery.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <img id="banner" class="indent" src="/media/main/banner.png">
+        </header>
+
+        <main>
+            <section> <!-- intro -->
+                <img class="sticker" src="/media/main/stickers/sticker_casual.png" style="float: right;">
+                <h2>Homepage</h2>
+                <hr>
+
+                <p>welcome to my website! this is the spot for everything i create. here i'm keeping a blog, cataloging my art, and a bunch of other stuff too!</p>
+                <p><em>this website is intended to be viewed on desktops. apologies to anyone visiting on mobile. (i will not be adding mobile support. ever.)</em></p>
+            </section>
+
+            <section> <!-- gallery showcase -->
+                <h2>Gallery Showcase</h2>
+                <hr>
+
+                <p>a small selection of stuff from the <a href="/gallery.html">gallery</a> that i wanna show off here.</p>
+                <div id="galleryShowcase" class="cutout">
+                    <a class="galleryItem" href="/media/pages/gallery/photos/2025/mall.jpg" target="_blank">
+                        <img class="galleryTag" src="/media/pages/gallery/categories/photos/tag_Photos.png">
+                        <img src="/media/pages/gallery/photos/2025/mall.jpg">
+                    </a>
+
+                    <a class="galleryItem" onclick="window.parent.updatePlaylist([
+                        {
+                            name:'scenario.wav', artist:'Backslash', album:'scenario.wav - Single',
+                            albumCover:'media/pages/gallery/music/scenario.wav/cover.png',
+                            filePath:'media/pages/gallery/music/scenario.wav/audio.wav'
+                        },
+                    ])">
+                        <img class="galleryTag" src="/media/pages/gallery/categories/music/tag_Music.png">
+                        <img class="itemThumb" src="/media/pages/gallery/music/scenario.wav/cover.png">
+                    </a>
+
+                    <a class="galleryItem" href="/media/pages/gallery/photos/2026/snowskyEchoMini.jpg" target="_blank">
+                        <img class="galleryTag" src="/media/pages/gallery/categories/photos/tag_Photos.png">
+                        <img src="/media/pages/gallery/photos/2026/snowskyEchoMini.jpg">
+                    </a>
+
+                    <a class="galleryItem" href="/media/pages/gallery/graphics/2024/G-STOP_magazine.png" target="_blank">
+                        <img class="galleryTag" src="/media/pages/gallery/categories/graphics/tag_Graphics.png">
+                        <img src="/media/pages/gallery/graphics/2024/G-STOP_magazine.png">
+                    </a>
+                </div>
+
+                <p style="text-align: center;"><em>some works may be cropped. click on one to open its raw file in a new tab.</em></p>
+                <p style="text-align: center;"><em>songs/albums will be loaded into the music player in the sidebar.</em></p>
+            </section>
+
+            <section> <!-- blogpost -->
+                <h2>Latest Blogpost</h2>
+                <hr>
+
+                <p>self-explanatory. it's the most recent blogpost.</p>
+
+                <a class="cutout" href="/blogposts/02-08-2026.html">
+                    <div class="blogpost">
+                        <img class="icon" src="/media/icons/book.png">
+                        <span class="blogpostTitle">welcome back!</span>
+                        <span class="blogpostDate">02/08/2026</span>
+                    </div>
+                </a>
+            </section>
+
+            <br>
+        </main>
+
+        <footer class="indent">
+            <p>this website is a work-in-progress, and it will be for the foreseeable future.</p>
+            <p>if you encounter any bugs, issues, etc. please report them on <a href="https://github.com/backslash127/backslash127.github.io/issues" target="_blank">github</a>.</p>
+        </footer>
+    </body>
+</html>

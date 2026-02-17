@@ -1,0 +1,333 @@
+.window
+{
+    display: flex;
+    flex-direction: column;
+
+    padding: 0;
+    margin: 0;
+
+    background: #edead7;
+    border: 3px solid;
+    border-color: #c088c2 #725296 #725296 #c088c2;
+    border-radius: 8px 8px 0 0;
+}
+
+.toolBar
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1 0 auto;
+
+    width: 100%;
+    height: unset;
+
+    padding: 0;
+    margin: 0;
+
+    color: #000000;
+
+    border: 1px solid #d3cfb8;
+}
+
+.icon
+{
+    width: 16px;
+    height: 16px;
+
+    padding: 0;
+    margin: 0;
+
+    user-select: none;
+
+    filter: drop-shadow(1px 1px 1px #00000080);
+}
+
+.windowContent
+{
+    width: 100%;
+    height: 100%;
+
+    padding: unset;
+    margin: 0;
+
+    font-family: "Courier Prime Code";
+}
+
+/* title bar */
+.titleBar
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 100%;
+    height: 32px;
+
+    padding: 0;
+    margin: 0;
+
+    color: #ffffff;
+    font-size: 0.875rem;
+
+    background: #9460a9;
+    border: 3px solid #9460a9;
+    border-radius: 4px 4px 0 0;
+
+    user-select: none;
+}
+
+.windowIcon
+{
+    margin: 0 10px 0 7px;
+}
+
+.windowTitle
+{
+    flex: 1 0 auto;
+
+    height: auto;
+    width: auto;
+
+    padding: 0;
+    margin: 0;
+}
+
+.titleBarButtons
+{
+    display: flex;
+    flex-direction: row;
+
+    margin: 0 1px;
+}
+
+.titleButton
+{
+    display: block;
+    width: 24px;
+    height: 24px;
+
+    padding: 0;
+    margin: 0 1px;
+}
+
+.titleButton:hover
+{
+    opacity: 75%;
+}
+
+.titleButton:active
+{
+    opacity: 50%;
+}
+
+/* menu bar */
+.menuBar
+{
+    width: 100%;
+    height: 24px;
+
+    font-size: 0.875rem;
+}
+
+.menuItem
+{
+    display: block;
+
+    width: auto;
+    height: 100%;
+
+    padding: 0 10px;
+    margin: 0;
+
+    line-height: 20px;
+
+    user-select: none;
+}
+
+.menuItem:hover
+{
+    background: #d3cfb8;
+}
+
+.menuItem:active
+{
+    background: #edead7;
+}
+
+/* tabs */
+.tabBar
+{
+    width: 100%;
+    height: 38px;
+
+    background: #d3cfb8;
+}
+
+.tab
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 175px;
+    height: 100%;
+
+    padding: 0;
+    margin: 0;
+
+    color: #000000;
+    font-size: 0.875rem;
+    text-decoration: none;
+    font-weight: normal;
+
+    background: #d3cfb8;
+    border: 1px solid #d3cfb8;
+
+    transition: all 25ms ease-out;
+
+    user-select: none;
+    cursor: pointer;
+}
+
+.tab.active, .tab:hover
+{
+    background: #edead7;
+}
+
+.tab:active
+{
+    background: #d3cfb8;
+}
+
+.tabIcon
+{
+    margin: 0 8px;
+}
+
+.tab p
+{
+    flex: 1 0 auto;
+
+    margin: 0 1px;
+}
+
+.tab p::after
+{
+    content: "×";
+    float: right;
+
+    margin: 0 12px;
+}
+
+/* address bar */
+.addressBar
+{
+    width: 100%;
+    height: 38px;
+
+    padding: 0 10px;
+    margin: 0;
+}
+
+.navigationButtons
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navigationButtons :first-child
+{
+    margin-right: 5px;
+}
+
+.navigationButtons :last-child
+{
+    margin-left: 5px;
+}
+
+.navButton
+{
+    width: 24px;
+    height: 24px;
+
+    padding: 0;
+
+    user-select: none;
+    cursor: pointer;
+}
+
+.navButton:hover
+{
+    opacity: 75%;
+}
+
+.navButton:active
+{
+    opacity: 50%;
+}
+
+.urlBox
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1 1 auto;
+
+    width: 100%;
+    height: 75%;
+
+    padding: 0 8px;
+    margin: 0 5px 0 10px;
+
+    color: #888888;
+    font-size: 0.875rem;
+
+    background: linear-gradient(#fcfcfe, #f4f3ee);
+    border: 1px solid #d3cfb8;
+    border-radius: 8px;
+
+    user-select: none;
+    cursor: not-allowed;
+}
+
+.urlBox img
+{
+    margin: 0 7px 0 0;
+}
+
+.searchChip
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: auto;
+    height: 100%;
+
+    padding: 0 10px 0 5px;
+    margin: 0;
+
+    font-size: 0.75rem;
+
+    user-select: none;
+}
+
+.searchChip img
+{
+    width: 18px;
+    height: 18px;
+
+    margin: 0 5px 0 0;
+}
+
+.searchChip:hover
+{
+    background: #d3cfb8;
+}
+
+.searchChip:active
+{
+    background: #edead7;
+}

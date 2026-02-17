@@ -1,0 +1,120 @@
+/* gallery categories */
+a:is(#graphic, #music, #photos, #writing)
+{
+    transition: all 50ms ease-in-out;
+}
+
+#graphics:hover
+{
+    background: #efbe78;
+}
+
+#music:hover
+{
+    background: #cc5062;
+}
+
+#photos:hover
+{
+    background: #56bf5b;
+}
+
+#writings:hover
+{
+    background: #4a97dd;
+}
+
+a:is(#graphics, #music, #photos, #writings):active
+{
+    background: transparent;
+}
+
+/* gallery grid */
+.gridSection
+{
+    width: 100%;
+    height: 100%;
+
+    padding: 0;
+    margin: 0;
+
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+}
+
+.sectionDate
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sectionDate::after
+{
+    content: "";
+
+    flex: 1;
+
+    border-bottom: 3px solid #ffffff;
+    border-radius: 50em;
+}
+
+.sectionDate:not(:empty)::after
+{
+    margin-left: 0.75em;
+}
+
+.galleryItem
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    width: calc(100% / 4em);
+    height: auto;
+    aspect-ratio: 1 / 1;
+
+    padding: 0;
+    margin: 5px;
+
+    cursor: pointer;
+}
+
+#galleryShowcase .galleryItem
+{
+    width: calc(100% / 4);
+}
+
+.galleryItem *
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.galleryItem img
+{
+    width: 100%;
+    height: 100%;
+
+    padding: 0;
+    margin: 0;
+
+    object-fit: cover;
+
+    border: 2px solid #9460a9;
+    border-radius: 8px;
+}
+
+.galleryTag
+{
+    z-index: 2;
+}
+
+.galleryItem:hover img
+{
+    transform: scale(102%) rotate(1.25deg);
+    transition: all 50ms ease-in-out;
+
+    border-color: #ffffff;
+}

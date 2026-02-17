@@ -1,5 +1,5 @@
 // this script is under the MIT license (https://max.nekoweb.org/resources/license.txt)
-                        
+
 const USERNAME = "backslash127"; // Put your LastFM username here
 const BASE_URL = `https://lastfm-last-played.biancarosa.com.br/${USERNAME}/latest-song`;
 
@@ -23,11 +23,12 @@ const getTrack = async () => {
     // ARTIST: json.track.artist['#text']
 
     document.getElementById("listening").innerHTML = `
-    <img class="indent" src="${json.track.image[1]['#text']}">
     <div id="trackInfo">
-    <p id="trackName"><strong><em>${json.track.name}</em></strong></p>
-    <p id="artistName">${json.track.artist['#text']}</p>
+        <p id="trackName"><strong>${json.track.name}</strong></p>
+        <p id="artistName">${json.track.artist['#text']}</p>
+        <p id="albumName"><em>${json.track.album['#text']}</em></p>
     </div>
+    <img src="${json.track.image[3]['#text']}">
     `
 };
 

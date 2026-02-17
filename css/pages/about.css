@@ -1,0 +1,267 @@
+#profileContainer
+{
+    display: flex;
+    flex-direction: row;
+
+    font-size: 0.875rem;
+}
+
+#leftHalf
+{
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+
+    width: 45%;
+
+    padding: 0 15px 0 0;
+    margin: 0;
+}
+
+#rightHalf
+{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+
+    width: 55%;
+
+    padding: 0 0 0 15px;
+    margin: 0;
+}
+
+/* left side */
+#generalSection
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#profilePicture
+{
+    width: 128px;
+    height: 128px;
+
+    aspect-ratio: 1 / 1;
+}
+
+#profilePicture img
+{
+    width: 100%;
+    height: 100%;
+
+    border: 3px solid #9460a9;
+    border-radius: 8px;
+}
+
+#statuses
+{
+    padding: 0 20px;
+}
+
+#statuses :first-child
+{
+    margin-top: 0;
+}
+
+#onlineIndicator
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#onlineIndicator img
+{
+    width: 10px;
+    margin: 0 10px 0 0;
+}
+
+#onlineIndicator p
+{
+    margin: 0;
+}
+
+#contactSection .tableContent
+{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+
+    color: #9460a9;
+    font-size: 0.75rem;
+    font-weight: bold;
+    line-height: 0.25rem;
+}
+
+.contactLink
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    text-decoration: underline;
+}
+
+.contactLink img
+{
+    width: 12px;
+    height: 12px;
+    aspect-ratio: 1 / 1;
+
+    padding: 0;
+    margin: 0 10px 0 0;
+
+    filter: drop-shadow(1px 1px 1px #00000080);
+}
+
+.contactLink:hover
+{
+    cursor: not-allowed;
+    text-decoration-thickness: 2px;
+}
+
+#webspaceURL
+{
+    padding: 0 10px;
+
+    border: 2px solid #9460a9;
+    border-radius: 8px;
+}
+
+#webspaceURL *
+{
+    line-height: 0.25em;
+}
+
+.socialLink
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.socialLink img
+{
+    width: 32px;
+    height: 32px;
+    aspect-ratio: 1 / 1;
+
+    margin: 0 10px 0 0;
+}
+
+/* right side */
+.sectionHeading
+{
+    padding: 1px 10px;
+
+    color: #ffffff;
+    background: #9460a9;
+
+    border-radius: 8px;
+}
+
+.sectionHeading ::selection
+{
+    color: #9460a9;
+    background: #ffffff;
+}
+
+.sectionInner
+{
+    padding: 0 10px;
+}
+
+#commentsSection
+{
+    flex: 1 0 0;
+
+    height: 100%;
+
+}
+
+#c_widget
+{
+    overflow-y: scroll;
+}
+
+/* last fm */
+#lastFmStats
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#lastFmStats #listening
+{
+    display: flex;
+    flex-direction: row;
+
+    margin: 0 30px 0 auto;
+
+    text-align: right;
+}
+
+#lastFmStats #listening img
+{
+    transform: perspective(500px) rotateX(10deg) rotateY(-20deg);
+    transform-origin: 50% 50%;
+
+    height: 200px;
+    width: 200px;
+    aspect-ratio: 1 / 1;
+
+    filter: drop-shadow(10px 8px 6px #0000004d);
+}
+
+#lastFmStats #trackInfo
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+#lastFmStats #trackName
+{
+    margin: 0;
+
+    font-size: 1.5rem;
+}
+
+#lastFmStats :is(#artistName, #albumName)
+{
+    margin: 0;
+
+    font-size: 1.25rem;
+}
+
+/* misc. */
+.tableHeading
+{
+    padding: 10px;
+    margin: 0;
+
+    color: #ffffff;
+
+    background: #9460a9;
+
+    border-radius: 8px 8px 0 0;
+}
+
+.tableHeading::selection, .tableHeading ::selection
+{
+    color: #9460a9;
+
+    background: #ffffff;
+}
+
+.tableContent
+{
+    padding: 5px 10px;
+
+    border: 2px solid #9460a9;
+    border-radius: 0 0 8px 8px;
+}

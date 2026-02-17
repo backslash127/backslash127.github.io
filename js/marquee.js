@@ -1,48 +1,48 @@
 var loading = null;
 
-function init() {
-	loading = true;
+function marqueeInit() {
+    loading = true;
 
-	let marquee = document.querySelector(".marquee");
-	let content = document.querySelector(".marqueeContent");
-	let contentList = document.querySelectorAll(".marqueeContent");
-	let contentClone = content.cloneNode(true)
+    let marquee = document.querySelector(".marquee");
+    let marqueeContent = document.querySelector(".marqueeContent");
+    let contentList = document.querySelectorAll(".marqueeContent");
+    let contentClone = marqueeContent.cloneNode(true);
 
-	let contentWidth = content.scrollWidth;
-	let rate = 75; // pixels per second
-	
-	let animationDuration = contentWidth / rate;
-	content.style.setProperty("--animation-duration", `${animationDuration}s`);
-	contentClone.style.setProperty("--animation-duration", `${animationDuration}s`);
+    let contentWidth = marqueeContent.scrollWidth;
+    let rate = 75; // pixels per second
 
-	marquee.appendChild(contentClone);
-	contentClone.style.animationPlayState = "running";
+    let animationDuration = contentWidth / rate;
+    marqueeContent.style.setProperty("--marqueeDuration", `${animationDuration}s`); // sets the css variable to the animation duration
+    contentClone.style.setProperty("--marqueeDuration", `${animationDuration}s`); // sets the css variable to the animation duration
 
-	contentList.forEach(content => content.style.animationPlayState = "running");
+    marquee.appendChild(contentClone); // parents the cloned content into the marquee element
 
-	console.log("marquee content cloned");
-}
+    contentClone.style.animationPlayState = "running"; // sets the play state of the marque animation
+    contentList.forEach(item => item.style.animationPlayState = "running"); // sets the play state of the marque animation for each found marquee content element
 
-function pause() {
-	if (loading == false) {
-		let contentList = document.querySelectorAll(".marqueeContent");
-		contentList.forEach(content => content.style.animationPlayState = "paused");
+    console.log("marquee initialized")
+};
 
-		console.log("marquee paused");
-	}
-}
+function marqueePause() { // self explanatory
+    if (loading == false) {
+        let contentList = document.querySelectorAll(".marqueeContent");
+        contentList.forEach(item => item.style.animationPlayState = "paused");
 
-function play() {
-	if (loading == false) {
-		let contentList = document.querySelectorAll(".marqueeContent");
-		contentList.forEach(content => content.style.animationPlayState = "running");
+        console.log("marquee paused");
+    };
+};
 
-		console.log("marquee unpaused");
-	}
-}
+function marqueePlay() { // self explanatory
+    if (loading == false) {
+        let contentList = document.querySelectorAll(".marqueeContent");
+        contentList.forEach(item => item.style.animationPlayState = "running");
+
+        console.log("marquee unpaused");
+    };
+};
 
 window.onload = function() {
-	init();
+    marqueeInit(); // self explanatory
 
-	loading = false;
-}
+    loading = false; // sets loading to false
+};

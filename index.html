@@ -1,156 +1,334 @@
 <!DOCTYPE html>
-
+<!-- website created : 02/07/2026 -->
 <html lang="en">
-	<head>
-		<!-- metadata -->
-		<title>01011100 : Home</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
 
-		<!-- css -->
-		<link href="/css/main.css" rel="stylesheet" type="text/css">
-		<link href="/css/fonts.css" rel="stylesheet" type="text/css">
+        <title>01011100 : kat's suite</title>
 
-		<link href="/css/index.css" rel="stylesheet" type="text/css">
-		<link href="/css/blog.css" rel="stylesheet" type="text/css">
+        <!-- css -->
+        <link href="/css/main.css" rel="stylesheet">
+        <link href="/css/font.css" rel="stylesheet">
+        <link href="/css/windowStyling.css" rel="stylesheet">
+        <link href="/css/musicPlayer.css" rel="stylesheet">
 
-		<!-- js -->
-		<script src="/js/quickJump.js"></script>
-	</head>
+        <link href="/css/index.css" rel="stylesheet">
 
-	<body>
-		<!-- sidebar -->
-		<div id="sidebar" class="window">
-			<iframe src="/sidebar.html"></iframe>
-		</div>
+        <!-- js -->
+        <script src="/js/tabs.js"></script>
+        <script src="/js/redirectButtons.js"></script>
+        <script src="/js/taskbar.js" defer></script>
+        <script src="/js/musicPlayer.js" defer></script>
 
-		<!-- main content -->
-		<div id="mainWindow" class="window">
-			<div class="titlebar">
-				<img class="titleIcon" src="/media/icons/small/home.png" draggable="false">
+        <script src="/js/marquee.js"></script>
+    </head>
 
-				<p>Home</p>
+    <body>
+        <div id="mainContainer">
+            <div id="sidebar"> <!-- sidebar -->
+                <div class="window" id="youtubeEmbed"> <!-- yt embed -->
+                    <div class="titleBar">
+                        <img class="icon windowIcon" src="/media/icons/video.png" draggable="false">
 
-				<div class="barButtons">
-					<button onclick="toBottom();"><img src="/media/titlebar/arrow.png" draggable="false"></button>
-					<button><img src="/media/titlebar/paw.png" draggable="false"></button>
-				</div>
-			</div>
+                        <p class="windowTitle">Youtube Video</p>
 
-			<div id="mainContent" class="windowContent">
-				<!-- navbanner -->
-				<section>
-					<img class="indent" id="banner" src="/media/main/banner.png">
+                        <div class="titleBarButtons">
+                            <img class="titleButton" src="/media/windowGraphics/titlebar/minimize.png" draggable="false">
+                            <img class="titleButton" src="/media/windowGraphics/titlebar/maximize.png" draggable="false">
+                            <img class="titleButton" src="/media/windowGraphics/titlebar/close.png" draggable="false">
+                        </div>
+                    </div>
 
-					<br>
+                    <div class="windowContent">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/LwVlbivQmCA?si=2Q9x0fYvNSlexdE5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
 
-					<nav>
-						<div class="navContainer indent">
-							<img src="/media/icons/large/home.png">
-							<div class="navOverflow">
-								<a href="/">Home</a>
-							</div>
-						</div>
+                <div class="window" id="buttonMarquee"> <!-- buttons -->
+                    <div class="titleBar">
+                        <img class="icon windowIcon" src="/media/icons/network.png" draggable="false">
 
-						<div class="navContainer indent">
-							<img src="/media/icons/large/blog.png">
-							<div class="navOverflow">
-								<a href="/blog">Blog</a>
-							</div>
-						</div>
+                        <p class="windowTitle">Buttons</p>
 
-						<div class="navContainer indent">
-							<img src="/media/icons/large/art.png">
-							<div class="navOverflow">
-								<a href="/gallery">Gallery</a>
-							</div>
-						</div>
+                        <div class="titleBarButtons">
+                            <img class="titleButton" src="/media/windowGraphics/titlebar/minimize.png" draggable="false">
+                            <img class="titleButton" src="/media/windowGraphics/titlebar/maximize.png" draggable="false">
+                            <img class="titleButton" src="/media/windowGraphics/titlebar/close.png" draggable="false">
+                        </div>
+                    </div>
 
-						<div class="navContainer indent">
-							<img src="/media/icons/large/about.png">
-							<div class="navOverflow">
-								<a href="/about">About</a>
-							</div>
-						</div>
+                    <div class="windowContent">
+                        <div class="marquee indent" onmouseenter="marqueePause();" onmouseleave="marqueePlay();">
+                            <div class="marqueeContent">
+                                <a class="webButton" href="https://atribecalledquest.com/" target="_blank">
+                                    <img src="/media/webButtons/ATCQ.gif">
+                                </a>
 
-						<div class="navContainer indent">
-							<img src="/media/icons/large/extras.png">
-							<div class="navOverflow">
-								<a href="/extras">Extras</a>
-							</div>
-						</div>
-					</nav>
-				</section>
+                                <a class="webButton" href="https://backslash127.github.io/" target="_blank">
+                                    <img src="/media/webButtons/backslash.gif">
+                                </a>
 
-				<br>
+                                <a class="webButton" href="https://blinkies.cafe/" target="_blank">
+                                    <img src="/media/webButtons/blinkiesCafe-badge.gif">
+                                </a>
 
-				<main>
-					<section>
-						<header><p>Welcome!</p></header>
-						<hr>
+                                <a class="webButton" href="https://derrek.org/" target="_blank">
+                                    <img src="/media/webButtons/derrek.gif">
+                                </a>
 
-						<p>hi! i'm backslash. welcome to my website! here i'm hosting my blog, keeping my art, and probably doing some other stuff too!</p>
-						<p>just as a forewarning, this website uses IFrames and Javascript! not sure why that's important information, but it might be useful to someone!</p>
-					</section>
+                                <a class="webButton" href="https://dimden.dev/" target="_blank">
+                                    <img src="https://dimden.dev/services/images/88x31.gif">
+                                </a>
 
-					<br>
+                                <a class="webButton" target="_blank">
+                                    <img src="/media/webButtons/firefox2.gif">
+                                </a>
 
-					<section>
-						<header><p>Gallery Showcase</p></header>
-						<hr>
+                                <a class="webButton" href="https://item64.neocities.org/" target="_blank">
+                                    <img src="/media/webButtons/item64.gif">
+                                </a>
 
-						<p>a small selection of works from the <a href="/gallery">gallery</a> that i want to show off.</p>
+                                <a class="webButton" href="https://kitmeow.neocities.org/" target="_blank">
+                                    <img src="/media/webButtons/kitdoombutton1.gif">
+                                </a>
 
-						<div id="artShowcase" class="cutout">
-							<a class="showcaseCard" href="/media/gallery/art/harleyDoodle.png" target="_blank">
-								<img class="showcaseImage" src="/media/gallery/art/harleyDoodle.png">
-							</a>
+                                <a class="webButton" href="https://mukkysworld.neocities.org/" target="_blank">
+                                    <img src="/media/webButtons/MukkysWorld_Button.gif">
+                                </a>
 
-							<a class="showcaseCard" href="/media/gallery/art/SHRED.png" target="_blank">
-								<img class="showcaseImage" src="/media/gallery/art/SHRED.png">
-							</a>
+                                <a class="webButton" href="https://nekoweb.org/" target="_blank">
+                                    <img src="https://nekoweb.org/assets/buttons/button11.gif">
+                                </a>
 
-							<a class="showcaseCard" href="/media/gallery/art/G-STOP_magazine.png" target="_blank">
-								<img class="showcaseImage" src="/media/gallery/art/G-STOP_magazine.png">
-							</a>
-						</div>
+                                <a class="webButton" href="https://nondmo.online/" target="_blank">
+                                    <img src="/media/webButtons/nondmo.png">
+                                </a>
 
-						<p style="text-align: center;"><em>some works may be cropped. click on one to open its raw file in a new tab.</em></p>
-					</section>
+                                <a class="webButton" href="https://olliveen.neocities.org/" target="_blank">
+                                    <img src="/media/webButtons/olliveen.gif">
+                                </a>
 
-					<br>
+                                <a class="webButton" href="https://ribo.zone/" target="_blank">
+                                    <img src="/media/webButtons/ribose.png">
+                                </a>
 
-					<section>
-						<header><p>Recent Blogpost</p></header>
-						<hr>
+                                <a class="webButton" href="https://rickys.place/" target="_blank">
+                                    <img src="/media/webButtons/rickys.place_button-Xsmall.gif">
+                                </a>
 
-						<p>self-explanatory.</p>
+                                <a class="webButton" href="https://thepersonever.net/" target="_blank">
+                                    <img src="/media/webButtons/thepersoneverbutton.gif">
+                                </a>
 
-						<a href="/blog/08_30_25">
-							<div class="blogpost cutout">
-								<p class="postDate">08/30/25</p>
-								<header><p>status update!</p></header>
-								<hr>
+                                <a class="webButton" href="https://thumtacka.nekoweb.org/" target="_blank">
+                                    <img src="/media/webButtons/thumtackaAlt.gif">
+                                </a>
 
-								<p>updated the website! heres a post on what else i've been up to.</p>
-							</div>
-						</a>
-					</section>
-				</main>
+                                <a class="webButton" href="https://ublockorigin.com/" target="_blank">
+                                    <img src="/media/webButtons/ublock-now.png">
+                                </a>
 
-				<br>
+                                <a class="webButton" href="https://wiby.me/" target="_blank">
+                                    <img src="/media/webButtons/wiby.gif">
+                                </a>
 
-				<!-- footer -->
-				<section>
-					<footer class="indent">
-						<p>this website is a work-in-progress, and it will be for the foreseeable future.</p>
-						<p>if you encounter any issues, bugs, etc. please report it on <a href="https://github.com/backslash127/backslash127.github.io/issues" target="_blank">github</a>.</p>
-					</footer>
+                                <a class="webButton" href="https://00s.neocities.org/" target="_blank">
+                                    <img src="/media/webButtons/00s.gif">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-					<br>
+                <div class="window" id="musicPlayer"> <!-- music player -->
+                    <div class="titleBar">
+                        <img class="icon windowIcon" src="/media/icons/musicPlayer.png" draggable="false">
 
-					<button onclick="toTop();"><p>return to top</p></button>
-				</section>
-			</div>
-		</div>
-	</body>
+                        <p class="windowTitle">Taperunner</p>
+
+                        <div class="titleBarButtons">
+                            <img class="titleButton" src="/media/windowGraphics/titlebar/minimize.png" draggable="false">
+                            <img class="titleButton" src="/media/windowGraphics/titlebar/maximize.png" draggable="false">
+                            <img class="titleButton" src="/media/windowGraphics/titlebar/close.png" draggable="false">
+                        </div>
+                    </div>
+
+                    <div class="windowContent">
+                        <div id="infoSection">
+                            <img id="albumCover" src="/media/pages/gallery/categories/music/icon_Music.png">
+
+                            <marquee id="trackInfo" class="indent">
+                                <p id="trackTitle">nothings playing...<span id="trackArtist"></span></p>
+                                <p id="trackAlbum">n/a</p>
+                            </marquee>
+                        </div>
+
+                        <div id="playerControls">
+                            <button id="backButton" onclick="previousTrack();">
+                                <img src="/media/windowGraphics/musicPlayer/back.png">
+                            </button>
+
+                            <button id="playbackButton" onclick="togglePlayback();">
+                                <img src="/media/windowGraphics/musicPlayer/play.png">
+                            </button>
+
+                            <button id="forwardButton" onclick="nextTrack();">
+                                <img src="/media/windowGraphics/musicPlayer/forward.png">
+                            </button>
+
+                            <button id="volumeButton" onclick="toggleMute();">
+                                <img src="/media/windowGraphics/musicPlayer/volumeHalf.png">
+                            </button>
+
+                            <input id="volumeSlider" type="range" value="50" min="0" max="100" autocomplete="off" oninput="setVolume();" onchange="setVolume();">
+                            <p id="volumePercentage">50%</p>
+                        </div>
+
+                        <div id="seekControls">
+                            <p id="playbackTime">00:00</p>
+                            <input id="playbackSeeker" type="range" value="0" min="1" max="100" autocomplete="off" oninput="seekTo();">
+                            <p id="trackDuration">00:00</p>
+                        </div>
+
+                        <ul id="playlist" class="indent">
+
+                        </ul>
+
+                        <audio id="audioPlayer" src=""></audio>
+                    </div>
+                </div>
+            </div>
+
+            <div id="mainWindow" class="window"> <!-- main window -->
+                <!-- title bar -->
+                <div class="titleBar">
+                    <img class="icon windowIcon" src="/media/icons/runner.png" draggable="false">
+
+                    <p class="windowTitle">Webrunnr Browser 20 : v1.2.7 BETA</p>
+
+                    <div class="titleBarButtons">
+                        <img class="titleButton" src="/media/windowGraphics/titlebar/minimize.png" draggable="false">
+                        <img class="titleButton" src="/media/windowGraphics/titlebar/maximize.png" draggable="false">
+                        <img class="titleButton" src="/media/windowGraphics/titlebar/close.png" draggable="false">
+                    </div>
+                </div>
+
+                <!-- menu bar -->
+                <div class="toolBar menuBar">
+                    <p class="menuItem"><u>F</u>ile</p>
+                    <p class="menuItem"><u>E</u>dit</p>
+                    <p class="menuItem"><u>V</u>iew</p>
+                    <p class="menuItem"><u>B</u>ookmarks</p>
+                    <p class="menuItem"><u>T</u>ools</p>
+                    <p class="menuItem"><u>H</u>elp</p>
+                </div>
+
+                <!-- tabs -->
+                <div class="toolBar tabBar">
+                    <a class="tab active" href="/home.html" target="mainIFrame" draggable="false">
+                        <img class="icon tabIcon" src="/media/icons/computer.png" draggable="false">
+                        <p>Home</p>
+                    </a>
+
+                    <a class="tab" href="/blog.html" target="mainIFrame" draggable="false">
+                        <img class="icon tabIcon" src="/media/icons/journal.png" draggable="false">
+                        <p>Blog</p>
+                    </a>
+
+                    <a class="tab" href="/gallery.html" target="mainIFrame" draggable="false">
+                        <img class="icon tabIcon" src="/media/icons/paint.png" draggable="false">
+                        <p>Gallery</p>
+                    </a>
+
+                    <a class="tab" href="/about.html" target="mainIFrame" draggable="false">
+                        <img class="icon tabIcon" src="/media/icons/info.png" draggable="false">
+                        <p>About</p>
+                    </a>
+
+                    <a class="tab" href="/extras.html" target="mainIFrame" draggable="false">
+                        <img class="icon tabIcon" src="/media/icons/folder.png" draggable="false">
+                        <p>Extras</p>
+                    </a>
+                </div>
+
+                <!-- address bar -->
+                <div class="toolBar addressBar">
+                    <div class="navigationButtons">
+                        <img class="navButton" src="/media/windowGraphics/navigation/back.png" draggable="false" onclick="historyBack();">
+                        <img class="navButton" src="/media/windowGraphics/navigation/forward.png" draggable="false" onclick="historyForward();">
+                        <img class="navButton" src="/media/windowGraphics/navigation/reload.png" draggable="false" onclick="reloadFrame();">
+                    </div>
+
+                    <div class="urlBox">
+                        <img class="icon" src="/media/icons/globe.png" draggable="false">
+                        <p></p>
+                    </div>
+
+                    <div class="searchChip">
+                        <img class="icon" src="/media/icons/search.png" draggable="false">
+                        <p>Search</p>
+                    </div>
+                </div>
+
+                <!-- window content -->
+                <div class="windowContent" id="mainContent">
+                    <iframe id="mainIFrame" src="/home.html" name="mainIFrame" onload="updateTabs()">
+                        iFrame failed to load... (x_x) sorry!
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <div id="taskbar">
+            <div id="startMenu">
+                <div id="userInfo">
+                    <img src="/media/main/ballincat.png">
+                    <p>guest1</p>
+                </div>
+
+                <div id="innerContainer">
+                    <div id="leftHalf">
+
+                    </div>
+
+                    <div id="rightHalf">
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="startButton">
+                <img src="/media/main/logo.png">
+                start
+            </div>
+
+            <div id="taskbarContainer">
+                <div class="taskbarItem">
+                    <img class="icon" src="/media/icons/runner.png">
+                    <p>Webrunnr Browser 20 : v1.2.7 BETA</p>
+                </div>
+
+                <div class="taskbarItem">
+                    <img class="icon" src="/media/icons/video.png">
+                    <p>Youtube Video</p>
+                </div>
+
+                <div class="taskbarItem">
+                    <img class="icon" src="/media/icons/network.png">
+                    <p>Buttons</p>
+                </div>
+
+                <div class="taskbarItem">
+                    <img class="icon" src="/media/icons/musicPlayer.png">
+                    <p>Taperunner</p>
+                </div>
+            </div>
+
+            <div id="notificationArea">
+                <span id="clock">00:00</span>
+            </div>
+        </div>
+    </body>
 </html>
