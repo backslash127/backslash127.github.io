@@ -60,9 +60,9 @@ function resetValues() {
 
 updatePlaylist([  // this is just the initial playlist i want to have loaded when the page first loads
     {
-        name:'Imposter Syndrome', artist:'Sidney Gish', album:'No Dogs Allowed',
-        albumCover:'media/pages/gallery/music/initialSong/cover.png',
-        filePath:'media/pages/gallery/music/initialSong/audio.mp3'
+        name:'Ball is Infinite', artist:'D-CELL SOUND TEAM', album:'unbeatable [ost]',
+        albumCover:'media/pages/gallery/music/startupSong/cover.png',
+        filePath:'media/pages/gallery/music/startupSong/audio.mp3'
     },
 ]);
 
