@@ -60,7 +60,7 @@ function resetValues() {
 
 updatePlaylist([  // this is just the initial playlist i want to have loaded when the page first loads
     {
-        name:'Ball is Infinite', artist:'D-CELL SOUND TEAM', album:'unbeatable [ost]',
+        name:'SLEEPING IN', artist:'UNBEATABLE', album:'ALBUM.',
         albumCover:'media/pages/gallery/music/startupSong/cover.png',
         filePath:'media/pages/gallery/music/startupSong/audio.mp3'
     },
