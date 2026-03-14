@@ -24,6 +24,11 @@ a:is(#graphic, #music, #photos, #writing)
     background: #4a97dd;
 }
 
+#videos:hover
+{
+    background: #9460a9;
+}
+
 a:is(#graphics, #music, #photos, #writings):active
 {
     background: transparent;

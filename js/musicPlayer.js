@@ -60,7 +60,7 @@ function resetValues() {
 
 updatePlaylist([  // this is just the initial playlist i want to have loaded when the page first loads
     {
-        name:'SLEEPING IN', artist:'UNBEATABLE', album:'ALBUM.',
+        name:'Aisle 10 (Hello Allison)', artist:'Scapegoat Wax', album:'Okeeblow',
         albumCover:'media/pages/gallery/music/startupSong/cover.png',
         filePath:'media/pages/gallery/music/startupSong/audio.mp3'
     },
