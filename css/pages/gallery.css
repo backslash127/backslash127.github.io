@@ -1,5 +1,5 @@
 /* gallery categories */
-a:is(#graphic, #music, #photos, #writing)
+a:is(#graphics, #music, #photos, #writings, #videos)
 {
     transition: all 50ms ease-in-out;
 }
@@ -29,7 +29,7 @@ a:is(#graphic, #music, #photos, #writing)
     background: #9460a9;
 }
 
-a:is(#graphics, #music, #photos, #writings):active
+a:is(#graphics, #music, #photos, #writings, #videos):active
 {
     background: transparent;
 }
