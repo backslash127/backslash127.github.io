@@ -161,7 +161,7 @@ body
     font-style: italic;
     font-size: 1.125rem;
 
-    background: #9460a9;
+    background: linear-gradient(180deg,#9460a9 37.5%, #b378b5 100%);
 
     border: 3px solid;
     border-color: #c088c2 #725296 #725296 #c088c2;
