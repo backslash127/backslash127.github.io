@@ -61,7 +61,7 @@ const s_noCommentsText = 'no comments yet...';
 const s_closedCommentsText = 'comments are currently closed.';
 const s_websiteText = 'website'; // The links to websites left by users on their comments
 const s_replyButtonText = 'reply'; // The button for replying to someone
-const s_replyingText = 'replying to'; // The text that displays while the user is typing a reply
+const s_replyingText = 'replying to: '; // The text that displays while the user is typing a reply
 const s_expandRepliesText = 'show replies';
 const s_leftButtonText = '<';
 const s_rightButtonText = '>';
@@ -285,7 +285,7 @@ function displayComments(comments) {
         button.value = comment.id;
         button.setAttribute('onclick', `openReply(this.value)`);
         button.className = 'c-replyButton';
-        //comment.appendChild(button);
+        comment.appendChild(button);
 
         // Choose whether to display or not based on page number
         comment.style.display = 'none';

@@ -134,8 +134,19 @@
     max-width: 900px;
     resize: none;
 }
+
+#c_nameWrapper
+{
+    margin-top: 0;
+}
+
 #c_submitButton {display: block;}
-#c_replyingText {color: #000000;}
+#c_replyingText {
+    margin-top: 10px;
+
+    color: #000000;
+    font-weight: bold;
+}
 
 /* Comment section */
 .c-comment {
