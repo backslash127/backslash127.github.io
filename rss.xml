@@ -1,0 +1,24 @@
+<!--
+<guid> : https://www.uuidgenerator.net/guid
+<pubdate> : uses RFC 2822 format https://www.bairesdev.com/tools/onlinedevtools/
+-->
+
+<rss version="2.0">
+    <channel>
+        <!-- metadata -->
+        <title>01011100 : Kat's Feed</title>
+        <description>the RSS feed for "01011100 : Kat's Suite"!</description>
+        <link>https://backslash127.github.io/</link>
+
+
+        <!-- items -->
+        <item>
+            <title>TEST RSS POST</title>
+            <description>testing rss shittt yknow how it be</description>
+            <link>https://backslash127.github.io/</link>
+
+            <guid>3387776a-88b1-4829-b270-32e33f5d4612</guid>
+            <pubdate>Thu, 19 Mar 2026 01:37:23 +0000</pubdate>
+        </item>
+    </channel>
+</rss>
