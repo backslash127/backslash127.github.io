@@ -175,6 +175,7 @@
     text-decoration: none;
 }
 .c-site {
+    display: unset;
     text-transform: lowercase;
     color: #9460a9;
 }
