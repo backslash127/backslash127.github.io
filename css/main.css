@@ -102,6 +102,12 @@ body
     text-decoration: none;
 }
 
+.webButton img
+{
+    width: 88px;
+    height: 31px;
+}
+
 /* special styles */
 .indent, .cutout
 {
@@ -221,6 +227,8 @@ a:hover
 
 a:has(img)
 {
+    display: block;
+
     padding: 0;
     margin: unset;
 
