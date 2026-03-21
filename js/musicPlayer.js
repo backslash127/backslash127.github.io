@@ -60,8 +60,8 @@ function resetValues() {
 
 updatePlaylist([  // this is just the initial playlist i want to have loaded when the page first loads
     {
-        name:'Aisle 10 (Hello Allison)', artist:'Scapegoat Wax', album:'Okeeblow',
-        albumCover:'media/pages/gallery/music/startupSong/cover.png',
+        name:'All Alone', artist:'Alps Cru', album:'The Classic Collection',
+        albumCover:'media/pages/gallery/music/startupSong/cover.jpg',
         filePath:'media/pages/gallery/music/startupSong/audio.mp3'
     },
 ]);
