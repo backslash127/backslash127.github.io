@@ -1,9 +1,9 @@
 const isIFrame = typeof window !== 'undefined' && window.self !== window.top;
 
 if (isIFrame == true) {
-    window.top.location.replace("/404");
+    window.top.location.replace("https://" + location.hostname + "/404");
 };
 
 document.addEventListener("keypress", function(event) {
-    window.location.replace("");
+    window.location.replace("https://" + location.hostname + "/");
 });
