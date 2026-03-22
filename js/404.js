@@ -5,5 +5,5 @@ if (isIFrame == true) {
 };
 
 document.addEventListener("keypress", function(event) {
-    window.location.replace("https://" + location.hostname + "/");
+    window.location.replace("https://" + location.hostname + "/?p=/home");
 });
