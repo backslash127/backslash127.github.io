@@ -137,6 +137,10 @@ function seekTo() {
 };
 
 function setVolume() {
+    if (currentTrack.volume > 0) {
+        muted = false;
+    };
+
     currentTrack.volume = volumeSlider.value / 100; // sets the current track's volume to the value of the volume slider
     currentVolume = currentTrack.volume; // stores the current track's volume
 

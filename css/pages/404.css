@@ -1,0 +1,65 @@
+:root
+{
+    --prurprl: #8d39ad;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #ffffff;
+    font-family: "Perfect DOS";
+
+    background: var(--prurprl);
+    border: none;
+
+    user-select: none;
+}
+
+p, ul
+{
+    margin: 0.5rem 0;
+}
+
+#system
+{
+    padding: 2px 10px 2px 10px;
+    margin: auto;
+
+    color: var(--prurprl);
+
+    background-color: #ffffff;
+}
+
+#errorSection
+{
+    max-width: 675px;
+}
+
+ul
+{
+    list-style: none;
+    list-style-type: "\002A";
+    list-style-position: outside;
+}
+
+li span
+{
+    position: relative;
+    left: 20px;
+}
+
+#blinkBlink
+{
+    animation: blinking 1s step-end infinite;
+}
+
+@keyframes blinking {
+    50%
+    {
+        opacity: 0;
+    }
+}
