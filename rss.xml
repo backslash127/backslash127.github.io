@@ -1,6 +1,6 @@
 <!--
 <guid> : https://www.uuidgenerator.net/guid
-<pubdate> : uses RFC 2822 format https://www.bairesdev.com/tools/onlinedevtools/
+<pubdate> : uses RFC 2822 format https://www.unixtimestamp.com/
 -->
 
 <rss version="2.0">
@@ -12,6 +12,15 @@
 
 
         <!-- items -->
+        <item>
+            <title>i wish they'd understand</title>
+            <description>i hate when people try to help but end up making things worse.</description>
+            <link>https://backslash.nekoweb.org/?p=/blogposts/03-25-2026</link>
+
+            <guid>11b6e042-faf4-44c5-a17f-50977f8fb853</guid>
+            <pubdate>Wed, 25 Mar 2026 15:46:14 +0000</pubdate>
+        </item>
+
         <item>
             <title>a reconsideration of someone i love</title>
             <description>i love my mom, but sometimes it's not easy.</description>
