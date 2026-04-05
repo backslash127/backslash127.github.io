@@ -60,8 +60,8 @@ function resetValues() {
 
 updatePlaylist([  // this is just the initial playlist i want to have loaded when the page first loads
     {
-        name:'24 Hours', artist:'Zookeeper', album:'Jet Set Radio Evolution SIIVAGUNNER Original Tracks',
-        albumCover:'media/pages/gallery/music/startupSong/cover.png',
+        name:'Got To Move! (Millennium Girl)', artist:'MilkCan', album:'Make It Sweet!',
+        albumCover:'media/pages/gallery/music/startupSong/cover.jpg',
         filePath:'media/pages/gallery/music/startupSong/audio.mp3'
     },
 ]);
