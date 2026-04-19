@@ -60,7 +60,7 @@ function resetValues() {
 
 updatePlaylist([  // this is just the initial playlist i want to have loaded when the page first loads
     {
-        name:'PULL UP', artist:'2 Mello', album:'Sounds Of Tokyo-To Future',
+        name:'Imposter Syndrome', artist:'Sidney Gish', album:'No Dogs Allowed',
         albumCover:'media/pages/gallery/music/startupSong/cover.jpg',
         filePath:'media/pages/gallery/music/startupSong/audio.mp3'
     },
