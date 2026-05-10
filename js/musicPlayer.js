@@ -60,7 +60,7 @@ function resetValues() {
 
 updatePlaylist([  // this is just the initial playlist i want to have loaded when the page first loads
     {
-        name:'DAWG', artist:'colon3', album:'NEVER KNOWS BEST',
+        name:'M3 N MIN3', artist:'femtanyl; Danny Brown', album:'REACTOR',
         albumCover:'media/pages/gallery/music/startupSong/cover.jpg',
         filePath:'media/pages/gallery/music/startupSong/audio.mp3'
     },

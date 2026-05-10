@@ -13,6 +13,15 @@
 
         <!-- items -->
         <item>
+            <title>hello again</title>
+            <description>made it on time!</description>
+            <link>https://backslash.nekoweb.org/?p=/blogposts/05-10-2026</link>
+
+            <guid>24881bfe-4ae0-4055-a96f-25a816222bce</guid>
+            <pubdate>Sun, 10 May 2026 19:48:21 +0000</pubdate>
+        </item>
+
+        <item>
             <title>sorry i was too lazy</title>
             <description>...to do the weekly update last weekend so i'm doing it now</description>
             <link>https://backslash.nekoweb.org/?p=/blogposts/05-04-2026</link>
