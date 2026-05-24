@@ -141,7 +141,7 @@ body
     color: #9460a9;
 }
 
-img.indent, img.cutout
+img.indent, img.cutout, video.indent, video.cutout
 {
     padding: 0;
 }

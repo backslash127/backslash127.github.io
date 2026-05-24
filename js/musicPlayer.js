@@ -60,9 +60,9 @@ function resetValues() {
 
 updatePlaylist([  // this is just the initial playlist i want to have loaded when the page first loads
     {
-        name:'M3 N MIN3', artist:'femtanyl; Danny Brown', album:'REACTOR',
+        name:'Uknowhowwedu', artist:'Bahamadia', album:'Kollage',
         albumCover:'media/pages/gallery/music/startupSong/cover.jpg',
-        filePath:'media/pages/gallery/music/startupSong/audio.mp3'
+        filePath:'media/pages/gallery/music/startupSong/audio.flac'
     },
 ]);
 
