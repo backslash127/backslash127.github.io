@@ -30,6 +30,14 @@ let playlist = [ // the list of tracks to play
 
 ];
 
+let startupPlaylist = [  // this is just the initial playlist i want to have loaded when the page first loads
+    {
+        name:'MIC CHECK', artist:'D-CELL SOUND TEAM', album:'unbeatable [ost]',
+        albumCover:'media/pages/gallery/music/startupSong/cover.png',
+        filePath:'media/pages/gallery/music/startupSong/audio.mp3'
+    },
+]
+
 function loadTrack(trackIndex) {
     clearInterval(updateTimer);
     resetValues();
@@ -58,13 +66,7 @@ function resetValues() {
     playbackSlider.value = 0;
 };
 
-updatePlaylist([  // this is just the initial playlist i want to have loaded when the page first loads
-    {
-        name:'MIC CHECK', artist:'D-CELL SOUND TEAM', album:'unbeatable [ost]',
-        albumCover:'media/pages/gallery/music/startupSong/cover.png',
-        filePath:'media/pages/gallery/music/startupSong/audio.mp3'
-    },
-]);
+updatePlaylist(startupPlaylist);
 
 function updatePlaylist(newPlaylist) {
     playlist.length = 0; // clears the playlist array
