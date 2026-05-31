@@ -72,7 +72,7 @@ function updatePlaylist(newPlaylist) {
     playlist.length = 0; // clears the playlist array
     playlistElement.innerHTML = ""; // clears the <ul> element of all children
 
-    playlist = newPlaylist; // sets the playlist array to the new playlist send in
+    playlist = newPlaylist; // sets the playlist array to the "newPlaylist"
     trackIndex = 0;
 
     pauseTrack();
@@ -212,7 +212,7 @@ function updateSeekTime() {
 function createPlaylist() {
     playlist.forEach(function(item) { // the inner code runs "for each" item inside the playlist array
         const playlistItem = document.createElement("li"); // creates a new <li> html element
-        playlistItem.classList.add("playlistItem"); // adds the tag ".playlistItem" to the newly created element
+        playlistItem.classList.add("playlistItem"); // adds the class ".playlistItem" to the newly created element
 
         playlistItem.textContent = item.name; // inserts the name of the item inside the <li>
         playlistItem.addEventListener("click", function() { // adds an event to detect when an <li> is clicked
