@@ -60,9 +60,9 @@ function resetValues() {
 
 updatePlaylist([  // this is just the initial playlist i want to have loaded when the page first loads
     {
-        name:'Uknowhowwedu', artist:'Bahamadia', album:'Kollage',
-        albumCover:'media/pages/gallery/music/startupSong/cover.jpg',
-        filePath:'media/pages/gallery/music/startupSong/audio.flac'
+        name:'MIC CHECK', artist:'D-CELL SOUND TEAM', album:'unbeatable [ost]',
+        albumCover:'media/pages/gallery/music/startupSong/cover.png',
+        filePath:'media/pages/gallery/music/startupSong/audio.mp3'
     },
 ]);
 
