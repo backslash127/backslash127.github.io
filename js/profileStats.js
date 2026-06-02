@@ -1,7 +1,7 @@
 let username = "Backslash"
 
-let moodText = "sleepy";
-let activityText = "meow";
+let moodText = "feeling kinda okay";
+let activityText = "being myself";
 
 function setUsername() {
     let usernameElement = document.querySelectorAll(".username");
