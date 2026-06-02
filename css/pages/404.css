@@ -19,6 +19,7 @@ body
     border: none;
 
     user-select: none;
+    cursor: none;
 }
 
 p, ul
