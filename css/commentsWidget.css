@@ -114,9 +114,9 @@
 
     #c_submitButton
     {
-        display: inline-block;
+        display: block;
 
-        position: relative;
+        float: right;
 
         width: 32px;
         height: 32px;
@@ -363,7 +363,7 @@
         width: auto;
         height: auto;
 
-        float: right;
+        float: left;
 
         color: #9460a9;
     }
