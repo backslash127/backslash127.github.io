@@ -30,8 +30,9 @@ function changeURL() {
     const urlText = document.querySelector(".urlBox p");
 
     if (mainIframe) {
-        urlText.innerHTML = mainIframe.contentWindow.location.href.split(".html").join(""); // changes the cosmetic address bar to match the actual url of the iframe
+        urlText.innerHTML = mainIframe.contentWindow.location.href.replace(".html", "").replace("#c_inputDiv", ""); // changes the cosmetic address bar to match the actual url of the iframe
     };
+    // .replace("#c_inputDiv", "") is exclusive to the About page
 
     console.log("updated URL");
 };

@@ -17,7 +17,7 @@
 */
 
 // The values in this section are REQUIRED for the widget to work! Keep them in quotes!
-const s_stylePath = '/css/commentWidget.css';
+const s_stylePath = '/css/commentsWidget.css';
 const s_formId = '1FAIpQLScaChFkJZa9757hc1ykdZDJkwx4X0SPR-T_fDxDxBqGOhTzCg';
 const s_nameId = '19124715';
 const s_websiteId = '299261410';
@@ -45,9 +45,9 @@ const s_fixRarebitIndexPage = false; // If using Rarebit, change to true to make
 
 // Word filter - Censor profanity, etc
 const s_wordFilterOn = false; // True for on, false for off
-const s_filterReplacement = '****'; // Change what filtered words are censored with (**** is the default)
+const s_filterReplacement = '♡♡♡'; // Change what filtered words are censored with (**** is the default)
 const s_filteredWords = [ // Add words to filter by putting them in quotes and separating with commas (ie. 'heck', 'dang')
-    'heck', 'dang'
+
 ]
 
 // Text - Change what messages/text appear on the form and in the comments section (Mostly self explanatory)
@@ -55,16 +55,16 @@ const s_widgetTitle = '';
 const s_nameFieldLabel = '';
 const s_websiteFieldLabel = '';
 const s_textFieldLabel = '';
-const s_submitButtonLabel = 'send';
+const s_submitButtonLabel = '';
 const s_loadingText = 'loading comments...';
 const s_noCommentsText = 'no comments yet...';
 const s_closedCommentsText = 'comments are currently closed.';
 const s_websiteText = 'website'; // The links to websites left by users on their comments
-const s_replyButtonText = 'reply'; // The button for replying to someone
-const s_replyingText = 'replying to: '; // The text that displays while the user is typing a reply
-const s_expandRepliesText = 'show replies';
-const s_leftButtonText = '<';
-const s_rightButtonText = '>';
+const s_replyButtonText = ''; // The button for replying to someone
+const s_replyingText = 'replying to :'; // The text that displays while the user is typing a reply
+const s_expandRepliesText = '';
+const s_leftButtonText = '';
+const s_rightButtonText = '';
 
 /*
     DO NOT edit below this point unless you are confident you know what you're doing!
@@ -104,10 +104,10 @@ const v_formHtml = `
 
     <div id="c_textWrapper" class="c-inputWrapper">
         <label class="c-label c-textLabel" for="entry.${s_textId}">${s_textFieldLabel}</label>
-        <textarea class="c-input c-textInput" name="entry.${s_textId}" id="entry.${s_textId}" rows="4" cols="50" maxlength="${s_maxLength}" required></textarea>
+        <textarea class="c-input c-textInput" name="entry.${s_textId}" id="entry.${s_textId}" rows="4" cols="50" maxlength="${s_maxLength}" spellcheck="false" placeholder="write your message!" required></textarea>
     </div>
 
-    <input id="c_submitButton" name="c_submitButton" type="submit" value="${s_submitButtonLabel}" disabled>
+    <button id="c_submitButton" name="c_submitButton" type="submit" value="${s_submitButtonLabel}" disabled></button>
 `;
 
 // Insert main HTML to page
@@ -324,7 +324,7 @@ function displayComments(comments) {
 
             // The button to expand replies
             const button = document.createElement('button');
-            button.innerHTML = s_expandRepliesText + ` (${num})`;
+            button.innerHTML = s_expandRepliesText + ` ${num}`;
             button.setAttribute('onclick', `expandReplies(this.parentElement.id)`);
             button.className = 'c-expandButton';
             parentDiv.insertBefore(button, parentDiv.lastChild);
@@ -368,19 +368,12 @@ function createComment(data) {
     const id = data.Name + '|--|' + data.Timestamp2;
     comment.id = id;
 
-    // Name of user
-    let name = document.createElement('h3');
-    let filteredName = data.Name;
-    if (s_wordFilterOn) {filteredName = filteredName.replace(v_filteredWords, s_filterReplacement)}
-    name.innerText = filteredName;
-    name.className = 'c-name';
-    comment.appendChild(name);
-
     // Timestamp
     let time = document.createElement('span');
     time.innerText = timestamp;
     time.className = 'c-timestamp';
     comment.appendChild(time);
+
 
     // Website URL, if one was provided
     if (data.Website) {
@@ -391,11 +384,23 @@ function createComment(data) {
         site.className = 'c-site';
         site.target = '_blank'
 
-        linkImage.src = "/media/pages/about/icons/link.png"
+        linkImage.src = "/media/pages/about/comments/siteLink.png"
 
         comment.appendChild(site);
         site.appendChild(linkImage)
     }
+
+    // Name of user
+    let name = document.createElement('h3');
+    let filteredName = data.Name;
+    if (s_wordFilterOn) {filteredName = filteredName.replace(v_filteredWords, s_filterReplacement)}
+    name.innerText = filteredName;
+    name.className = 'c-name';
+    comment.appendChild(name);
+
+    // Divider
+    let divider = document.createElement('hr');
+    comment.appendChild(divider);
 
     // Text content
     let text = document.createElement('p');
@@ -485,7 +490,7 @@ const link = document.createElement('a');
 link.href = '#c_inputDiv';
 function openReply(id) {
     if (c_replyingText.style.display == 'none') {
-        c_replyingText.innerHTML = s_replyingText + ` ${id.split('|--|')[0]}...`;
+        c_replyingText.innerHTML = s_replyingText + ` <strong>${id.split('|--|')[0]}</strong>`;
         c_replyInput.value = id;
         c_replyingText.style.display = 'block';
     } else {
