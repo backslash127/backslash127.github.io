@@ -1,7 +1,7 @@
 let username = "Backslash"
 
-let moodText = "meow";
-let activityText = "sitting around";
+let moodText = "a bit all over the place";
+let activityText = "keeping busy";
 
 function setUsername() {
     let usernameElement = document.querySelectorAll(".username");
@@ -11,16 +11,6 @@ function setUsername() {
     });
 
     console.log("username updated");
-};
-
-function setMood() {
-    let moodElement = document.querySelectorAll("#moodStat");
-
-    moodElement.forEach((item) => {
-        item.innerHTML = "<strong>Mood</strong> : " + moodText;
-    });
-
-    console.log("mood updated");
 };
 
 function setActivity() {
@@ -43,7 +33,6 @@ function setWebspaceTag() {
 
 function updateStats() {
     setUsername();
-    setMood();
     setActivity();
 
     setWebspaceTag();

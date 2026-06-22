@@ -55,6 +55,23 @@
     border-radius: 8px;
 }
 
+#moodStat
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#moodStat p
+{
+    margin-right: 7px;
+}
+
+#moodStat a
+{
+    margin-bottom: 3px;
+}
+
 #statuses
 {
     padding: 0 20px;
