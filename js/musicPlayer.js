@@ -32,7 +32,7 @@ let playlist = [ // the list of tracks to play
 
 let startupPlaylist = [  // this is just the initial playlist i want to have loaded when the page first loads
     {
-        name:'The World Is Yours', artist:'Nas', album:'Illmatic',
+        name:'Noid', artist:'Tyler, The Creator', album:'CHROMAKOPIA',
         albumCover:'media/startupSong/cover.jpg',
         filePath:'media/startupSong/audio.mp3'
     },
