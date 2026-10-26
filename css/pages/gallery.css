@@ -64,6 +64,16 @@ a:is(#graphics, #music, #photos, #writings, #videos):active
     border-radius: 50em;
 }
 
+.sectionDate.purpleLine::after
+{
+    content: "";
+
+    flex: 1;
+
+    border-bottom: 3px solid #9460a9;
+    border-radius: 50em;
+}
+
 .sectionDate:not(:empty)::after
 {
     margin-left: 0.75em;

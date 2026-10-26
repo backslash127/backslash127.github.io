@@ -1,6 +1,6 @@
 <!--
 <guid> : https://www.uuidgenerator.net/guid
-<pubdate> : uses RFC 2822 format https://www.unixtimestamp.com/
+<pubdate> : uses RFC 2822 format httpsz://www.unixtimestamp.com/
 -->
 
 <rss version="2.0">
@@ -12,6 +12,15 @@
 
 
         <!-- items -->
+        <item>
+            <title>out past curfew</title>
+            <description>now where the hell have i been?</description>
+            <link>https://backslash.nekoweb.org/?p=/blogposts/2026/10/26</link>
+
+            <guid>058e66b0-f083-496c-9080-9c8cc571e339</guid>
+            <pubdate>Mon, 26 Oct 2026 06:21:47 +0000</pubdate>
+        </item>
+
         <item>
             <title>cushy living found dead in her apartment</title>
             <description>goodbye summer break. i'm gonna miss you a lot.</description>
