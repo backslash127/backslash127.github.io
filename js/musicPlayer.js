@@ -32,7 +32,7 @@ let playlist = [ // the list of tracks to play
 
 let startupPlaylist = [  // this is just the initial playlist i want to have loaded when the page first loads
     {
-        name:'Sound Test', artist:'squid.mid', album:'Jet Set Radio Evolution SIIVA Original Tracks ~ Vol. 2KOPIA',
+        name:'Sound Test', artist:'squid.mid', album:'Jet Set Radio Evolution SIIVA Original Tracks ~ Vol. 2',
         albumCover:'media/startupSong/cover.jpg',
         filePath:'media/startupSong/audio.flac'
     },
