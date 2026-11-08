@@ -1,6 +1,6 @@
 <!--
 <guid> : https://www.uuidgenerator.net/guid
-<pubdate> : uses RFC 2822 format httpsz://www.unixtimestamp.com/
+<pubdate> : uses RFC 2822 format https://www.unixtimestamp.com/
 -->
 
 <rss version="2.0">
@@ -12,6 +12,15 @@
 
 
         <!-- items -->
+        <item>
+            <title></title>
+            <description>bisected down the middle</description>
+            <link>https://backslash.nekoweb.org/?p=/blogposts/2026/11/08</link>
+
+            <guid>ab52a390-4693-466f-9a53-43fff75c9847</guid>
+            <pubdate>Sun, 08 Nov 2026 09:18:19 +0000</pubdate>
+        </item>
+
         <item>
             <title>out past curfew</title>
             <description>now where the hell have i been?</description>
