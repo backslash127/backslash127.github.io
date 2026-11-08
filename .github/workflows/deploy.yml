@@ -10,10 +10,19 @@ jobs:
 
       # your build step here
 
+      - name: Prepare deploy directory
+        run: |
+          mkdir deploy
+          rsync -a ./ ./deploy \
+            --exclude .git \
+            --exclude .github \
+            --exclude deploy \
+            --exclude deploy2nekoweb
+
       - name: deploy2nekoweb
         uses: indiefellas/deploy2nekoweb@main
         with:
           nekoweb-api-key: ${{ secrets.NEKOWEB_API_KEY }}
           nekoweb-domain: 'backslash.nekoweb.org'
           nekoweb-username: 'backslash'
-          directory: ''
+          directory: 'deploy'
