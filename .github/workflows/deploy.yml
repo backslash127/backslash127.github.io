@@ -16,4 +16,4 @@ jobs:
           nekoweb-api-key: ${{ secrets.NEKOWEB_API_KEY }}
           nekoweb-domain: 'backslash.nekoweb.org'
           nekoweb-username: 'backslash'
-          directory: '/'
+          directory: './'
